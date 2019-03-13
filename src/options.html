@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head><title>Oh My Tab Options</title></head>
+<body>
+<style>
+span {
+	font-size:14px;
+	margin-left:10px;
+	line-height:20px;
+}
+
+form{
+	height: 110px;
+}
+</style>
+
+<form id='form'>
+<span>__MSG_option_top__</span>
+
+<br/>
+
+<label>
+<input type="checkbox" id="glue">
+<span>__MSG_option1__</span>
+</label>
+<br/>
+
+<label>
+<input type="checkbox" id="depclean">
+<span>__MSG_option2__</span>
+</label>
+<br/>
+
+<label>
+<input type="checkbox" id="sorttab">
+<span>__MSG_option3__</span>
+</label>
+
+(__MSG_option3_0__:
+<select id="sortkey">
+ <option value="url">__MSG_option3_1__</option>
+ <option value="title">__MSG_option3_2__</option>
+</select>
+)<br/>
+
+<label>
+<input type="checkbox" id="refresh">
+<span>__MSG_option4__</span>
+</label>
+<br/>
+
+<div id="status"></div>
+
+</form>
+
+
+<script src="options.js"></script>
+</body>
+</html>

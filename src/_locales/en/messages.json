@@ -1,0 +1,29 @@
+{
+	"appDesc": {
+		"message": "You can aggregate separate tabs, remove duplicate tabs, and sort tabs by URL or page title by using OhMyTab."
+	},
+	"option_top":{
+		"message": "Select the behaviors of the extension"
+	},
+	"option1":{
+		"message": "Merge tabs into one window"
+	},
+	"option2":{
+		"message": "Close deplicated tabs"
+	},
+	"option3":{
+		"message": "Sort tabs"
+	},
+	"option3_0":{
+		"message": "Key"
+	},
+	"option3_1":{
+		"message": "URL"
+	},
+	"option3_2":{
+		"message": "Page Title"
+	},
+	"option4":{
+		"message": "Reload discarded tabs"
+	}
+}

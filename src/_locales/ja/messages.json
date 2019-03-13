@@ -1,0 +1,29 @@
+{
+	"appDesc": {
+		"message": "OhMyTab は散逸したタブの集約や重複したタブの除去、URLやページタイトルでのタブの並び替えなどに便利です。"
+	},
+	"option_top":{
+		"message": "プラグインの動作を選択してください"
+	},
+	"option1":{
+		"message": "タブを一つのウィンドウにまとめる"
+	},
+	"option2":{
+		"message": "重複したタブを閉じる"
+	},
+	"option3":{
+		"message": "タブを並び替える"
+	},
+	"option3_0":{
+		"message": "要素"
+	},
+	"option3_1":{
+		"message": "URL"
+	},
+	"option3_2":{
+		"message": "ページタイトル"
+	},
+	"option4":{
+		"message": "アンロードされたページを再読み込みする"
+	}
+}

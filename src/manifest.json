@@ -1,0 +1,39 @@
+{
+	"manifest_version": 2,
+
+	"name": "OhMyTab",
+	"short_name": "OMT",
+	"description": "__MSG_appDesc__",
+	"version": "1.0",
+	"default_locale": "en",
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+
+	"browser_action": {
+		"default_icon": {
+			"16": "icon16.png",
+			"19": "icon19.png"
+		}
+	},
+
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
+
+	"permissions": [
+		"tabs",
+		"storage"
+	],
+
+	"options_ui":{
+		"page": "options.html",
+		"open_in_tab":false
+	},
+
+	"minimum_chrome_version": "54"
+
+}
