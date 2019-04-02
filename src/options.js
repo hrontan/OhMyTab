@@ -35,13 +35,15 @@ function save_options() {
 	var sorttab = document.getElementById('sorttab').checked;
 	var sortkey = document.getElementById('sortkey').value;
 	var refresh = document.getElementById('refresh').checked;
+	var comclose = document.getElementById('comclose').checked;
 
 	chrome.storage.sync.set({
 			glue: glue,
 			depclean: depclean,
 			sorttab: sorttab,
 			sortkey: sortkey,
-			refresh: refresh
+			refresh: refresh,
+			comclose: comclose
 		});
 }
 
@@ -52,13 +54,15 @@ function restore_options() {
 			depclean: true,
 			sorttab: true,
 			sortkey: 'url',
-			refresh: true
+			refresh: true,
+			comclose: false
 		}, function(items) {
 			document.getElementById('glue').checked = items.glue;
 			document.getElementById('depclean').checked = items.depclean;
 			document.getElementById('sorttab').checked = items.sorttab;
 			document.getElementById('sortkey').value = items.sortkey;
 			document.getElementById('refresh').checked = items.refresh;
+			document.getElementById('comclose').checked = items.comclose;
 			fixrefreshoption();
 	});
 }

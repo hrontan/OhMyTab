@@ -25,5 +25,8 @@
 	},
 	"option4":{
 		"message": "Reload discarded tabs"
+	},
+	"option5":{
+		"message": "Colose system tabs"
 	}
 }
