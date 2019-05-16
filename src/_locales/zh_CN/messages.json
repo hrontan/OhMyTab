@@ -1,0 +1,34 @@
+{
+	"appDesc": {
+		"message": "您可以使用OhMyTab聚合单独的选项卡，删除重复的选项卡，并按URL或页面标题对选项卡进行排序。"
+	},
+	"option_top":{
+		"message": "选择扩展的行为"
+	},
+	"option1":{
+		"message": "将选项卡合并到一个窗口中"
+	},
+	"option2":{
+		"message": "关闭重复选项卡"
+	},
+	"option3":{
+		"message": "排序选项卡"
+	},
+	"option3_0":{
+		"message": "排序键"
+	},
+	"option3_1":{
+		"message": "网址"
+	},
+	"option3_2":{
+		"message": "页面标题"
+	},
+	"option4":{
+		"message": "重新加载丢弃的选项卡"
+	},
+	"option5":{
+		"message": "关闭系统选项卡"
+	}
+}
+
+

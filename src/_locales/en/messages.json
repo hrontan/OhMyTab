@@ -9,7 +9,7 @@
 		"message": "Merge tabs into one window"
 	},
 	"option2":{
-		"message": "Close deplicated tabs"
+		"message": "Close deplicate tabs"
 	},
 	"option3":{
 		"message": "Sort tabs"
@@ -27,6 +27,6 @@
 		"message": "Reload discarded tabs"
 	},
 	"option5":{
-		"message": "Colose system tabs"
+		"message": "Close system tabs"
 	}
 }
