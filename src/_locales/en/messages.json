@@ -28,5 +28,8 @@
 	},
 	"option5":{
 		"message": "Close system tabs"
+	},
+	"option6":{
+		"message": "Show tab count on the icon"
 	}
 }
