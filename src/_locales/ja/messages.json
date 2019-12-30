@@ -31,5 +31,8 @@
 	},
 	"option6":{
 		"message": "タブの数をアイコンに表示する"
+	},
+	"option7":{
+		"message": "検索エンジンの結果のタブを閉じる (Google, Bing, Baidu, Yahoo Japan)"
 	}
 }

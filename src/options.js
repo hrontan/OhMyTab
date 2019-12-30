@@ -32,6 +32,7 @@ function save_options() {
     var refresh = document.getElementById('refresh').checked;
     var comclose = document.getElementById('comclose').checked;
     var iconbadge = document.getElementById('iconbadge').checked;
+    var rxclose = document.getElementById('rxclose').checked;
 
     chrome.storage.sync.set({
         glue: glue,
@@ -40,7 +41,8 @@ function save_options() {
         sortkey: sortkey,
         refresh: refresh,
         comclose: comclose,
-        iconbadge: iconbadge
+        iconbadge: iconbadge,
+        rxclose: rxclose
     });
 }
 
@@ -53,6 +55,7 @@ function restore_options() {
         refresh: true,
         comclose: false,
         iconbadge: false,
+        rxclose: false
     }, function (items) {
         document.getElementById('glue').checked = items.glue;
         document.getElementById('depclean').checked = items.depclean;
@@ -61,6 +64,7 @@ function restore_options() {
         document.getElementById('refresh').checked = items.refresh;
         document.getElementById('comclose').checked = items.comclose;
         document.getElementById('iconbadge').checked = items.iconbadge;
+        document.getElementById('rxclose').checked = items.rxclose;
         fixrefreshoption();
     });
 }

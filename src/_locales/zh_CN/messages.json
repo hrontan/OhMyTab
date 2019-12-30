@@ -31,6 +31,9 @@
 	},
 	"option6":{
 		"message": "显示图标上的选项卡数量"
+	},
+	"option7":{
+		"message": "关闭搜索引擎结果页面 (Google, Bing, Baidu, Yahoo Japan)"
 	}
 
 }
