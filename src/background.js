@@ -23,7 +23,7 @@
         return new Promise(function (resolve, reject) { chrome.windows.getCurrent(resolve) });
     }
 
-    var re = /^chrome:\/\//;
+    var re = /^(chrome|chrome-extension):\/\//;
 
     let comclose = async function (flag) {
         if (!flag) return;

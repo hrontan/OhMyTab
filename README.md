@@ -9,6 +9,9 @@ OhMyTab provides four main functions.
 
 You can configure the behavior of the extension by disabling some functions shown above on option.
 
+*Update 1.5*
+Close Chrome Extension Tabs(chrome-extension://) when close system tabs option is enabled.
+
 *Update 1.4*
 Add function to close search engine result tabs. You can enable it on option page.
 Speedup extension.
@@ -26,6 +29,9 @@ OhMyTabには次の四つの機能があります。
 3. URLやページタイトルでタブを並び替える。
 4. Chromeのシステムに関するタブや検索エンジンの結果のタブを閉じる
 また、これらの動作は、オプションで個別に無効化することができます。
+
+*アップデート1.5*
+システムタブを閉じるオプションが有効な時、拡張機能のタブも閉じる様に変更
 
 *アップデート1.4*
 検索エンジンの結果のページを閉じる機能を追加（Google, Bing, Baidu, Yahoo Japan対応）
