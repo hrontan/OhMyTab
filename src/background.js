@@ -4,7 +4,7 @@
     }
 
     let getTabsAsync = function () {
-        return new Promise(function (resolve, reject) { chrome.tabs.query({}, resolve) });
+        return new Promise(function (resolve, reject) { chrome.tabs.query({windowType:"normal"}, resolve) });
     }
 
     let moveTabAsync = function (tabids, winid) {

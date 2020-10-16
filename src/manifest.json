@@ -4,7 +4,7 @@
 	"name": "OhMyTab",
 	"short_name": "OMT",
 	"description": "__MSG_appDesc__",
-	"version": "1.5",
+	"version": "1.6",
 	"default_locale": "en",
 	"icons": {
 		"16": "icon16.png",
