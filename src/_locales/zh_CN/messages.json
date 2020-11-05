@@ -32,8 +32,20 @@
 	"option6":{
 		"message": "显示图标上的选项卡数量"
 	},
+	"option6_0":{
+		"message": "作用域"
+	},
+	"option6_1":{
+		"message": "一切"
+	},
+	"option6_2":{
+		"message": "每个窗口"
+	},
 	"option7":{
 		"message": "关闭搜索引擎结果页面 (Google, Bing, Baidu, Yahoo Japan)"
+	},
+	"option8":{
+		"message": "仅适用于当前窗口"
 	}
 
 }

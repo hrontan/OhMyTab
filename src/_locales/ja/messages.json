@@ -32,7 +32,19 @@
 	"option6":{
 		"message": "タブの数をアイコンに表示する"
 	},
+	"option6_0":{
+		"message": "範囲"
+	},
+	"option6_1":{
+		"message": "全体"
+	},
+	"option6_2":{
+		"message": "タブごと"
+	},
 	"option7":{
 		"message": "検索エンジンの結果のタブを閉じる (Google, Bing, Baidu, Yahoo Japan)"
+	},
+	"option8":{
+		"message": "選択しているウィンドウのみに対して動作"
 	}
 }

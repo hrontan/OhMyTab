@@ -6,8 +6,14 @@ OhMyTab provides four main functions.
 2. Close duplicated tabs
 3. Sort tabs by page titles or URLs
 4. Close close system and search engine result tabs
+5. Count the number of tabs in total or in each window
 
 You can configure the behavior of the extension by disabling some functions shown above on option.
+
+*Update 1.7*
+Fix the issue of asynchronous processing.
+Add the option to apply some function only for the current windows.
+Add the option to count tabs for each windows on the icon badge.
 
 *Update 1.6*
 Fix the issue that this extension unexpectedly handled chrome app tabs and popups. 
@@ -31,7 +37,14 @@ OhMyTabには次の四つの機能があります。
 2. 重複したタブを閉じる
 3. URLやページタイトルでタブを並び替える。
 4. Chromeのシステムに関するタブや検索エンジンの結果のタブを閉じる
+5. 全体、もしくはウィンドウ毎のタブの数を拡張機能のアイコンに表示する。
+
 また、これらの動作は、オプションで個別に無効化することができます。
+
+*アップデート1.7*
+非同期実行のバグの修正
+一部機能を現在のウィンドウにのみ適用するオプションを追加
+タブの数の表記をウィンドウ毎にするオプションを追加
 
 *アップデート1.6*
 拡張機能の動作範囲にChromeアプリやポップアップを含めてしまう問題を修正

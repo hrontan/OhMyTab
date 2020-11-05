@@ -32,7 +32,19 @@
 	"option6":{
 		"message": "Show tab count on the icon"
 	},
+	"option6_0":{
+		"message": "Scope"
+	},
+	"option6_1":{
+		"message": "Total"
+	},
+	"option6_2":{
+		"message": "Each Tab"
+	},
 	"option7":{
 		"message": "Close search engine result tabs (Google, Bing, Baidu, Yahoo Japan)"
+	},
+	"option8":{
+		"message": "Work only for a current window"
 	}
 }

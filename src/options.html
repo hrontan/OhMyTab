@@ -10,7 +10,7 @@ span {
 }
 
 form{
-	height: 180px;
+	height: 220px;
 	width: 500px;
 }
 </style>
@@ -25,8 +25,10 @@ form{
 <span>__MSG_option1__</span>
 </label>
 <br/>
-<label>
 
+<hr>
+
+<label>
 <input type="checkbox" id="comclose">
 <span>__MSG_option5__</span>
 </label>
@@ -63,9 +65,25 @@ form{
 <br/>
 
 <label>
+<input type="checkbox" id="currentonly">
+<span>__MSG_option8__</span>
+</label>
+<br/>
+
+<hr>
+
+<label>
 <input type="checkbox" id="iconbadge">
 <span>__MSG_option6__</span>
 </label>
+
+(__MSG_option6_0__:
+<select id="iconbadgescope">
+ <option value="all">__MSG_option6_1__</option>
+ <option value="tab">__MSG_option6_2__</option>
+</select>
+)<br/>
+
 <br/>
 
 <div id="status"></div>

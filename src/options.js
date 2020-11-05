@@ -1,4 +1,4 @@
-function localizeHtmlPage() {
+let localizeHtmlPage = function () {
     var objects = document.getElementsByTagName('html');
     for (var j = 0; j < objects.length; j++) {
         var obj = objects[j];
@@ -14,17 +14,17 @@ function localizeHtmlPage() {
     }
 }
 
-function fixrefreshoption() {
-    if (document.getElementById('sorttab').checked && document.getElementById('sortkey').value == 'title') {
-        document.getElementById('refresh').checked = true;
-        document.getElementById('refresh').disabled = true;
+let fixoption = function () {
+    if (document.getElementById('glue').checked) {
+        document.getElementById('currentonly').checked = false;
+        document.getElementById('currentonly').disabled = true;
     } else {
-        document.getElementById('refresh').disabled = false;
+        document.getElementById('currentonly').disabled = false;
     }
 }
 
-function save_options() {
-    fixrefreshoption();
+let save_options = function () {
+    fixoption();
     var glue = document.getElementById('glue').checked;
     var depclean = document.getElementById('depclean').checked;
     var sorttab = document.getElementById('sorttab').checked;
@@ -32,7 +32,9 @@ function save_options() {
     var refresh = document.getElementById('refresh').checked;
     var comclose = document.getElementById('comclose').checked;
     var iconbadge = document.getElementById('iconbadge').checked;
+    var iconbadgescope = document.getElementById('iconbadgescope').value;
     var rxclose = document.getElementById('rxclose').checked;
+    var currentonly = document.getElementById('currentonly').checked;
 
     chrome.storage.sync.set({
         glue: glue,
@@ -42,11 +44,13 @@ function save_options() {
         refresh: refresh,
         comclose: comclose,
         iconbadge: iconbadge,
-        rxclose: rxclose
+        iconbadgescope: iconbadgescope,
+        rxclose: rxclose,
+        currentonly: currentonly
     });
 }
 
-function restore_options() {
+let restore_options = function () {
     chrome.storage.sync.get({
         glue: true,
         depclean: true,
@@ -55,7 +59,9 @@ function restore_options() {
         refresh: true,
         comclose: false,
         iconbadge: false,
-        rxclose: false
+        iconbadgescope: 'all',
+        rxclose: false,
+        currentonly: false,
     }, function (items) {
         document.getElementById('glue').checked = items.glue;
         document.getElementById('depclean').checked = items.depclean;
@@ -64,8 +70,10 @@ function restore_options() {
         document.getElementById('refresh').checked = items.refresh;
         document.getElementById('comclose').checked = items.comclose;
         document.getElementById('iconbadge').checked = items.iconbadge;
+        document.getElementById('iconbadgescope').value = items.iconbadgescope;
         document.getElementById('rxclose').checked = items.rxclose;
-        fixrefreshoption();
+        document.getElementById('currentonly').checked = items.currentonly;
+        fixoption();
     });
 }
 
