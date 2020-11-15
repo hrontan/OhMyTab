@@ -39,12 +39,30 @@
 		"message": "全体"
 	},
 	"option6_2":{
-		"message": "タブごと"
+		"message": "ウィンドウ毎"
 	},
 	"option7":{
 		"message": "検索エンジンの結果のタブを閉じる (Google, Bing, Baidu, Yahoo Japan)"
 	},
 	"option8":{
 		"message": "選択しているウィンドウのみに対して動作"
+	},
+	"option9":{
+		"message": "コンテキストメニューに\"同じドメインのタブを閉じる\"を追加"
+	},
+	"option9_0":{
+		"message": "範囲"
+	},
+	"option9_1":{
+		"message": "全体"
+	},
+	"option9_2":{
+		"message": "ウィンドウ毎"
+	},
+	"text1":{
+		"message": "*1: \"タブを一つのウィンドウにまとめる\"と\"選択しているウィンドウのみに対して動作\"は排他です"
+	},
+	"text2":{
+		"message": "同じドメインのタブを閉じる"
 	}
 }

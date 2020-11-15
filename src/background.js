@@ -1,16 +1,20 @@
+'use strict';
+
 {
     let loadsettingAsync = function () {
         return new Promise(function (resolve, reject) { chrome.storage.sync.get({
             glue: true,
-            comclose: false,
-            rxclose: false,
             depclean: true,
             sorttab: true,
             sortkey: 'url',
             refresh: true,
-            iconbadge: true,
+            comclose: false,
+            iconbadge: false,
             iconbadgescope: 'all',
-            currentonly: false
+            rxclose: false,
+            currentonly: false,
+            contextmenu: false,
+            contextmenuscope: 'all'
         }, resolve) });
     }
 
@@ -120,6 +124,39 @@
         await Promise.all(ps);
     }
 
+    let exdom = function (url){
+        return new URL(url).hostname;
+    }
+    
+    let domclose = async function (coflag, url) {
+        const tabs = await getTabsAsync(coflag);
+        let ps = tabs.filter(tab => exdom(tab.url) == exdom(url))
+            .map(el => removeTabAsync(el.id));
+        await Promise.all(ps);
+    }
+
+    var updateContextMenu = function(){
+        let currentContextMenu = false;
+        return async function () {
+            const items = await loadsettingAsync();
+           if (currentContextMenu == items.contextmenu ) return;
+            if (!items.contextmenu) {
+                chrome.contextMenus.remove('ohmytab1')
+            }else{
+                const menutext = chrome.i18n.getMessage("text2")
+                chrome.contextMenus.create({
+                        id: 'ohmytab1',
+                        title: menutext,
+                        contexts: ['all']
+                });
+            }
+            currentContextMenu = items.contextmenu;
+        }
+    }();
+
+    updateContextMenu();
+
+
     chrome.browserAction.onClicked.addListener(async function () {
         const items = await loadsettingAsync();
         await glue(false, items.glue);
@@ -144,6 +181,13 @@
     chrome.windows.onFocusChanged.addListener(async function () {
         const items = await loadsettingAsync();
         await iconbadge(items.iconbadgescope, items.iconbadge);
+    })
+
+    chrome.contextMenus.onClicked.addListener( async function (info, tab) {
+        if(info.menuItemId == 'ohmytab1'){   
+            const items = await loadsettingAsync();
+            await domclose(items.contextmenuscope != 'all', tab.url);
+        }
     })
 
 }

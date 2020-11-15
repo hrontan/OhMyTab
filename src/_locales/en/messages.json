@@ -39,12 +39,30 @@
 		"message": "Total"
 	},
 	"option6_2":{
-		"message": "Each Tab"
+		"message": "Each Window"
 	},
 	"option7":{
 		"message": "Close search engine result tabs (Google, Bing, Baidu, Yahoo Japan)"
 	},
 	"option8":{
 		"message": "Work only for a current window"
+	},
+	"option9":{
+		"message": "Add \"Close tabs in the same domain\" to the context menu"
+	},
+	"option9_0":{
+		"message": "Scope"
+	},
+	"option9_1":{
+		"message": "Total"
+	},
+	"option9_2":{
+		"message": "Each Window"
+	},
+	"text1":{
+		"message": "*1: \"Merge tabs into one window\" and \"Work only for a current window\" are exclusive"
+	},
+	"text2":{
+		"message": "Close tabs in the same domain"
 	}
 }

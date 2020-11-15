@@ -4,20 +4,25 @@
 <body>
 <style>
 span {
-	font-size:14px;
-	margin-left:10px;
-	line-height:20px;
+	font-size: 14px;
+	margin-left: 10px;
+	line-height: 20px;
 }
 
 form{
-	height: 220px;
-	width: 500px;
+	height: 300px;
+	width: 600px;
+}
+
+aside span{
+	font-size: 12px;
 }
 </style>
 
 <form id='form'>
 <span>__MSG_option_top__</span>
 
+<br/>
 <br/>
 
 <label>
@@ -80,11 +85,27 @@ form{
 (__MSG_option6_0__:
 <select id="iconbadgescope">
  <option value="all">__MSG_option6_1__</option>
- <option value="tab">__MSG_option6_2__</option>
+ <option value="win">__MSG_option6_2__</option>
+</select>
+)<br/>
+
+<hr>
+<label>
+<input type="checkbox" id="contextmenu">
+<span>__MSG_option9__</span>
+</label>
+
+(__MSG_option9_0__:
+<select id="contextmenuscope">
+ <option value="all">__MSG_option9_1__</option>
+ <option value="win">__MSG_option9_2__</option>
 </select>
 )<br/>
 
 <br/>
+<aside>
+ <span>__MSG_text1__</span>
+</aside>
 
 <div id="status"></div>
 
