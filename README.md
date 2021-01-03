@@ -12,6 +12,9 @@ OhMyTab provides seven main functions.
 
 You can configure the behavior of the extension by disabling some functions shown above on option.
 
+*Update 1.8*
+- Fix minor issue.
+
 *Update 1.7*
 - Fix the issue of asynchronous processing.
 - Add the option to apply some function only for the current windows.
@@ -46,6 +49,9 @@ OhMyTabには次の七つの機能があります。
 7. コンテキストメニューに"タブを一つのウィンドウにまとめる"を追加する。
 
 また、これらの動作は、オプションで個別に無効化することができます。
+
+*アップデート1.8*
+軽微な問題点を修正
 
 *アップデート1.7*
 - 非同期実行のバグの修正
