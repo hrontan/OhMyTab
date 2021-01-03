@@ -1,7 +1,7 @@
 'use strict';
 
 {
-    let loadsettingAsync = function () {
+    let loadSettingAsync = function () {
         return new Promise(function (resolve, reject) { chrome.storage.sync.get({
             glue: true,
             depclean: true,
@@ -13,8 +13,9 @@
             iconbadgescope: 'all',
             rxclose: false,
             currentonly: false,
-            contextmenu: false,
-            contextmenuscope: 'all'
+            contextmenu1: false,
+            contextmenu1scope: 'all',
+            contextmenu2: false,
         }, resolve) });
     }
 
@@ -71,8 +72,8 @@
     }
 
     let glue = async function (coflag, flag) {
-        if (!flag) return;
-        const [cWin, tabs] = await Promise.all([getcWinAsync(), getTabsAsync(coflag)]);
+        if (!flag || coflag) return;
+        const [cWin, tabs] = await Promise.all([getcWinAsync(), getTabsAsync(false)]);
         await moveTabAsync(tabs.map(el => el.id), cWin.id);
     }
 
@@ -136,21 +137,37 @@
     }
 
     var updateContextMenu = function(){
-        let currentContextMenu = false;
+        let currentContextMenu1 = false;
+        let currentContextMenu2 = false;
         return async function () {
-            const items = await loadsettingAsync();
-           if (currentContextMenu == items.contextmenu ) return;
-            if (!items.contextmenu) {
-                chrome.contextMenus.remove('ohmytab1')
-            }else{
-                const menutext = chrome.i18n.getMessage("text2")
-                chrome.contextMenus.create({
-                        id: 'ohmytab1',
-                        title: menutext,
-                        contexts: ['all']
-                });
+            const items = await loadSettingAsync();
+            if (currentContextMenu1 != items.contextmenu1 ){
+                if (!items.contextmenu1) {
+                    chrome.contextMenus.remove('ohmytab1')
+                }else{
+                    const menutext1 = chrome.i18n.getMessage("text2")
+                    chrome.contextMenus.create({
+                            id: 'ohmytab1',
+                            title: menutext1,
+                            contexts: ['all']
+                    });
+                }
+                currentContextMenu1 = items.contextmenu1;
             }
-            currentContextMenu = items.contextmenu;
+
+            if (currentContextMenu2 != items.contextmenu2 ){
+                if (!items.contextmenu2) {
+                    chrome.contextMenus.remove('ohmytab2')
+                }else{
+                    const menutext2 = chrome.i18n.getMessage("text3")
+                    chrome.contextMenus.create({
+                            id: 'ohmytab2',
+                            title: menutext2,
+                            contexts: ['all']
+                    });
+                }
+                currentContextMenu2 = items.contextmenu2;
+            }
         }
     }();
 
@@ -158,7 +175,7 @@
 
 
     chrome.browserAction.onClicked.addListener(async function () {
-        const items = await loadsettingAsync();
+        const items = await loadSettingAsync();
         await glue(false, items.glue);
         await depclean(items.currentonly, items.depclean);
         await comclose(items.currentonly, items.comclose);
@@ -169,24 +186,29 @@
     })
 
     chrome.tabs.onUpdated.addListener(async function () {
-        const items = await loadsettingAsync();
+        const items = await loadSettingAsync();
         await iconbadge(items.iconbadgescope, items.iconbadge);
     })
 
     chrome.tabs.onRemoved.addListener(async function () {
-        const items = await loadsettingAsync();
+        const items = await loadSettingAsync();
         await iconbadge(items.iconbadgescope, items.iconbadge);
     })
     
     chrome.windows.onFocusChanged.addListener(async function () {
-        const items = await loadsettingAsync();
+        const items = await loadSettingAsync();
         await iconbadge(items.iconbadgescope, items.iconbadge);
     })
 
     chrome.contextMenus.onClicked.addListener( async function (info, tab) {
         if(info.menuItemId == 'ohmytab1'){   
-            const items = await loadsettingAsync();
+            const items = await loadSettingAsync();
             await domclose(items.contextmenuscope != 'all', tab.url);
+        }
+        
+        if(info.menuItemId == 'ohmytab2'){   
+            const items = await loadSettingAsync();
+            await glue(false, true);
         }
     })
 

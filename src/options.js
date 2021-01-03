@@ -42,8 +42,9 @@
         var iconbadgescope = document.getElementById('iconbadgescope').value;
         var rxclose = document.getElementById('rxclose').checked;
         var currentonly = document.getElementById('currentonly').checked;
-        var contextmenu = document.getElementById('contextmenu').checked;
-        var contextmenuscope = document.getElementById('contextmenuscope').value;
+        var contextmenu1 = document.getElementById('contextmenu1').checked;
+        var contextmenu1scope = document.getElementById('contextmenu1scope').value;
+        var contextmenu2 = document.getElementById('contextmenu2').checked;
 
         chrome.storage.sync.set({
             glue: glue,
@@ -56,8 +57,9 @@
             iconbadgescope: iconbadgescope,
             rxclose: rxclose,
             currentonly: currentonly,
-            contextmenu: contextmenu,
-            contextmenuscope: contextmenuscope
+            contextmenu1: contextmenu1,
+            contextmenu1scope: contextmenu1scope,
+            contextmenu2: contextmenu2,
         });
         const bg = chrome.extension.getBackgroundPage();
         bg.updateContextMenu();
@@ -75,8 +77,9 @@
             iconbadgescope: 'all',
             rxclose: false,
             currentonly: false,
-            contextmenu: false,
-            contextmenuscope: 'all'
+            contextmenu1: false,
+            contextmenu1scope: 'all',
+            contextmenu2: false,
         }, function (items) {
             document.getElementById('glue').checked = items.glue;
             document.getElementById('depclean').checked = items.depclean;
@@ -88,8 +91,9 @@
             document.getElementById('iconbadgescope').value = items.iconbadgescope;
             document.getElementById('rxclose').checked = items.rxclose;
             document.getElementById('currentonly').checked = items.currentonly;
-            document.getElementById('contextmenu').checked = items.contextmenu;
-            document.getElementById('contextmenuscope').value = items.contextmenuscope;
+            document.getElementById('contextmenu1').checked = items.contextmenu1;
+            document.getElementById('contextmenu1scope').value = items.contextmenu1scope;
+            document.getElementById('contextmenu2').checked = items.contextmenu2;
             fixoption();
         });
     }

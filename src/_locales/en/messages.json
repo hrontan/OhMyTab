@@ -59,10 +59,16 @@
 	"option9_2":{
 		"message": "Each Window"
 	},
+	"option10":{
+		"message": "Add \"Merge tabs into one window\" to the context menu"
+	},
 	"text1":{
 		"message": "*1: \"Merge tabs into one window\" and \"Work only for a current window\" are exclusive"
 	},
 	"text2":{
 		"message": "Close tabs in the same domain"
+	},
+	"text3":{
+		"message": "Merge tabs into one window"
 	}
 }
