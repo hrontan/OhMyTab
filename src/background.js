@@ -150,7 +150,7 @@
                             id: 'ohmytab1',
                             title: menutext1,
                             contexts: ['all']
-                    });
+                    }, () => chrome.runtime.lastError);
                 }
                 currentContextMenu1 = items.contextmenu1;
             }
@@ -164,7 +164,7 @@
                             id: 'ohmytab2',
                             title: menutext2,
                             contexts: ['all']
-                    });
+                    }, () => chrome.runtime.lastError);
                 }
                 currentContextMenu2 = items.contextmenu2;
             }
