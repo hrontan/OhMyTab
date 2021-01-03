@@ -1,6 +1,6 @@
 # OhMyTab
 
-OhMyTab provides six main functions.
+OhMyTab provides seven main functions.
 
 1. Merge tabs on multiple windows into one window
 2. Close duplicated tabs
@@ -35,7 +35,7 @@ You can configure the behavior of the extension by disabling some functions show
 
 # OhMyTab
 
-OhMyTabには次の六つの機能があります。
+OhMyTabには次の七つの機能があります。
 
 1. 複数のウィンドウ上のタブを一つのウィンドウに集約する。
 2. 重複したタブを閉じる
