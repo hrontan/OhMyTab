@@ -204,11 +204,13 @@
         if(info.menuItemId == 'ohmytab1'){   
             const items = await loadSettingAsync();
             await domclose(items.contextmenuscope != 'all', tab.url);
+            await iconbadge(items.iconbadgescope, items.iconbadge);
         }
         
         if(info.menuItemId == 'ohmytab2'){   
             const items = await loadSettingAsync();
             await glue(false, true);
+            await iconbadge(items.iconbadgescope, items.iconbadge);
         }
     })
 
