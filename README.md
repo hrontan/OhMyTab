@@ -12,6 +12,9 @@ OhMyTab provides seven main functions.
 
 You can configure the behavior of the extension by disabling some functions shown above on option.
 
+*Update 1.10*
+- Fix minor issue.
+
 *Update 1.9*
 - Fix issue that the number shown in the icon badge is not updated when the extension is triggered from the context menu.
 
@@ -52,6 +55,9 @@ OhMyTabには次の七つの機能があります。
 7. コンテキストメニューに"タブを一つのウィンドウにまとめる"を追加する。
 
 また、これらの動作は、オプションで個別に無効化することができます。
+
+*アップデート1.10*
+- 軽微な問題点を修正
 
 *アップデート1.9*
 - コンテキストメニューから拡張機能を実行した際にタブの数を示すアイコンが更新されていなかった問題を修正

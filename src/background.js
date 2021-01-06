@@ -203,7 +203,7 @@
     chrome.contextMenus.onClicked.addListener( async function (info, tab) {
         if(info.menuItemId == 'ohmytab1'){   
             const items = await loadSettingAsync();
-            await domclose(items.contextmenuscope != 'all', tab.url);
+            await domclose(items.contextmenu1scope != 'all', tab.url);
             await iconbadge(items.iconbadgescope, items.iconbadge);
         }
         
