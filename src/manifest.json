@@ -4,7 +4,7 @@
 	"name": "OhMyTab",
 	"short_name": "OMT",
 	"description": "__MSG_appDesc__",
-	"version": "1.10",
+	"version": "1.11",
 	"default_locale": "en",
 	"icons": {
 		"16": "icon16.png",
@@ -33,6 +33,13 @@
 	"options_ui":{
 		"page": "options.html",
 		"open_in_tab":false
+	},
+
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "hrontan@gmail.com",
+			"strict_min_version": "42.0"
+		}
 	},
 
 	"minimum_chrome_version": "54"
