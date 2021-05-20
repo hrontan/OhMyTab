@@ -1,122 +1,151 @@
 <!DOCTYPE html>
 <html>
-<head><title>Oh My Tab Options</title></head>
+
+<head>
+	<title>OhMyTab Options</title>
+</head>
+
 <body>
-<style>
-span {
-	font-size: 14px;
-	margin-left: 10px;
-	line-height: 20px;
-}
+	<style>
+		h1 {
+			font-size: 14px;
+			margin-left: 10px;
+			line-height: 20px;
+			font-weight: bolder;
+		}
 
-form{
-	height: 325px;
-	width: 600px;
-}
+		span {
+			font-size: 14px;
+			margin-left: 10px;
+			line-height: 20px;
+		}
 
-aside span{
-	font-size: 12px;
-}
-</style>
+		form {
+			height: 420px;
+			width: 600px;
+		}
 
-<form id='form'>
-<span>__MSG_option_top__</span>
+		aside span {
+			font-size: 12px;
+		}
+	</style>
 
-<br/>
-<br/>
+	<form id='form'>
+		<h1>__MSG_option_top__</h1>
 
-<label>
-<input type="checkbox" id="glue">
-<span>__MSG_option1__</span>
-</label>
-<br/>
+		<label>
+			<input type="checkbox" id="glue">
+			<span>__MSG_option1__</span>
+			<span>*1</span>
+		</label>
+		<br />
 
-<hr>
+		<label>
+			<input type="checkbox" id="comclose">
+			<span>__MSG_option5__</span>
+		</label>
+		<br />
 
-<label>
-<input type="checkbox" id="comclose">
-<span>__MSG_option5__</span>
-</label>
-<br/>
+		<label>
+			<input type="checkbox" id="rxclose">
+			<span>__MSG_option7__</span>
+		</label>
+		<br />
 
-<label>
-<input type="checkbox" id="rxclose">
-<span>__MSG_option7__</span>
-</label>
-<br/>
+		<label>
+			<input type="checkbox" id="depclean">
+			<span>__MSG_option2__</span>
+		</label>
+		<br />
 
-<label>
-<input type="checkbox" id="depclean">
-<span>__MSG_option2__</span>
-</label>
-<br/>
+		<label>
+			<input type="checkbox" id="sorttab">
+			<span>__MSG_option3__</span>
+		</label>
 
-<label>
-<input type="checkbox" id="sorttab">
-<span>__MSG_option3__</span>
-</label>
+		(__MSG_option3_0__:
+		<select id="sortkey">
+			<option value="url">__MSG_option3_1__</option>
+			<option value="title">__MSG_option3_2__</option>
+		</select>
+		)<br />
 
-(__MSG_option3_0__:
-<select id="sortkey">
- <option value="url">__MSG_option3_1__</option>
- <option value="title">__MSG_option3_2__</option>
-</select>
-)<br/>
+		<label>
+			<input type="checkbox" id="refresh">
+			<span>__MSG_option4__</span>
+		</label>
+		<br />
 
-<label>
-<input type="checkbox" id="refresh">
-<span>__MSG_option4__</span>
-</label>
-<br/>
+		<label>
+			<input type="checkbox" id="currentonly">
+			<span>__MSG_option8__</span>
+			<span>*1</span>
+		</label>
+		<br />
 
-<label>
-<input type="checkbox" id="currentonly">
-<span>__MSG_option8__</span>
-</label>
-<br/>
+		<aside>
+			<span>__MSG_text1__</span>
+		</aside>
 
-<hr>
+		<hr>
+		<h1>__MSG_option_category1__</h1>
 
-<label>
-<input type="checkbox" id="iconbadge">
-<span>__MSG_option6__</span>
-</label>
+		<label>
+			<input type="checkbox" id="iconbadge">
+			<span>__MSG_option6__</span>
+		</label>
 
-(__MSG_option6_0__:
-<select id="iconbadgescope">
- <option value="all">__MSG_option6_1__</option>
- <option value="win">__MSG_option6_2__</option>
-</select>
-)<br/>
+		(__MSG_option6_0__:
+		<select id="iconbadgescope">
+			<option value="all">__MSG_option6_1__</option>
+			<option value="win">__MSG_option6_2__</option>
+		</select>
+		)<br />
 
-<hr>
-<label>
-<input type="checkbox" id="contextmenu1">
-<span>__MSG_option9__</span>
-</label>
+		<hr>
+		<h1>__MSG_option_category2__</h1>
+		<label>
+			<input type="checkbox" id="contextmenu1">
+			<span>__MSG_option9__</span>
+		</label>
 
-(__MSG_option9_0__:
-<select id="contextmenu1scope">
- <option value="all">__MSG_option9_1__</option>
- <option value="win">__MSG_option9_2__</option>
-</select>
-)<br/>
+		(__MSG_option6_0__:
+		<select id="contextmenu1scope">
+			<option value="all">__MSG_option6_1__</option>
+			<option value="win">__MSG_option6_2__</option>
+		</select>
+		)<br />
+
+		<label>
+			<input type="checkbox" id="contextmenu4">
+			<span>__MSG_option12__</span>
+		</label>
+
+		(__MSG_option6_0__:
+		<select id="contextmenu4scope">
+			<option value="all">__MSG_option6_1__</option>
+			<option value="win">__MSG_option6_2__</option>
+		</select>
+		)<br />
+
+		<label>
+			<input type="checkbox" id="contextmenu2">
+			<span>__MSG_option10__</span>
+		</label>
+		<br />
+
+		<label>
+			<input type="checkbox" id="contextmenu3">
+			<span>__MSG_option11__</span>
+		</label>
+		<br />
 
 
-<label>
-<input type="checkbox" id="contextmenu2">
-<span>__MSG_option10__</span>
-</label>
-<br/>
+		<div id="status"></div>
 
-<aside>
- <span>__MSG_text1__</span>
-</aside>
+	</form>
 
-<div id="status"></div>
-
-</form>
-
-<script src="options.js"></script>
+	<script src="options.js"></script>
 </body>
+
 </html>

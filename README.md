@@ -7,10 +7,17 @@ OhMyTab provides seven main functions.
 3. Sort tabs by page titles or URLs
 4. Close close system and search engine result tabs
 5. Count the number of tabs in total or in each window
-6. Close tabs in the same domain from the context menu.
-7. Merge tabs on multiple windows into one window from the context menu.
+6. Add following menus into the context menu.
+    - "Close tabs in the same domain"
+    - "Extract the tabs in the same domain into a new window"
+    - "Merge tabs into one window"
+    - "Extract the current tab into a new window"
 
 You can configure the behavior of the extension by disabling some functions shown above on option.
+
+*Update 1.11*
+- Add two menu into the context menu.
+- Refactor the source code
 
 *Update 1.10*
 - Fix minor issue.
@@ -51,10 +58,17 @@ OhMyTabには次の七つの機能があります。
 3. URLやページタイトルでタブを並び替える。
 4. Chromeのシステムに関するタブや検索エンジンの結果のタブを閉じる。
 5. 全体、もしくはウィンドウ毎のタブの数を拡張機能のアイコンに表示する。
-6. コンテキストメニューに"同一ドメインのタブを閉じる"を追加する。
-7. コンテキストメニューに"タブを一つのウィンドウにまとめる"を追加する。
+6. コンテキストメニューに下記の4つのメニューを追加する
+    - "同一ドメインのタブを閉じる"
+    - "同じドメインのタブを抽出する"
+    - "タブを一つのウィンドウにまとめる"
+    - "タブを新しいウィンドウに抽出する"
 
 また、これらの動作は、オプションで個別に無効化することができます。
+
+*アップデート 1.11*
+- コンテキストメニューに新しく2つメニューを追加
+- ソースコードのリファクタリング
 
 *アップデート1.10*
 - 軽微な問題点を修正
