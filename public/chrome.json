@@ -1,0 +1,59 @@
+{
+  "manifest_version": 3,
+  "name": "OhMyTab",
+  "short_name": "OMT",
+  "description": "__MSG_appDesc__",
+  "version": "2.0",
+  "default_locale": "en",
+  "icons": {
+    "16": "image/icon16.png",
+    "48": "image/icon48.png",
+    "128": "image/icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "image/icon16.png",
+      "19": "image/icon19.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.mjs",
+    "type": "module"
+  },
+  "permissions": ["tabs", "contextMenus", "storage", "tabGroups"],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "commands": {
+    "_execute_action": {},
+    "02_execute_option1": {
+      "description": "__MSG_option1__"
+    },
+    "03_execute_option3": {
+      "description": "__MSG_option3__"
+    },
+    "04_execute_option4": {
+      "description": "__MSG_option4__"
+    },
+    "05_execute_option11_d": {
+      "description": "__MSG_option11_d__"
+    },
+    "06_execute_option12_d": {
+      "description": "__MSG_option12_d__"
+    },
+    "07_execute_option5": {
+      "description": "__MSG_option5__"
+    },
+    "08_execute_option2": {
+      "description": "__MSG_option2__"
+    },
+    "09_execute_option7": {
+      "description": "__MSG_option7__"
+    },
+    "10_execute_option9_d": {
+      "description": "__MSG_option9_d__"
+    }
+  },
+  "minimum_chrome_version": "89"
+}

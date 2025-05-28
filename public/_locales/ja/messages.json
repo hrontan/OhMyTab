@@ -1,0 +1,131 @@
+{
+  "appDesc": {
+    "message": "OhMyTab は散逸したタブの集約や重複したタブの除去、URLやページタイトルでのタブの並び替えなどに便利な拡張機能です。"
+  },
+  "option_top": {
+    "message": "プラグインの動作の設定"
+  },
+  "option_category1": {
+    "message": "アイコンバッジの設定"
+  },
+  "option_category2": {
+    "message": "コンテキストメニューの設定"
+  },
+  "option1": {
+    "message": "タブを一つのウィンドウにまとめる"
+  },
+  "option2": {
+    "message": "重複したタブを閉じる"
+  },
+  "option3": {
+    "message": "タブを並び替える"
+  },
+  "option3_0": {
+    "message": "要素"
+  },
+  "option3_1": {
+    "message": "URL"
+  },
+  "option3_2": {
+    "message": "ページタイトル"
+  },
+  "option4": {
+    "message": "アンロードされたページを再読み込みする"
+  },
+  "option5": {
+    "message": "システムタブを閉じる"
+  },
+  "option6": {
+    "message": "タブの数をアイコンに表示する"
+  },
+  "option6_0": {
+    "message": "範囲"
+  },
+  "option6_1": {
+    "message": "全体"
+  },
+  "option6_2": {
+    "message": "ウィンドウ毎"
+  },
+  "option7": {
+    "message": "検索エンジンの結果のタブを閉じる"
+  },
+  "option8": {
+    "message": "現在のウィンドウのみに対して動作"
+  },
+  "option9": {
+    "message": "\"同じドメインのタブを閉じる\"を追加"
+  },
+  "option9_d": {
+    "message": "同じドメインのタブを閉じる"
+  },
+  "option10": {
+    "message": "\"タブを一つのウィンドウにまとめる\"を追加"
+  },
+  "option11": {
+    "message": "\"現在のタブを新しいウィンドウに抽出する\"を追加"
+  },
+  "option11_d": {
+    "message": "現在のタブを新しいウィンドウに抽出する"
+  },
+  "option12": {
+    "message": "\"同じドメインのタブを抽出する\"を追加"
+  },
+  "option12_d": {
+    "message": "同じドメインのタブを抽出する"
+  },
+  "option13": {
+    "message": "ローカルファイルを閉じる"
+  },
+  "option14": {
+    "message": "同じドメインのタブをタブグループ化する"
+  },
+  "option14_0": {
+    "message": "グループ化/グループ化解除のしきい値"
+  },
+  "option15": {
+    "message": "拡張: \"条件に一致するドメインのタブを閉じる\"を追加"
+  },
+  "option16": {
+    "message": "拡張: \"条件に一致するドメインのタブを抽出する\"を追加"
+  },
+  "option17": {
+    "message": "高度な機能: マッチパターンに一致するURLのタブを閉じる（一行に一つのパターンを記述）"
+  },
+  "option17_1": {
+    "message": "例: *google.com, *yahoo*"
+  },
+  "text0_0": {
+    "message": " (現在のウィンドウのみ)"
+  },
+  "text0_1": {
+    "message": " (全てのウィンドウ)"
+  },
+  "text2": {
+    "message": "同じドメインのタブを閉じる"
+  },
+  "text3": {
+    "message": "タブを一つのウィンドウにまとめる"
+  },
+  "text4": {
+    "message": "現在のタブを新しいウィンドウに抽出する"
+  },
+  "text5": {
+    "message": "同じドメインのタブを抽出する"
+  },
+  "text6": {
+    "message": "条件に一致するドメインのタブを閉じる"
+  },
+  "text7": {
+    "message": "条件に一致するドメインのタブを抽出する"
+  },
+  "footnote1": {
+    "message": "Google, Bing, Baidu, Yahoo, Yahoo Japan, Yandex, DuckDuckGo, Brave, You, Dogpile, Startpage, Ecosia, SwissCows, NAVER"
+  },
+  "footnote2": {
+    "message": "\"タブを一つのウィンドウにまとめる\"と\"選択しているウィンドウのみに対して動作\"は排他です"
+  },
+  "footnote3": {
+    "message": "picomatchライブラリを使用。"
+  }
+}

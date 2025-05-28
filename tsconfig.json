@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "@tsconfig/recommended/tsconfig.json",
+    "@tsconfig/strictest/tsconfig.json",
+    "@tsconfig/esm/tsconfig.json"
+  ],
+  "compilerOptions": {
+    "outDir": "./dist",
+
+    // Source Code Checking
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "useUnknownInCatchVariables": true,
+    "noPropertyAccessFromIndexSignature": false,
+
+    // Other
+    "lib": ["dom", "es2022"],
+
+    "baseUrl": "./"
+  },
+  "include": ["src"],
+  "exclude": ["**/node_modules"]
+}

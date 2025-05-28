@@ -1,0 +1,131 @@
+{
+  "appDesc": {
+    "message": "Consolidate open tabs into one window, remove duplicates, and sort by URL or title."
+  },
+  "option_top": {
+    "message": "Configure the behaviors of the extension"
+  },
+  "option_category1": {
+    "message": "Icon Badge Setting"
+  },
+  "option_category2": {
+    "message": "Context Menu Setting"
+  },
+  "option1": {
+    "message": "Consolidate tabs into one window"
+  },
+  "option2": {
+    "message": "Close duplicated tabs"
+  },
+  "option3": {
+    "message": "Sort tabs"
+  },
+  "option3_0": {
+    "message": "Key"
+  },
+  "option3_1": {
+    "message": "URL"
+  },
+  "option3_2": {
+    "message": "Page Title"
+  },
+  "option4": {
+    "message": "Reload discarded tabs"
+  },
+  "option5": {
+    "message": "Close system tabs"
+  },
+  "option6": {
+    "message": "Show tab count on the icon"
+  },
+  "option6_0": {
+    "message": "Scope"
+  },
+  "option6_1": {
+    "message": "Total"
+  },
+  "option6_2": {
+    "message": "Each Window"
+  },
+  "option7": {
+    "message": "Close search engine result tabs"
+  },
+  "option8": {
+    "message": "Operate only on the current window"
+  },
+  "option9": {
+    "message": "Add \"Close tabs in the same domain\""
+  },
+  "option9_d": {
+    "message": "Close tabs in the same domain"
+  },
+  "option10": {
+    "message": "Add \"Merge tabs into one window\""
+  },
+  "option11": {
+    "message": "Add \"Extract the current tab into a new window\""
+  },
+  "option11_d": {
+    "message": "Extract the current tab into a new window"
+  },
+  "option12": {
+    "message": "Add \"Extract the tabs in the same domain into a new window\""
+  },
+  "option12_d": {
+    "message": "Extract the tabs in the same domain into a new window"
+  },
+  "option13": {
+    "message": "Close local files"
+  },
+  "option14": {
+    "message": "Group tabs by the same domain"
+  },
+  "option14_0": {
+    "message": "Threshold for grouping / ungrouping"
+  },
+  "option15": {
+    "message": "Add option: \"Close tabs matching the specified domain\""
+  },
+  "option16": {
+    "message": "Add option: \"Extract tabs matching the specified domain\""
+  },
+  "option17": {
+    "message": "Advanced feature: Close tabs whose URLs match the specified patterns (one pattern per line). "
+  },
+  "option17_1": {
+    "message": "e.g. *google.com, *yahoo*"
+  },
+  "text0_0": {
+    "message": " (for the current window)"
+  },
+  "text0_1": {
+    "message": " (for the all windows)"
+  },
+  "text2": {
+    "message": "Close tabs in the same domain"
+  },
+  "text3": {
+    "message": "Consolidate tabs into a single window"
+  },
+  "text4": {
+    "message": "Extract the current tab into a new window"
+  },
+  "text5": {
+    "message": "Extract the tabs in the same domain into a new window"
+  },
+  "text6": {
+    "message": "Close tabs matching the specified domain"
+  },
+  "text7": {
+    "message": "Extract tabs matching the specified domain"
+  },
+  "footnote1": {
+    "message": "Google, Bing, Baidu, Yahoo, Yahoo Japan, Yandex, DuckDuckGo, Brave, You, Dogpile, Startpage, Ecosia, SwissCows, NAVER"
+  },
+  "footnote2": {
+    "message": "\"Consolidate tabs into a single window\" and \"Operate only on the current window\" are exclusive"
+  },
+  "footnote3": {
+    "message": "using the picomatch library"
+  }
+}

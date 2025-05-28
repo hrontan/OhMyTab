@@ -1,0 +1,131 @@
+{
+  "appDesc": {
+    "message": "使用 OhMyTab 将分散的标签聚合到一个窗口，删除重复标签，并按 URL 或标题排序。"
+  },
+  "option_top": {
+    "message": "选择扩展的行为"
+  },
+  "option_category1": {
+    "message": "通知标志图标的配置"
+  },
+  "option_category2": {
+    "message": "右键菜单设置"
+  },
+  "option1": {
+    "message": "将选项卡合并到同一窗口"
+  },
+  "option2": {
+    "message": "关闭重复选项卡"
+  },
+  "option3": {
+    "message": "排序选项卡"
+  },
+  "option3_0": {
+    "message": "排序键"
+  },
+  "option3_1": {
+    "message": "网址"
+  },
+  "option3_2": {
+    "message": "页面标题"
+  },
+  "option4": {
+    "message": "重新加载丢弃的选项卡"
+  },
+  "option5": {
+    "message": "关闭系统选项卡"
+  },
+  "option6": {
+    "message": "显示图标上的选项卡数量"
+  },
+  "option6_0": {
+    "message": "作用域"
+  },
+  "option6_1": {
+    "message": "一切"
+  },
+  "option6_2": {
+    "message": "每个窗口"
+  },
+  "option7": {
+    "message": "关闭搜索引擎结果页面"
+  },
+  "option8": {
+    "message": "仅在当前窗口操作"
+  },
+  "option9": {
+    "message": "添加\"关闭同一域名中的选项卡\""
+  },
+  "option9_d": {
+    "message": "关闭同一域名中的选项卡"
+  },
+  "option10": {
+    "message": "添加\"将选项卡合并到同一窗口\""
+  },
+  "option11": {
+    "message": "添加\"将当前选项卡提取到新窗口中\""
+  },
+  "option11_d": {
+    "message": "将当前选项卡提取到新窗口中"
+  },
+  "option12": {
+    "message": "添加\"将同一域名中的选项卡提取到新窗口中\""
+  },
+  "option12_d": {
+    "message": "将同一域名中的选项卡提取到新窗口中"
+  },
+  "option13": {
+    "message": "关闭本地文件"
+  },
+  "option14": {
+    "message": "将相同域的选项卡分组"
+  },
+  "option14_0": {
+    "message": "分组/取消分组阈值"
+  },
+  "option15": {
+    "message": "扩展：添加“关闭与指定域匹配的标签”"
+  },
+  "option16": {
+    "message": "扩展：添加“提取与指定域匹配的标签”"
+  },
+  "option17": {
+    "message": "高级功能：关闭与指定匹配模式相符的 URL 选项卡（每行一个）"
+  },
+  "option17_1": {
+    "message": "例如：*google.com、*yahoo*"
+  },
+  "text0_0": {
+    "message": " (每个窗口)"
+  },
+  "text0_1": {
+    "message": " (一切窗口)"
+  },
+  "text2": {
+    "message": "关闭同一域名中的选项卡"
+  },
+  "text3": {
+    "message": "将选项卡合并到一个窗口中"
+  },
+  "text4": {
+    "message": "将当前选项卡提取到新窗口中"
+  },
+  "text5": {
+    "message": "将同一域名中的选项卡提取到新窗口中"
+  },
+  "text6": {
+    "message": "关闭与指定域匹配的标签"
+  },
+  "text7": {
+    "message": "提取与指定域匹配的标签"
+  },
+  "footnote1": {
+    "message": "Google, Bing, 百度, Yahoo, Yahoo Japan, Yandex, DuckDuckGo, Brave, You, Dogpile, Startpage, Ecosia, SwissCows, NAVER"
+  },
+  "footnote2": {
+    "message": "\"将选项卡合并到一个窗口中\"和\"仅在当前窗口操作\"互斥。"
+  },
+  "footnote3": {
+    "message": "使用 picomatch 库"
+  }
+}
