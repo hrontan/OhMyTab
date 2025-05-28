@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>OhMyTab Options</title>
+  </head>
+
+  <body>
+    <style>
+      body {
+        font-size: 100%;
+      }
+      h1 {
+        font-size: 1.4em;
+        margin-left: 10px;
+        line-height: 20px;
+        font-weight: bolder;
+      }
+
+      label {
+        margin-left: 10px;
+        line-height: 20px;
+      }
+
+      form {
+        width: 800px;
+      }
+
+      aside {
+        margin-left: 30px;
+      }
+
+      aside span {
+        font-size: 0.9em;
+      }
+
+      textarea {
+        width: 100%;
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <form id="form">
+      <h1>__MSG_option_category1__</h1>
+
+      <label>
+        <input type="checkbox" id="iconbadge" />
+        <span>__MSG_option6__</span> (__MSG_option6_0__:
+        <select id="iconbadgescope" aria-label="iconbadgescope">
+          <option value="all">__MSG_option6_1__</option>
+          <option value="win">__MSG_option6_2__</option>
+        </select>
+        )<br />
+      </label>
+
+      <hr />
+      <h1>__MSG_option_category2__</h1>
+      <label>
+        <input type="checkbox" id="contextmenu1" />
+        <span>__MSG_option9__</span> (__MSG_option6_0__:
+        <select id="contextmenu1scope" aria-label="contextmenu1scope">
+          <option value="all">__MSG_option6_1__</option>
+          <option value="win">__MSG_option6_2__</option>
+        </select>
+        )<br />
+      </label>
+
+      <label style="margin-left: 2em">
+        <input type="checkbox" id="contextmenu1advanced" />
+        <span>__MSG_option15__</span>
+        <br />
+      </label>
+
+      <label>
+        <input type="checkbox" id="contextmenu4" />
+        <span>__MSG_option12__</span> (__MSG_option6_0__:
+        <select id="contextmenu4scope" aria-label="contextmenu4scope">
+          <option value="all">__MSG_option6_1__</option>
+          <option value="win">__MSG_option6_2__</option>
+        </select>
+        )<br />
+      </label>
+
+      <label style="margin-left: 2em">
+        <input type="checkbox" id="contextmenu4advanced" />
+        <span>__MSG_option16__</span>
+        <br />
+      </label>
+
+      <label>
+        <input type="checkbox" id="contextmenu2" />
+        <span>__MSG_option10__</span>
+        <br />
+      </label>
+
+      <label>
+        <input type="checkbox" id="contextmenu3" />
+        <span>__MSG_option11__</span>
+        <br />
+      </label>
+      <hr />
+      <h1>__MSG_option_top__</h1>
+
+      <label>
+        <input type="checkbox" id="glue" />
+        <span>__MSG_option1__</span>
+        <span>*1</span>
+        <br />
+      </label>
+
+      <label class=".forChrome">
+        <input type="checkbox" id="grouping" />
+        <span>__MSG_option14__</span>
+        (__MSG_option14_0__:
+        <select id="grouping_min" aria-label="grouping_min">
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        )
+        <br />
+      </label>
+
+      <label>
+        <input type="checkbox" id="comclose" />
+        <span>__MSG_option5__</span>
+        <br />
+      </label>
+
+      <label>
+        <input type="checkbox" id="closelocal" />
+        <span>__MSG_option13__</span>
+        <br />
+      </label>
+
+      <label>
+        <input type="checkbox" id="rxclose" />
+        <span>__MSG_option7__</span>
+        <span>*2</span>
+        <br />
+      </label>
+
+      <label>
+        <input type="checkbox" id="depclean" />
+        <span>__MSG_option2__</span>
+        <br />
+      </label>
+
+      <label>
+        <input type="checkbox" id="sorttab" />
+        <span>__MSG_option3__</span>
+        (__MSG_option3_0__:
+        <select id="sortkey" aria-label="sortkey">
+          <option value="url">__MSG_option3_1__</option>
+          <option value="title">__MSG_option3_2__</option>
+        </select>
+        )<br />
+      </label>
+
+      <label>
+        <input type="checkbox" id="refresh" />
+        <span>__MSG_option4__</span>
+        <br />
+      </label>
+
+      <label>
+        <input type="checkbox" id="currentonly" />
+        <span>__MSG_option8__</span>
+        <span>*1</span>
+        <br />
+      </label>
+
+      <label>
+        <input type="checkbox" id="urlmatch" />
+        <span>__MSG_option17__</span>
+        <span>*3</span>
+        <br />
+        <span style="margin-left: 40px; font-size: 0.8em"
+          >__MSG_option17_1__</span
+        >
+        <br />
+        <textarea rows="15" id="urlmatch_pattern"></textarea>
+        <br />
+      </label>
+
+      <aside>
+        <span>*1 :</span>
+        <span>__MSG_footnote2__</span>
+        <br />
+        <span>*2 :</span>
+        <span>__MSG_footnote1__</span>
+        <br />
+        <span>*3 :</span>
+        <span>__MSG_footnote3__</span>
+      </aside>
+
+      <div id="status"></div>
+    </form>
+
+    <script src="options.mjs"></script>
+  </body>
+</html>
