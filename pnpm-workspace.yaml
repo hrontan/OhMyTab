@@ -1,0 +1,12 @@
+packages:
+  - .
+
+strictPeerDependencies: true
+
+minimumReleaseAgeExclude:
+  - '@types/chrome@0.3.6'
+  - vite@8.3.5
+
+# Chrome uses chrome; Firefox owns the browser global namespace.
+patchedDependencies:
+  '@types/chrome@0.3.6': patches/@types__chrome@0.3.6.patch

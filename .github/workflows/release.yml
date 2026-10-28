@@ -1,0 +1,67 @@
+name: Release
+'on':
+  push:
+    tags:
+      - 'v*'
+permissions:
+  contents: write
+jobs:
+  release:
+    name: Build and publish ${{ github.ref_name }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24.x
+          package-manager-cache: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - uses: pnpm/action-setup@v4
+      - name: Check that the tag matches the package and manifest versions
+        env:
+          TAG: ${{ github.ref_name }}
+        run: |
+          version="${TAG#v}"
+          base="${version%%-*}"
+          for file in package.json public/chrome.json public/firefox.json; do
+            actual="$(node -p "require('./$file').version")"
+            if [ "$actual" != "$base" ]; then
+              echo "::error::$file version $actual does not match tag $TAG"
+              exit 1
+            fi
+          done
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Typecheck source and tests
+        run: pnpm run typecheck
+      - name: Lint without modifying files
+        run: pnpm run lint
+      - name: Test Chrome and Firefox modes
+        run: pnpm test
+      - name: Build Chrome and Firefox
+        run: pnpm run build
+      - name: Initialize standalone distribution modules
+        run: node --experimental-vm-modules scripts/checks/check-bundles.ts
+      - name: Package Chrome and Firefox
+        run: pnpm run zip
+      - name: Inspect actual distribution archives
+        run: python scripts/checks/check-distribution.py
+      - name: Create the GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          cp dist/chrome.zip "ohmytab-$TAG-chrome.zip"
+          cp dist/firefox.zip "ohmytab-$TAG-firefox.zip"
+          prerelease=()
+          case "$TAG" in *-*) prerelease=(--prerelease) ;; esac
+          gh release create "$TAG" "ohmytab-$TAG-chrome.zip" "ohmytab-$TAG-firefox.zip" \
+            --repo "$GITHUB_REPOSITORY" --verify-tag --title "OhMyTab $TAG" --generate-notes "${prerelease[@]}"

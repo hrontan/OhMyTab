@@ -3,31 +3,31 @@
     "message": "Consolidate open tabs into one window, remove duplicates, and sort by URL or title."
   },
   "option_top": {
-    "message": "Configure the behaviors of the extension"
+    "message": "Extension behavior"
   },
   "option_category1": {
-    "message": "Icon Badge Setting"
+    "message": "Tab count on the icon"
   },
   "option_category2": {
-    "message": "Context Menu Setting"
+    "message": "Context menu settings"
   },
   "option1": {
     "message": "Consolidate tabs into one window"
   },
   "option2": {
-    "message": "Close duplicated tabs"
+    "message": "Close duplicate tabs"
   },
   "option3": {
     "message": "Sort tabs"
   },
   "option3_0": {
-    "message": "Key"
+    "message": "Sort by"
   },
   "option3_1": {
     "message": "URL"
   },
   "option3_2": {
-    "message": "Page Title"
+    "message": "Page title"
   },
   "option4": {
     "message": "Reload discarded tabs"
@@ -42,37 +42,37 @@
     "message": "Scope"
   },
   "option6_1": {
-    "message": "Total"
+    "message": "All windows"
   },
   "option6_2": {
-    "message": "Each Window"
+    "message": "Current window"
   },
   "option7": {
-    "message": "Close search engine result tabs"
+    "message": "Close search results tabs"
   },
   "option8": {
     "message": "Operate only on the current window"
   },
   "option9": {
-    "message": "Add \"Close tabs in the same domain\""
+    "message": "Add “Close tabs from the same domain”"
   },
   "option9_d": {
-    "message": "Close tabs in the same domain"
+    "message": "Close tabs from the same domain"
   },
   "option10": {
-    "message": "Add \"Merge tabs into one window\""
+    "message": "Add “Consolidate tabs into one window”"
   },
   "option11": {
-    "message": "Add \"Extract the current tab into a new window\""
+    "message": "Add “Extract the current tab into a new window”"
   },
   "option11_d": {
     "message": "Extract the current tab into a new window"
   },
   "option12": {
-    "message": "Add \"Extract the tabs in the same domain into a new window\""
+    "message": "Add “Extract tabs from the same domain into a new window”"
   },
   "option12_d": {
-    "message": "Extract the tabs in the same domain into a new window"
+    "message": "Extract tabs from the same domain into a new window"
   },
   "option13": {
     "message": "Close local files"
@@ -84,34 +84,34 @@
     "message": "Threshold for grouping / ungrouping"
   },
   "option15": {
-    "message": "Add option: \"Close tabs matching the specified domain\""
+    "message": "Add option: “Close tabs matching the specified domain”"
   },
   "option16": {
-    "message": "Add option: \"Extract tabs matching the specified domain\""
+    "message": "Add option: “Extract tabs matching the specified domain”"
   },
   "option17": {
-    "message": "Advanced feature: Close tabs whose URLs match the specified patterns (one pattern per line). "
+    "message": "Close tabs whose URL matches a glob rule"
   },
   "option17_1": {
-    "message": "e.g. *google.com, *yahoo*"
+    "message": "Enter one URL pattern per line, such as example.com/**. Tabs matching any line are included."
   },
   "text0_0": {
     "message": " (for the current window)"
   },
   "text0_1": {
-    "message": " (for the all windows)"
+    "message": " (for all windows)"
   },
   "text2": {
-    "message": "Close tabs in the same domain"
+    "message": "Close tabs from the same domain"
   },
   "text3": {
-    "message": "Consolidate tabs into a single window"
+    "message": "Consolidate tabs into one window"
   },
   "text4": {
     "message": "Extract the current tab into a new window"
   },
   "text5": {
-    "message": "Extract the tabs in the same domain into a new window"
+    "message": "Extract tabs from the same domain into a new window"
   },
   "text6": {
     "message": "Close tabs matching the specified domain"
@@ -120,12 +120,720 @@
     "message": "Extract tabs matching the specified domain"
   },
   "footnote1": {
-    "message": "Google, Bing, Baidu, Yahoo, Yahoo Japan, Yandex, DuckDuckGo, Brave, You, Dogpile, Startpage, Ecosia, SwissCows, NAVER"
+    "message": "Google, Bing, Baidu, Yahoo, Yahoo Japan, Yandex, DuckDuckGo, Brave, Dogpile, Startpage, Ecosia, SwissCows, NAVER"
   },
   "footnote2": {
-    "message": "\"Consolidate tabs into a single window\" and \"Operate only on the current window\" are exclusive"
+    "message": "\"Consolidate tabs into one window\" and \"Operate only on the current window\" cannot both be enabled."
   },
   "footnote3": {
-    "message": "using the picomatch library"
+    "message": "Rules match a part of the URL. Write \\? to match a literal question mark in a URL."
+  },
+  "settingsSaved": {
+    "message": "Settings saved."
+  },
+  "settingsSaveFailed": {
+    "message": "Settings were not saved. Edit them or retry."
+  },
+  "settingsRetry": {
+    "message": "Retry"
+  },
+  "settingsLoadFailed": {
+    "message": "Settings could not be loaded. Retry before editing."
+  },
+  "settingsExternalChanged": {
+    "message": "Settings updated from another page or sync."
+  },
+  "settingsExternalConflict": {
+    "message": "External settings changed. Your unsaved edits are kept and take priority when saved."
+  },
+  "operationRunning": {
+    "message": "OhMyTab: operation running."
+  },
+  "operationBusy": {
+    "message": "OhMyTab: another operation is running. This request was not executed; try again after completion."
+  },
+  "menuNotReady": {
+    "message": "OhMyTab: the menu was being prepared, so this request was not executed. Right-click and choose it again."
+  },
+  "operationResult": {
+    "message": "OhMyTab: targets $1; completed $2; failed $3; unknown $4; API errors $5."
+  },
+  "operationFailed": {
+    "message": "OhMyTab: operation stopped. Targets $1; completed $2; failed $3; unknown $4; API errors $5. Retry after checking the result."
+  },
+  "protectionTitle": {
+    "message": "Tab protection and duplicate selection"
+  },
+  "protectDomains": {
+    "message": "Protected hostnames"
+  },
+  "protectDomainsHelp": {
+    "message": "Enter one site per line, such as example.com. Subdomains are also protected. Use site names, without URLs or *."
+  },
+  "protectAudible": {
+    "message": "Exclude tabs playing audio"
+  },
+  "protectGroups": {
+    "message": "Exclude tabs in existing groups"
+  },
+  "duplicateKeeper": {
+    "message": "Duplicate tab to keep"
+  },
+  "duplicateLast": {
+    "message": "Last tab in the current order (default)"
+  },
+  "duplicateActive": {
+    "message": "Prefer an active tab (otherwise the last tab)"
+  },
+  "optionsLanguage": {
+    "message": "en"
+  },
+  "labelBadgeScope": {
+    "message": "Tab count scope"
+  },
+  "labelCloseScope": {
+    "message": "Same-domain closing scope"
+  },
+  "labelExtractScope": {
+    "message": "Same-domain extraction scope"
+  },
+  "settingsSaving": {
+    "message": "Saving settings…"
+  },
+  "settingsUnsaved": {
+    "message": "Unsaved changes."
+  },
+  "previewOption": {
+    "message": "Preview before running operations"
+  },
+  "previewTitle": {
+    "message": "Review operation targets"
+  },
+  "previewHelp": {
+    "message": "Check the tabs before running. If tabs or settings change, or this confirmation expires, start the operation again."
+  },
+  "previewBoundary": {
+    "message": "Pinned tabs and tabs in other private or container sessions are excluded. Canceling leaves tabs unchanged."
+  },
+  "previewTab": {
+    "message": "Tab / window"
+  },
+  "previewReasons": {
+    "message": "Reasons"
+  },
+  "previewScope": {
+    "message": "Window scope (IDs)"
+  },
+  "previewOrigin": {
+    "message": "Requesting tab / window"
+  },
+  "previewCount": {
+    "message": "Target tabs"
+  },
+  "previewExcluded": {
+    "message": "Protected tabs excluded"
+  },
+  "previewConfirm": {
+    "message": "Confirm and run"
+  },
+  "previewCancel": {
+    "message": "Cancel"
+  },
+  "previewChecking": {
+    "message": "Rechecking targets…"
+  },
+  "previewCancelled": {
+    "message": "Cancelled. Your tabs were not changed."
+  },
+  "previewComplete": {
+    "message": "Operation finished. Check the extension icon for the result."
+  },
+  "previewExpired": {
+    "message": "This preview is no longer available. Run the operation again."
+  },
+  "previewStale": {
+    "message": "Tabs or settings changed. Nothing was executed. Run the operation again."
+  },
+  "previewPending": {
+    "message": "Waiting for preview confirmation"
+  },
+  "previewReasonAction": {
+    "message": "Selected operation"
+  },
+  "previewReasonMove": {
+    "message": "Move tab"
+  },
+  "previewReasonGlue": {
+    "message": "Combine windows"
+  },
+  "previewReasonSort": {
+    "message": "Sort tabs"
+  },
+  "previewReasonReload": {
+    "message": "Reload discarded tab"
+  },
+  "previewReasonExtract": {
+    "message": "Extract to a new window"
+  },
+  "previewReasonGroup": {
+    "message": "Group by domain"
+  },
+  "previewReasonUngroup": {
+    "message": "Below grouping threshold"
+  },
+  "previewReasonGroupOrder": {
+    "message": "Order tab groups"
+  },
+  "previewReasonSameDomain": {
+    "message": "Domain rule matches"
+  },
+  "previewReasonSystem": {
+    "message": "System page"
+  },
+  "previewReasonLocal": {
+    "message": "Local file"
+  },
+  "previewReasonSearch": {
+    "message": "Search results page"
+  },
+  "previewReasonDuplicate": {
+    "message": "Duplicate URL; keeper preference applied"
+  },
+  "previewReasonURL": {
+    "message": "URL glob matches"
+  },
+  "previewReasonPinned": {
+    "message": "Pinned tab"
+  },
+  "previewReasonProtected": {
+    "message": "Protected domain"
+  },
+  "previewReasonAudible": {
+    "message": "Playing audio"
+  },
+  "previewReasonExistingGroup": {
+    "message": "Existing group"
+  },
+  "previewFailed": {
+    "message": "The operation failed or tabs changed while it was running. Check the extension icon for the result."
+  },
+  "undoOpen": {
+    "message": "Restore recently closed tabs"
+  },
+  "undoTitle": {
+    "message": "Restore closed tabs"
+  },
+  "undoLimitations": {
+    "message": "Restore recorded web pages to their original windows. Form entries, browsing history and scroll positions cannot be restored. Some tabs, including private tabs, are not recorded."
+  },
+  "undoRetention": {
+    "message": "Records cover the most recent eligible close operation: up to 50 tabs for up to 5 minutes. They may disappear earlier if the extension stops. You can delete them below."
+  },
+  "undoUnknownHelp": {
+    "message": "If a restore result is unknown, check your open tabs before deleting the record. It cannot be retried, to avoid duplicates. If the original window is gone, tabs cannot be restored."
+  },
+  "undoRestoreAll": {
+    "message": "Restore available entries"
+  },
+  "undoClearAll": {
+    "message": "Delete all records"
+  },
+  "undoRefresh": {
+    "message": "Refresh"
+  },
+  "undoRestore": {
+    "message": "Restore"
+  },
+  "undoDelete": {
+    "message": "Delete record"
+  },
+  "undoUnknown": {
+    "message": "Creation result unknown"
+  },
+  "undoWindow": {
+    "message": "Window"
+  },
+  "undoIndex": {
+    "message": "Recorded position"
+  },
+  "undoExpires": {
+    "message": "Expires no later than"
+  },
+  "undoEmpty": {
+    "message": "No recorded tabs are available."
+  },
+  "undoUnavailable": {
+    "message": "Records are unavailable in this session or the background has restarted."
+  },
+  "undoWorking": {
+    "message": "Processing records…"
+  },
+  "undoRestored": {
+    "message": "Restored"
+  },
+  "undoFailed": {
+    "message": "Not restored"
+  },
+  "undoDeleted": {
+    "message": "Records deleted."
+  },
+  "ruleStorageTitle": {
+    "message": "URL-rule storage"
+  },
+  "ruleStorageSync": {
+    "message": "Use browser sync"
+  },
+  "ruleStorageLocal": {
+    "message": "Only this browser"
+  },
+  "ruleStorageHelp": {
+    "message": "Choose where to save URL rules. Using them on other devices depends on your browser’s sync settings. While switching, avoid editing rules on other devices: synced rules may be replaced or deleted."
+  },
+  "ruleStorageUnavailable": {
+    "message": "You can view URL rules, but this browser cannot switch their storage."
+  },
+  "ruleStorageResidual": {
+    "message": "Rules saved only in this browser are in use. URL rules remain in sync storage. Deleting them may also remove rules updated on other devices."
+  },
+  "ruleStorageLocalReady": {
+    "message": "Using URL rules saved only in this browser."
+  },
+  "ruleStorageSyncReady": {
+    "message": "URL rules are set to use browser sync."
+  },
+  "ruleStorageCleanup": {
+    "message": "Delete URL rules left in sync storage"
+  },
+  "ruleStorageMoving": {
+    "message": "Saving edits and switching where URL rules are saved…"
+  },
+  "ruleStorageDraftPending": {
+    "message": "Save your edits before switching storage."
+  },
+  "ruleStorageFailed": {
+    "message": "Could not finish switching storage or deleting rules. Your original rules are kept. Check the selected storage and any URL rules left in sync storage."
+  },
+  "settingsTransferTitle": {
+    "message": "Import and export settings"
+  },
+  "settingsTransferHelp": {
+    "message": "Display your saved settings, then copy them to keep a backup or paste them here on another browser. You can review changes before importing. Save any edits first."
+  },
+  "settingsTransferSensitive": {
+    "message": "This data includes URL rules and protected site names. Check for private site information before sharing."
+  },
+  "settingsJSONLabel": {
+    "message": "Settings JSON"
+  },
+  "settingsJSONHelp": {
+    "message": "Paste settings data copied from OhMyTab. The supported format is ohmytab-settings version 1, UTF-8, up to 64 KiB. Edited or unsupported data may not import."
+  },
+  "settingsExport": {
+    "message": "Export JSON"
+  },
+  "settingsImportReview": {
+    "message": "Review import"
+  },
+  "settingsImportHeading": {
+    "message": "Review settings: current → imported"
+  },
+  "settingsImportMode": {
+    "message": "Review “current → imported” settings before applying. Canceling keeps your current settings. URL rule storage stays unchanged."
+  },
+  "settingsImportFirefox": {
+    "message": "Tab grouping settings are not imported in Firefox."
+  },
+  "settingsImportConfirm": {
+    "message": "Apply reviewed settings"
+  },
+  "settingsImportCancel": {
+    "message": "Cancel import"
+  },
+  "settingsImportRecover": {
+    "message": "Restore settings from interrupted import"
+  },
+  "settingsImportRecovery": {
+    "message": "The previous import did not finish. Select “Restore settings from before import” before saving, switching storage or importing again."
+  },
+  "settingsTransferBusy": {
+    "message": "Wait for the current import or storage switch to finish."
+  },
+  "settingsTransferDraft": {
+    "message": "Save your edits before displaying or importing settings. Your input is kept."
+  },
+  "settingsExportReady": {
+    "message": "Copy and save all the data below."
+  },
+  "settingsImportReviewReady": {
+    "message": "Review the values, then apply or cancel. Nothing has been imported yet."
+  },
+  "settingsImportStale": {
+    "message": "The settings or input changed after review. Review the import again."
+  },
+  "settingsImportApplying": {
+    "message": "Applying reviewed settings…"
+  },
+  "settingsImportDone": {
+    "message": "Settings imported. The storage location and unsupported preferences were retained."
+  },
+  "settingsTransferFailed": {
+    "message": "The operation did not complete."
+  },
+  "settingsImportCancelled": {
+    "message": "Import cancelled. Stored settings were unchanged."
+  },
+  "settingsImportRecovered": {
+    "message": "Original settings restored. You can save or import again."
+  },
+  "globDetailsTitle": {
+    "message": "Supported glob syntax and limits"
+  },
+  "globSyntaxHelp": {
+    "message": "Use *, **, ?, character classes such as [a-z], choices such as {docs,help}, and extglobs such as @(foo|bar), ?(foo), !(foo). Supported POSIX classes: alnum, alpha, ascii, blank, cntrl, digit, graph, lower, print, punct, space, upper, word, xdigit. Escape literal parentheses as \\( and \\); raw regular-expression parentheses are not supported."
+  },
+  "globRepeatHelp": {
+    "message": "Repeated extglobs +(foo|bar) and *(a|b) allow only nonempty literal alternatives. Wildcards or nesting inside branches and overlapping prefixes such as +(a|aa) are rejected. Unclosed delimiters and unknown POSIX classes are errors."
+  },
+  "globLimitsHelp": {
+    "message": "Use up to 100 rules. If they cannot be saved, reduce or shorten them."
+  },
+  "globDisabledHelp": {
+    "message": "Turning off “Close tabs matching URLs” skips these rules. Other enabled actions still run. If a rule is invalid, correct it before running with URL rules enabled."
+  },
+  "sessionBoundaryHelp": {
+    "message": "Operations stay within the same normal/private boundary as the requesting tab. Firefox also keeps the same container; requests with unknown session metadata are not executed. Pinned tabs are excluded."
+  },
+  "protectionPolicyHelp": {
+    "message": "Actions skip protected tabs. Groups with a protected tab are not moved. Your selected setting determines which duplicate tab to keep."
+  },
+  "previewOptionHelp": {
+    "message": "Check the target tabs before running. Tabs stay unchanged until you confirm."
+  },
+  "workflowTitle": {
+    "message": "Saved workflows"
+  },
+  "workflowHelp": {
+    "message": "Save the workflow, then right-click a page and choose Workflow: name to run it."
+  },
+  "workflowSaved": {
+    "message": "Saved workflow"
+  },
+  "workflowName": {
+    "message": "Workflow name"
+  },
+  "workflowScope": {
+    "message": "Operation scope"
+  },
+  "workflowScopeHelp": {
+    "message": "To combine windows, select “All windows in the origin session.” Regular and private tabs stay separate. In Firefox, only tabs in the same container are included."
+  },
+  "workflowOperations": {
+    "message": "Operations"
+  },
+  "workflowRules": {
+    "message": "Target URL conditions (OR)"
+  },
+  "workflowRuleHelp": {
+    "message": "Tabs matching any enabled rule are included. Choose a site name, text in the URL or a wildcard pattern."
+  },
+  "workflowOrigin": {
+    "message": "Origin tab (same window and session)"
+  },
+  "workflowDiscardHelp": {
+    "message": "Keep this draft, or discard it and continue?"
+  },
+  "workflowKeep": {
+    "message": "Keep draft"
+  },
+  "workflowDiscard": {
+    "message": "Discard and continue"
+  },
+  "workflowNew": {
+    "message": "New"
+  },
+  "workflowSave": {
+    "message": "Save"
+  },
+  "workflowDuplicate": {
+    "message": "Duplicate saved"
+  },
+  "workflowDelete": {
+    "message": "Delete saved"
+  },
+  "workflowReload": {
+    "message": "Use saved version"
+  },
+  "workflowCopy": {
+    "message": "copy"
+  },
+  "workflowAddRule": {
+    "message": "Add rule"
+  },
+  "workflowRemoveRule": {
+    "message": "Remove rule"
+  },
+  "workflowRuleName": {
+    "message": "Rule name"
+  },
+  "workflowMatch": {
+    "message": "Match mode"
+  },
+  "workflowMode_host": {
+    "message": "Hostname"
+  },
+  "workflowMode_contains": {
+    "message": "Contains literal text"
+  },
+  "workflowMode_glob": {
+    "message": "URL glob"
+  },
+  "workflowValue": {
+    "message": "Match value"
+  },
+  "workflowSubdomains": {
+    "message": "Include subdomains (host only)"
+  },
+  "workflowEnabled": {
+    "message": "Enabled"
+  },
+  "workflowDisabled": {
+    "message": "Disabled"
+  },
+  "workflowInspectRule": {
+    "message": "Inspect this rule"
+  },
+  "workflowPreviewRule": {
+    "message": "Preview this draft rule (close only)"
+  },
+  "workflowCopyRules": {
+    "message": "Copy global URL rules"
+  },
+  "workflowCopyOperations": {
+    "message": "Copy global operations"
+  },
+  "workflowRefreshOrigin": {
+    "message": "Refresh origins and choose again"
+  },
+  "workflowRefreshTargets": {
+    "message": "Refresh targets"
+  },
+  "workflowRunSaved": {
+    "message": "Review and run saved workflow"
+  },
+  "workflowChooseOrigin": {
+    "message": "Choose an origin tab. Refresh and choose again if it moved or closed."
+  },
+  "workflowProtections": {
+    "message": "Current protections and duplicate selection (applied when running)"
+  },
+  "workflowTargets": {
+    "message": "Saved workflow targets"
+  },
+  "workflowDraftTargets": {
+    "message": "Draft targets — differs from saved"
+  },
+  "workflowRuleDraft": {
+    "message": "Draft rule — close only"
+  },
+  "workflowCandidates": {
+    "message": "Rule matches"
+  },
+  "workflowActual": {
+    "message": "All operation targets"
+  },
+  "workflowExcluded": {
+    "message": "Excluded by protection"
+  },
+  "workflowEmpty": {
+    "message": "No eligible targets. Check matches and protection exclusions."
+  },
+  "workflowLoading": {
+    "message": "Checking targets…"
+  },
+  "workflowUnsaved": {
+    "message": "Unsaved draft"
+  },
+  "workflowNewState": {
+    "message": "New unsaved workflow"
+  },
+  "workflowSavedState": {
+    "message": "Saved version loaded"
+  },
+  "workflowSaving": {
+    "message": "Saving…"
+  },
+  "workflowRevision": {
+    "message": "revision"
+  },
+  "workflowSelectSaved": {
+    "message": "Select a saved workflow first."
+  },
+  "workflowPreviewOpened": {
+    "message": "Confirmation opened. Review it before running. No draft was saved."
+  },
+  "workflowError_invalid": {
+    "message": "Check the focused field. Combining windows requires all windows."
+  },
+  "workflowError_conflict": {
+    "message": "Another options page saved changes, or your input changed while saving. Your edits are retained. Choose which version to use below."
+  },
+  "workflowError_failed": {
+    "message": "The operation could not be completed. Your edits are retained. Try again."
+  },
+  "workflowError_unavailable": {
+    "message": "Could not complete the operation. Please try again."
+  },
+  "workflowError_busy": {
+    "message": "Another operation is running. Try again when it finishes."
+  },
+  "workflowError_stale": {
+    "message": "Tabs or the workflow have changed. Start the operation again."
+  },
+  "workflowError_unsupported": {
+    "message": "This operation is unsupported in this browser or session."
+  },
+  "workflowGlueScope": {
+    "message": "Merge requires all windows. Choose all windows explicitly to continue."
+  },
+  "workflowUseAll": {
+    "message": "Use all windows for this workflow"
+  },
+  "workflowScopeWin": {
+    "message": "Right-clicked tab's window"
+  },
+  "workflowScopeAll": {
+    "message": "All windows in the origin session"
+  },
+  "workflowReasonURL": {
+    "message": "URL rule matches"
+  },
+  "settingsFormatDetails": {
+    "message": "Settings data format and size limits"
+  },
+  "groupingHelp": {
+    "message": "Tabs from the same site are grouped at or above this count and ungrouped below it."
+  },
+  "workflowConflictTitle": {
+    "message": "Choose which version to use"
+  },
+  "workflowConflictHelp": {
+    "message": "Using the saved version discards your current edits. Overwriting replaces changes saved in another options page."
+  },
+  "workflowOverwrite": {
+    "message": "Overwrite with my edits"
+  },
+  "workflowRetrySave": {
+    "message": "Save these edits"
+  },
+  "workflowConflictChanged": {
+    "message": "Your input changed while checking. Nothing was saved. Review your current edits and choose again."
+  },
+  "workflowConflictDeleted": {
+    "message": "This procedure was deleted in another options page. Your edits are retained, but the deleted procedure cannot be overwritten."
+  },
+  "workflowSaveFailed": {
+    "message": "Saving could not be confirmed. Your edits are retained. Choose below to save again or use the saved version."
+  },
+  "workflowConflictNewHelp": {
+    "message": "Other saved procedures changed. Save your current input as a new procedure, or discard it and reload the saved list."
+  },
+  "advancedFeatures": {
+    "message": "Advanced features"
+  },
+  "urlRulesEnabledNotice": {
+    "message": "Global URL rules are enabled. Open Advanced features to review them."
+  },
+  "workflowMenuTitle": {
+    "message": "Saved workflows — review targets"
+  },
+  "workflowLoad": {
+    "message": "Load selected workflow"
+  },
+  "workflowOriginAutomatic": {
+    "message": "Condition checks use an available tab in this window and browsing session automatically."
+  },
+  "workflowOriginUnavailable": {
+    "message": "No eligible tab is available in this window and browsing session. Open a normal page here, then refresh the targets."
+  },
+  "workflowEditing": {
+    "message": "Edit workflow"
+  },
+  "workflowSavedActions": {
+    "message": "Saved workflow actions"
+  },
+  "workflowGlobalURLRules": {
+    "message": "Global URL rules"
+  },
+  "workflowMenuPrefix": {
+    "message": "Workflow: "
+  },
+  "workflowStorageHelp": {
+    "message": "Workflows are saved only in this browser and are not included in settings backups."
+  },
+  "workflowInspectionOpen": {
+    "message": "Inspect edited workflow"
+  },
+  "workflowInspectionOpenRule": {
+    "message": "Inspect this rule"
+  },
+  "workflowInspectionTitle": {
+    "message": "Inspect workflow targets"
+  },
+  "workflowInspectionHelp": {
+    "message": "Choose an origin tab, then inspect. Results expire after 60 seconds. Current tab protections apply. Whole-workflow inspection does not run actions; save the workflow and use its context menu to run it."
+  },
+  "workflowInspectionOrigin": {
+    "message": "Origin tab"
+  },
+  "workflowInspectionChooseOrigin": {
+    "message": "Choose an origin tab explicitly"
+  },
+  "workflowInspectionNoOrigin": {
+    "message": "No usable tab in this window and browsing session. Open options alongside an ordinary page in the same window and session, then reopen this dialog."
+  },
+  "workflowInspectionInspect": {
+    "message": "Inspect targets"
+  },
+  "workflowInspectionUnsavedAck": {
+    "message": "Use this unsaved rule to proceed to confirmation"
+  },
+  "workflowInspectionClosePreview": {
+    "message": "Preview closing only this rule’s targets"
+  },
+  "workflowInspectionCancel": {
+    "message": "Close inspection"
+  },
+  "workflowInspectionRuleMode": {
+    "message": "Single rule: close only"
+  },
+  "workflowInspectionFullMode": {
+    "message": "Whole workflow: inspection only"
+  },
+  "workflowInspectionStale": {
+    "message": "Results are no longer current. Inspect again before proceeding."
+  },
+  "workflowInspectionNotifyFailed": {
+    "message": "Could not invalidate the previous confirmation. Proceeding is disabled. Choose the origin again or reopen this dialog to retry."
+  },
+  "workflowInspectionLoading": {
+    "message": "Inspecting targets…"
+  },
+  "workflowInspectionContextLoading": {
+    "message": "Loading available origin tabs…"
+  },
+  "workflowInspectionReady": {
+    "message": "Targets inspected. Closing requires a fresh preview and explicit confirmation."
+  },
+  "workflowInspectionEmpty": {
+    "message": "No tabs to operate on. Inspect again after changing the conditions or tabs."
+  },
+  "workflowInspectionPreviewing": {
+    "message": "Preparing a fresh close preview…"
+  },
+  "workflowInspectionConfirmHelp": {
+    "message": "A fresh preview is open. Confirm there to close tabs. Closing or changing this dialog invalidates that preview."
+  },
+  "workflowInspectionDisabledRuleHelp": {
+    "message": "This rule is disabled in the workflow. This inspection and the single-rule close still use the selected rule."
   }
 }

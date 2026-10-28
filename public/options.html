@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -8,48 +8,155 @@
 
   <body>
     <style>
+      :root {
+        color-scheme: light;
+        --page: #f6f6f3;
+        --panel: #fff;
+        --ink: #282d35;
+        --muted: #59616d;
+        --line: #d9dde2;
+        --soft: #f7f8fa;
+        --accent: #915600;
+        --focus: #245fa8;
+      }
+      * { box-sizing: border-box; }
+      [hidden] { display: none !important; }
       body {
-        font-size: 100%;
+        margin: 0;
+        padding: clamp(1rem, 4vw, 3rem) 1rem;
+        background: var(--page);
+        color: var(--ink);
+        font: 100%/1.6 system-ui, sans-serif;
       }
-      h1 {
-        font-size: 1.4em;
-        margin-left: 10px;
-        line-height: 20px;
-        font-weight: bolder;
-      }
-
-      label {
-        margin-left: 10px;
-        line-height: 20px;
-      }
-
-      form {
-        width: 800px;
-      }
-
-      aside {
-        margin-left: 30px;
-      }
-
-      aside span {
-        font-size: 0.9em;
-      }
-
-      textarea {
+      form, #workflows {
         width: 100%;
-        margin-top: 5px;
-        margin-left: 10px;
-        margin-bottom: 10px;
+        max-width: 50rem;
+        margin: 0 auto;
+        padding: clamp(1rem, 4vw, 2rem);
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 0.75rem;
       }
+      h1 { font-size: 1.125rem; line-height: 1.5; margin: 0 0 1rem; }
+      h2 { font-size: 1.0625rem; line-height: 1.5; }
+      h3 { font-size: 1rem; }
+      form > h1, #workflows > h1 {
+        padding-bottom: 0.75rem;
+        border-bottom: 1px solid var(--line);
+      }
+      hr { border: 0; margin: 1.5rem 0; }
+      label { display: block; margin: 0.75rem 0; overflow-wrap: anywhere; }
+      input[type="checkbox"] {
+        width: 1rem;
+        height: 1rem;
+        margin: 0 0.5rem 0 0;
+        vertical-align: -0.125em;
+        accent-color: var(--accent);
+      }
+      select, textarea, button, input:not([type="checkbox"]):not([type="hidden"]) {
+        max-width: 100%;
+        min-width: 0;
+        font: inherit;
+        color: inherit;
+        border: 1px solid #b8c0ca;
+        border-radius: 0.375rem;
+        background: var(--panel);
+      }
+      select, input:not([type="checkbox"]):not([type="hidden"]) {
+        min-height: 2.25rem;
+        padding: 0.25rem 0.5rem;
+      }
+      textarea {
+        display: block;
+        width: 100%;
+        margin: 0.5rem 0 0.75rem;
+        padding: 0.75rem;
+        background: #fcfcfd;
+        font: 0.875rem/1.65 ui-monospace, monospace;
+        resize: vertical;
+      }
+      button {
+        min-height: 2.5rem;
+        margin: 0.25rem 0.375rem 0.25rem 0;
+        padding: 0.375rem 0.875rem;
+        background: var(--soft);
+        font-weight: 600;
+        line-height: 1.5;
+        cursor: pointer;
+        overflow-wrap: anywhere;
+      }
+      button:hover:not(:disabled) { background: #eceff3; border-color: #8c98a7; }
+      button:active:not(:disabled) { background: #e2e7ed; }
+      :disabled { cursor: default; opacity: 0.65; }
+      fieldset {
+        min-width: 0;
+        margin: 1.75rem 0;
+        padding: 1rem;
+        border: 1px solid var(--line);
+        border-radius: 0.5rem;
+      }
+      legend {
+        max-width: 100%;
+        padding: 0 0.375rem;
+        font-weight: 650;
+        overflow-wrap: anywhere;
+      }
+      p, #status, dt, dd { overflow-wrap: anywhere; }
+      p { margin: 0.75rem 0; }
+      fieldset > p, .field-help, aside { color: var(--muted); font-size: 0.875rem; }
+      .field-help { display: block; margin: 0.5rem 0; }
+      aside {
+        margin: 1.25rem 0;
+        padding: 0.875rem 1rem;
+        background: var(--soft);
+        border-left: 3px solid var(--line);
+        border-radius: 0 0.375rem 0.375rem 0;
+        overflow-wrap: anywhere;
+      }
+      details { margin: 1rem 0; padding: 0.75rem 1rem; background: var(--soft); border-radius: 0.5rem; }
+      summary { font-weight: 600; cursor: pointer; overflow-wrap: anywhere; }
+      dd { margin: 0 0 0.75rem 1rem; white-space: pre-wrap; }
+      dt { font-weight: 600; }
+      #workflows label > input:not([type="checkbox"]), #workflows label > select { display: block; width: 100%; margin-top: 0.5rem; }
+      #workflows fieldset label { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.5rem; }
+      #workflows fieldset label.workflow-operation-label { display: grid; grid-template-columns: 1rem minmax(0, 1fr); align-items: start; }
+      #workflows fieldset input[type="checkbox"] { order: -1; flex: 0 0 1rem; margin: 0.3rem 0 0; }
+      #workflow_selection { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 0 1rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+      #workflow_selection label { grid-column: 1; }
+      .workflow-load-actions { grid-column: 1; }
+      .workflow-new-actions { grid-column: 2; grid-row: 1 / 3; }
+      #workflow_editor > h2 { margin: 1.5rem 0 1rem; }
+      .workflow-save-actions { margin: 1.5rem 0; }
+      button.workflow-primary { background: var(--accent); color: #fff; border-color: var(--accent); padding: 0.5rem 1.5rem; }
+      button.workflow-primary:hover:not(:disabled) { background: #754500; border-color: #754500; }
+      .workflow-saved-actions { border-top: 1px solid var(--line); padding-top: 0.75rem; }
+      .workflow-saved-actions h2 { color: var(--muted); font-size: 0.9375rem; }
+      a { color: var(--focus); text-underline-offset: 0.2em; }
+      #workflow_conflict { margin: 1rem 0; padding: 1rem; background: #fff8ed; border: 1px solid #d5b06a; border-radius: 0.5rem; }
+      #workflow_conflict h2 { margin-top: 0; }
+      #status { min-height: 1.5em; margin: 1rem 0 0; }
+      :focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; }
+      @media (max-width: 30rem) {
+        body { padding: 0.75rem; }
+        form, #workflows { padding: 1rem; border-radius: 0.5rem; }
+        fieldset { padding: 0.75rem; }
+        #workflow_selection { display: block; }
+        .workflow-new-actions { margin-top: 1rem; }
+      }
+      #workflow_inspection_dialog { box-sizing: border-box; width: min(44rem, calc(100% - 2rem)); max-height: calc(100dvh - 2rem); overflow: auto; padding: 1rem; }
+      #workflow_inspection_dialog::backdrop { background: rgb(0 0 0 / 45%); }
+      #workflow_inspection_dialog p { overflow-wrap: anywhere; }
+      #workflow_inspection_dialog select { max-width: 100%; }
+      #workflow_inspection_dialog button { margin: .3rem; white-space: normal; }
     </style>
 
     <form id="form">
       <h1>__MSG_option_category1__</h1>
 
       <label>
-        <input type="checkbox" id="iconbadge" />
+        <input type="checkbox" id="iconbadge" aria-label="__MSG_option6__" />
         <span>__MSG_option6__</span> (__MSG_option6_0__:
-        <select id="iconbadgescope" aria-label="iconbadgescope">
+        <select id="iconbadgescope" aria-label="__MSG_labelBadgeScope__">
           <option value="all">__MSG_option6_1__</option>
           <option value="win">__MSG_option6_2__</option>
         </select>
@@ -59,9 +166,9 @@
       <hr />
       <h1>__MSG_option_category2__</h1>
       <label>
-        <input type="checkbox" id="contextmenu1" />
+        <input type="checkbox" id="contextmenu1" aria-label="__MSG_option9__" />
         <span>__MSG_option9__</span> (__MSG_option6_0__:
-        <select id="contextmenu1scope" aria-label="contextmenu1scope">
+        <select id="contextmenu1scope" aria-label="__MSG_labelCloseScope__">
           <option value="all">__MSG_option6_1__</option>
           <option value="win">__MSG_option6_2__</option>
         </select>
@@ -69,15 +176,15 @@
       </label>
 
       <label style="margin-left: 2em">
-        <input type="checkbox" id="contextmenu1advanced" />
+        <input type="checkbox" id="contextmenu1advanced" aria-label="__MSG_option15__" />
         <span>__MSG_option15__</span>
         <br />
       </label>
 
       <label>
-        <input type="checkbox" id="contextmenu4" />
+        <input type="checkbox" id="contextmenu4" aria-label="__MSG_option12__" />
         <span>__MSG_option12__</span> (__MSG_option6_0__:
-        <select id="contextmenu4scope" aria-label="contextmenu4scope">
+        <select id="contextmenu4scope" aria-label="__MSG_labelExtractScope__">
           <option value="all">__MSG_option6_1__</option>
           <option value="win">__MSG_option6_2__</option>
         </select>
@@ -85,37 +192,40 @@
       </label>
 
       <label style="margin-left: 2em">
-        <input type="checkbox" id="contextmenu4advanced" />
+        <input type="checkbox" id="contextmenu4advanced" aria-label="__MSG_option16__" />
         <span>__MSG_option16__</span>
         <br />
       </label>
 
       <label>
-        <input type="checkbox" id="contextmenu2" />
+        <input type="checkbox" id="contextmenu2" aria-label="__MSG_option10__" />
         <span>__MSG_option10__</span>
         <br />
       </label>
 
       <label>
-        <input type="checkbox" id="contextmenu3" />
+        <input type="checkbox" id="contextmenu3" aria-label="__MSG_option11__" />
         <span>__MSG_option11__</span>
         <br />
       </label>
       <hr />
       <h1>__MSG_option_top__</h1>
+      <label><input type="checkbox" id="preview_before" aria-label="__MSG_previewOption__" /> __MSG_previewOption__</label>
+      <p class="field-help">__MSG_previewOptionHelp__</p>
+      <p class="field-help">__MSG_sessionBoundaryHelp__</p>
 
       <label>
-        <input type="checkbox" id="glue" />
+        <input type="checkbox" id="glue" aria-label="__MSG_option1__" />
         <span>__MSG_option1__</span>
-        <span>*1</span>
+        <span class="field-help">__MSG_footnote2__</span>
         <br />
       </label>
 
-      <label class=".forChrome">
-        <input type="checkbox" id="grouping" />
+      <label class="forChrome" hidden>
+        <input type="checkbox" id="grouping" aria-label="__MSG_option14__" disabled />
         <span>__MSG_option14__</span>
         (__MSG_option14_0__:
-        <select id="grouping_min" aria-label="grouping_min">
+        <select id="grouping_min" aria-label="__MSG_option14_0__" disabled>
           <option value="2">2</option>
           <option value="3">3</option>
           <option value="4">4</option>
@@ -128,38 +238,39 @@
         </select>
         )
         <br />
+        <span class="field-help">__MSG_groupingHelp__</span>
       </label>
 
       <label>
-        <input type="checkbox" id="comclose" />
+        <input type="checkbox" id="comclose" aria-label="__MSG_option5__" />
         <span>__MSG_option5__</span>
         <br />
       </label>
 
       <label>
-        <input type="checkbox" id="closelocal" />
+        <input type="checkbox" id="closelocal" aria-label="__MSG_option13__" />
         <span>__MSG_option13__</span>
         <br />
       </label>
 
       <label>
-        <input type="checkbox" id="rxclose" />
+        <input type="checkbox" id="rxclose" aria-label="__MSG_option7__" />
         <span>__MSG_option7__</span>
-        <span>*2</span>
+        <span class="field-help">__MSG_footnote1__</span>
         <br />
       </label>
 
       <label>
-        <input type="checkbox" id="depclean" />
+        <input type="checkbox" id="depclean" aria-label="__MSG_option2__" />
         <span>__MSG_option2__</span>
         <br />
       </label>
 
       <label>
-        <input type="checkbox" id="sorttab" />
+        <input type="checkbox" id="sorttab" aria-label="__MSG_option3__" />
         <span>__MSG_option3__</span>
         (__MSG_option3_0__:
-        <select id="sortkey" aria-label="sortkey">
+        <select id="sortkey" aria-label="__MSG_option3_0__">
           <option value="url">__MSG_option3_1__</option>
           <option value="title">__MSG_option3_2__</option>
         </select>
@@ -167,44 +278,102 @@
       </label>
 
       <label>
-        <input type="checkbox" id="refresh" />
+        <input type="checkbox" id="refresh" aria-label="__MSG_option4__" />
         <span>__MSG_option4__</span>
         <br />
       </label>
 
       <label>
-        <input type="checkbox" id="currentonly" />
+        <input type="checkbox" id="currentonly" aria-label="__MSG_option8__" />
         <span>__MSG_option8__</span>
-        <span>*1</span>
+        <span class="field-help">__MSG_footnote2__</span>
         <br />
       </label>
 
+      <p id="urlmatch_enabled_notice" class="field-help" hidden>__MSG_urlRulesEnabledNotice__</p>
+      <details id="advanced_features">
+        <summary>__MSG_advancedFeatures__</summary>
+      <fieldset>
+        <legend>__MSG_workflowGlobalURLRules__</legend>
+      <fieldset>
+        <legend>__MSG_ruleStorageTitle__</legend>
+        <label for="rule_storage">__MSG_ruleStorageTitle__</label>
+        <select id="rule_storage" aria-describedby="rule_storage_help">
+          <option value="sync">__MSG_ruleStorageSync__</option>
+          <option value="local">__MSG_ruleStorageLocal__</option>
+        </select>
+        <p id="rule_storage_help">__MSG_ruleStorageHelp__</p>
+        <p id="rule_storage_status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <button id="rule_storage_cleanup" type="button" hidden>__MSG_ruleStorageCleanup__</button>
+      </fieldset>
       <label>
-        <input type="checkbox" id="urlmatch" />
+        <input type="checkbox" id="urlmatch" aria-label="__MSG_option17__" />
         <span>__MSG_option17__</span>
-        <span>*3</span>
+        <span class="field-help">__MSG_footnote3__</span>
         <br />
-        <span style="margin-left: 40px; font-size: 0.8em"
+        <span class="field-help"
           >__MSG_option17_1__</span
         >
         <br />
-        <textarea rows="15" id="urlmatch_pattern"></textarea>
+        <textarea rows="15" id="urlmatch_pattern" aria-label="__MSG_option17__"></textarea>
         <br />
       </label>
 
-      <aside>
-        <span>*1 :</span>
-        <span>__MSG_footnote2__</span>
-        <br />
-        <span>*2 :</span>
-        <span>__MSG_footnote1__</span>
-        <br />
-        <span>*3 :</span>
-        <span>__MSG_footnote3__</span>
-      </aside>
+      <details id="url_rule_details">
+        <summary>__MSG_globDetailsTitle__</summary>
+        <p>__MSG_globSyntaxHelp__</p>
+        <p>__MSG_globRepeatHelp__</p>
+        <p>__MSG_globLimitsHelp__</p>
+        <p>__MSG_globDisabledHelp__</p>
+      </details>
 
-      <div id="status"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>__MSG_protectionTitle__</legend>
+        <p>__MSG_protectionPolicyHelp__</p>
+        <label for="protect_domains">__MSG_protectDomains__</label>
+        <textarea id="protect_domains" rows="4" maxlength="4096" aria-describedby="protect_domains_help"></textarea>
+        <p id="protect_domains_help">__MSG_protectDomainsHelp__</p>
+        <label><input type="checkbox" id="protect_audible" aria-label="__MSG_protectAudible__" /> __MSG_protectAudible__</label>
+        <label><input type="checkbox" id="protect_groups" aria-label="__MSG_protectGroups__" /> __MSG_protectGroups__</label>
+        <label for="duplicate_keep">__MSG_duplicateKeeper__</label>
+        <select id="duplicate_keep">
+          <option value="last">__MSG_duplicateLast__</option>
+          <option value="active">__MSG_duplicateActive__</option>
+        </select>
+      </fieldset>
+
+      </details>
+
+      <details id="settings_transfer_details">
+        <summary>__MSG_settingsTransferTitle__</summary>
+        <p>__MSG_settingsTransferHelp__</p>
+        <p>__MSG_settingsTransferSensitive__</p>
+        <label for="settings_json">__MSG_settingsJSONLabel__</label>
+        <textarea id="settings_json" rows="10" maxlength="65536" spellcheck="false" aria-describedby="settings_json_help"></textarea>
+        <details>
+          <summary>__MSG_settingsFormatDetails__</summary>
+          <p id="settings_json_help">__MSG_settingsJSONHelp__</p>
+        </details>
+        <button type="button" id="settings_export">__MSG_settingsExport__</button>
+        <button type="button" id="settings_import_review_button">__MSG_settingsImportReview__</button>
+        <section id="settings_import_review" hidden aria-labelledby="settings_import_heading">
+          <h2 id="settings_import_heading">__MSG_settingsImportHeading__</h2>
+          <p>__MSG_settingsImportMode__</p>
+          <p class="forChromeInverse">__MSG_settingsImportFirefox__</p>
+          <dl id="settings_import_content"></dl>
+          <button type="button" id="settings_import_confirm">__MSG_settingsImportConfirm__</button>
+          <button type="button" id="settings_import_cancel">__MSG_settingsImportCancel__</button>
+        </section>
+        <p id="settings_transfer_status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <button type="button" id="settings_import_recover" hidden>__MSG_settingsImportRecover__</button>
+      </details>
+      <p><a id="undo_link" href="undo.html" target="_blank" rel="noopener">__MSG_undoOpen__</a></p>
+      <div id="status" role="status" aria-live="polite" aria-atomic="true" data-state="idle"></div>
     </form>
+
+    <section id="workflows" style="max-width:50rem;margin:2rem auto"></section>
 
     <script src="options.mjs"></script>
   </body>

@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.tooling.json",
+  "compilerOptions": {
+    "types": [
+      "node",
+      "chrome"
+    ],
+    "lib": [
+      "ESNext",
+      "DOM"
+    ]
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

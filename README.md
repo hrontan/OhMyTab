@@ -2,68 +2,95 @@
 
 English / [日本語](README-ja.md) / [中文 (简体)](README-zh_CN.md)
 
-OhMyTab provides seven main functions.
+**OhMyTab** is a browser extension that tidies scattered tabs in one click. It runs on Chrome, Edge, Brave, and Firefox, merging windows, closing duplicate tabs, sorting tabs, and closing tabs that match specific URL patterns. On Chrome, Edge, and Brave, it can also group tabs from the same domain.
 
-1. Merge tabs on multiple windows into one window
-2. Close duplicated tabs
-3. Sort tabs by page titles or URLs
-4. Close system and search engine result tabs
-5. Count the number of tabs in total or in each window
-6. Add following menus into the context menu.
-    - "Close tabs in the same domain"
-    - "Extract the tabs in the same domain into a new window"
-    - "Merge tabs into one window"
-    - "Extract the current tab into a new window"
-7. Create tab groups based on the domain.
-8. Close tabs with URLs that match patterns
+![OhMyTab merges, deduplicates and sorts tabs in one click](resource/store/images/screenshot-en-1.svg)
 
-You can configure the behavior of the extension by disabling some functions shown above on option.
+## Basic usage
 
-## Update 2.0
+With the default settings upon installation, clicking the OhMyTab toolbar button runs the following actions together:
 
-- Add the function to close tabs that match patterns.
-- Add the function to create tab groups.
-- Support Manifest V3
-- Fix minor issues
+1. Merge the tabs of all windows in the same session (normal or private) into one window.
+2. Close duplicate tabs with the same URL.
+3. Sort tabs by URL.
+4. Reload tabs that the browser discarded to save memory.
 
-## Update 1.11
+Each action can be toggled on or off individually on the options page.
 
-- Add two menu into the context menu.
-- Refactor the source code
+## Main changes in version 3.0.0
 
-## Update 1.10
+- **Saved workflows:** Save a named routine (window scope, operations, and URL conditions) and run it from a page's right-click menu. You can inspect which tabs will be closed before running it.
+- **Preview, protection, and undo:** Added an optional preview before running (off by default); tab protection by domain, audio playback, or existing group; and an undo function for the most recently closed web pages (up to 50 tabs, within 5 minutes).
+- **Settings backup:** Export and import settings as a JSON file. URL patterns can now be stored locally on the device instead of using browser sync.
+- **Build and tooling:** Separated Chrome and Firefox builds, and migrated development tooling to TypeScript.
 
-- Fix minor issue.
+See the [changelog](CHANGELOG.md#english) for a complete list of changes.
 
-## Update 1.9
+## Main features
 
-- Fix issue that the number shown in the icon badge is not updated when the extension is triggered from the context menu.
+### Toolbar button actions
 
-## Update 1.8
+- Merge tabs from all windows into one
+- Close duplicate tabs with the same URL
+- Sort tabs by URL or title
+- Close browser internal pages, search results, and local files
+- Close tabs matching URL patterns (glob patterns using `*`; regular expressions are not supported)
+- Reload tabs the browser discarded to save memory
+- Group tabs of the same domain (not available in Firefox)
 
-- Fix minor issue.
+### Right-click menu actions
 
-## Update 1.7
+- Close tabs of the same site
+- Move tabs of the same site to a new window
+- Merge tabs into one window
+- Move the current tab to a new window
+- Run a saved workflow
 
-- Fix the issue of asynchronous processing.
-- Add the option to apply some function only for the current windows.
-- Add the option to count tabs for each windows on the icon badge.
-- Add the option to add "Close tabs in the same domain" to the context menu.
-- Add the option to add "Merge tabs into one window" to the context menu.
+### Specifications and notes
 
-## Update 1.6
+- The toolbar button runs all actions enabled on the options page at once. The icon can display the number of open tabs, either in total or per window.
+- Pinned tabs are never modified.
+- Operations do not cross between normal and private windows, or between Firefox containers.
 
-- Fix the issue that this extension unexpectedly handled chrome app tabs and popups.
+## Supported browsers
 
-## Update 1.5
+| Browser | Version | Notes |
+| --- | --- | --- |
+| **Chrome** (desktop) | 123 or later | All features available |
+| **Edge, Brave** (desktop) | Tested on 156 | Uses the Chrome build; all features available (device sync untested) |
+| **Firefox** (desktop) | 112 or later | Tab grouping is not supported. The Android version is not supported. |
 
-- Close Chrome Extension Tabs(chrome-extension://) when close system tabs option is enabled.
+See [browser support](docs/browser-support.ja.md) (Japanese) for details.
 
-## Update 1.4
+## Install from source
 
-- Add function to close search engine result tabs. You can enable it on option page.
-- Speedup extension.
+Requires Node.js (v22.18+ for the 22 line, 24, or 26+) and pnpm 12.
 
-## Update 1.3
+1. Install dependencies and build:
 
-- Add function to close system tabs. You can enable it on option page.
+   ```sh
+   pnpm install --frozen-lockfile
+   pnpm run build
+   ```
+
+2. Load the build into the browser:
+   - **Chrome / Edge / Brave:** Go to the extensions page (`chrome://extensions`, `edge://extensions`, or `brave://extensions`), turn on "Developer mode", click "Load unpacked", and select the `dist_chrome/` folder.
+   - **Firefox:** Go to `about:debugging#/runtime/this-firefox`, click "Load Temporary Add-on", and select `dist_firefox/manifest.json`.
+
+For packaging and testing instructions, see the [development guide](docs/development.ja.md) (Japanese).
+
+## Privacy
+
+OhMyTab does not send usage data or information about your tabs to its developer. Tab information is processed strictly within the browser.
+
+Settings are saved in the browser's sync storage, so your URL patterns and protected domains may sync across devices through your browser account (URL patterns can optionally be stored locally on the device instead). See the [privacy practices](resource/store/privacy.md) for details.
+
+## Documentation
+
+- [Usage](docs/usage.md): actions, saved workflows, protection, settings
+- [Documentation index](docs/README.md)
+- [Changelog](CHANGELOG.md#english)
+
+## License
+
+[GNU General Public License v3.0](LICENSE)

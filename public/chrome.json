@@ -3,7 +3,7 @@
   "name": "OhMyTab",
   "short_name": "OMT",
   "description": "__MSG_appDesc__",
-  "version": "2.0",
+  "version": "3.0.0",
   "default_locale": "en",
   "icons": {
     "16": "image/icon16.png",
@@ -55,5 +55,5 @@
       "description": "__MSG_option9_d__"
     }
   },
-  "minimum_chrome_version": "89"
+  "minimum_chrome_version": "123"
 }

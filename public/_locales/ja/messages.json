@@ -1,15 +1,15 @@
 {
   "appDesc": {
-    "message": "OhMyTab は散逸したタブの集約や重複したタブの除去、URLやページタイトルでのタブの並び替えなどに便利な拡張機能です。"
+    "message": "OhMyTabは、散らばったタブの集約、重複タブの削除、URLやタイトルでの並べ替えなどをワンクリックで行える便利なブラウザー拡張機能です。"
   },
   "option_top": {
-    "message": "プラグインの動作の設定"
+    "message": "アイコンを押したときの操作"
   },
   "option_category1": {
-    "message": "アイコンバッジの設定"
+    "message": "アイコンに表示するタブ数"
   },
   "option_category2": {
-    "message": "コンテキストメニューの設定"
+    "message": "右クリックメニューに表示する項目"
   },
   "option1": {
     "message": "タブを一つのウィンドウにまとめる"
@@ -18,10 +18,10 @@
     "message": "重複したタブを閉じる"
   },
   "option3": {
-    "message": "タブを並び替える"
+    "message": "タブを並べ替える"
   },
   "option3_0": {
-    "message": "要素"
+    "message": "並べ替えの基準"
   },
   "option3_1": {
     "message": "URL"
@@ -30,10 +30,10 @@
     "message": "ページタイトル"
   },
   "option4": {
-    "message": "アンロードされたページを再読み込みする"
+    "message": "休止中のタブを再読み込みする"
   },
   "option5": {
-    "message": "システムタブを閉じる"
+    "message": "ブラウザーの内部ページを閉じる"
   },
   "option6": {
     "message": "タブの数をアイコンに表示する"
@@ -42,58 +42,58 @@
     "message": "範囲"
   },
   "option6_1": {
-    "message": "全体"
+    "message": "すべてのウィンドウ"
   },
   "option6_2": {
-    "message": "ウィンドウ毎"
+    "message": "現在のウィンドウ"
   },
   "option7": {
-    "message": "検索エンジンの結果のタブを閉じる"
+    "message": "検索結果のタブを閉じる"
   },
   "option8": {
-    "message": "現在のウィンドウのみに対して動作"
+    "message": "現在のウィンドウだけを操作する"
   },
   "option9": {
-    "message": "\"同じドメインのタブを閉じる\"を追加"
+    "message": "「同じサイトのタブを閉じる」を表示"
   },
   "option9_d": {
-    "message": "同じドメインのタブを閉じる"
+    "message": "同じサイトのタブを閉じる"
   },
   "option10": {
-    "message": "\"タブを一つのウィンドウにまとめる\"を追加"
+    "message": "「タブを一つのウィンドウにまとめる」を表示"
   },
   "option11": {
-    "message": "\"現在のタブを新しいウィンドウに抽出する\"を追加"
+    "message": "「このタブを新しいウィンドウに移す」を表示"
   },
   "option11_d": {
-    "message": "現在のタブを新しいウィンドウに抽出する"
+    "message": "このタブを新しいウィンドウに移す"
   },
   "option12": {
-    "message": "\"同じドメインのタブを抽出する\"を追加"
+    "message": "「同じサイトのタブを新しいウィンドウに移す」を表示"
   },
   "option12_d": {
-    "message": "同じドメインのタブを抽出する"
+    "message": "同じサイトのタブを新しいウィンドウに移す"
   },
   "option13": {
-    "message": "ローカルファイルを閉じる"
+    "message": "ファイルを開いているタブを閉じる"
   },
   "option14": {
-    "message": "同じドメインのタブをタブグループ化する"
+    "message": "同じサイトのタブをグループにまとめる"
   },
   "option14_0": {
-    "message": "グループ化/グループ化解除のしきい値"
+    "message": "グループにする最小タブ数"
   },
   "option15": {
-    "message": "拡張: \"条件に一致するドメインのタブを閉じる\"を追加"
+    "message": "サブドメインの範囲も選べるメニューを表示"
   },
   "option16": {
-    "message": "拡張: \"条件に一致するドメインのタブを抽出する\"を追加"
+    "message": "サブドメインの範囲も選べるメニューを表示"
   },
   "option17": {
-    "message": "高度な機能: マッチパターンに一致するURLのタブを閉じる（一行に一つのパターンを記述）"
+    "message": "指定したURLのタブを閉じる"
   },
   "option17_1": {
-    "message": "例: *google.com, *yahoo*"
+    "message": "閉じたいURLのパターンを、1行に1つ入力してください。例：example.com/**。どれか1行に合うタブが対象です。"
   },
   "text0_0": {
     "message": " (現在のウィンドウのみ)"
@@ -102,30 +102,738 @@
     "message": " (全てのウィンドウ)"
   },
   "text2": {
-    "message": "同じドメインのタブを閉じる"
+    "message": "同じサイトのタブを閉じる"
   },
   "text3": {
     "message": "タブを一つのウィンドウにまとめる"
   },
   "text4": {
-    "message": "現在のタブを新しいウィンドウに抽出する"
+    "message": "このタブを新しいウィンドウに移す"
   },
   "text5": {
-    "message": "同じドメインのタブを抽出する"
+    "message": "同じサイトのタブを新しいウィンドウに移す"
   },
   "text6": {
-    "message": "条件に一致するドメインのタブを閉じる"
+    "message": "指定したサイトのタブを閉じる"
   },
   "text7": {
-    "message": "条件に一致するドメインのタブを抽出する"
+    "message": "指定したサイトのタブを新しいウィンドウに移す"
   },
   "footnote1": {
-    "message": "Google, Bing, Baidu, Yahoo, Yahoo Japan, Yandex, DuckDuckGo, Brave, You, Dogpile, Startpage, Ecosia, SwissCows, NAVER"
+    "message": "Google, Bing, Baidu, Yahoo, Yahoo Japan, Yandex, DuckDuckGo, Brave, Dogpile, Startpage, Ecosia, SwissCows, NAVER"
   },
   "footnote2": {
-    "message": "\"タブを一つのウィンドウにまとめる\"と\"選択しているウィンドウのみに対して動作\"は排他です"
+    "message": "ウィンドウを一つにまとめるときは、「現在のウィンドウだけを操作する」をオフにしてください。この2つは同時にオンにできません。"
   },
   "footnote3": {
-    "message": "picomatchライブラリを使用。"
+    "message": "URL全体ではなく、一部分に合うだけでも対象になります。URL中の「?」をそのまま指定する場合は「\\?」と入力してください。"
+  },
+  "settingsSaved": {
+    "message": "設定を保存しました。"
+  },
+  "settingsSaveFailed": {
+    "message": "設定を保存できませんでした。入力内容を確認し、もう一度保存を試してください。"
+  },
+  "settingsRetry": {
+    "message": "もう一度試す"
+  },
+  "settingsLoadFailed": {
+    "message": "設定を読み込めませんでした。「もう一度試す」を押し、読み込めてから編集してください。"
+  },
+  "settingsExternalChanged": {
+    "message": "ほかの設定画面や端末で変更された内容を、この画面にも反映しました。"
+  },
+  "settingsExternalConflict": {
+    "message": "ほかの設定画面や端末でも設定が変更されました。この画面の入力は残しています。保存すると、この画面で編集した内容を優先します。"
+  },
+  "operationRunning": {
+    "message": "OhMyTab: 操作を実行中です。"
+  },
+  "operationBusy": {
+    "message": "OhMyTab: 別の操作を実行中のため、この要求は実行しませんでした。完了後に再試行してください。"
+  },
+  "menuNotReady": {
+    "message": "OhMyTab: メニューを準備中のため、この操作は実行しませんでした。もう一度右クリックして選び直してください。"
+  },
+  "operationResult": {
+    "message": "OhMyTab: 対象 $1 件、完了 $2 件、失敗 $3 件、不明 $4 件、APIエラー $5 件。"
+  },
+  "operationFailed": {
+    "message": "OhMyTab: 操作を停止しました。対象 $1 件、完了 $2 件、失敗 $3 件、不明 $4 件、APIエラー $5 件。結果を確認して再試行してください。"
+  },
+  "protectionTitle": {
+    "message": "操作しないタブと、重複したときに残すタブ"
+  },
+  "protectDomains": {
+    "message": "操作しないサイト名"
+  },
+  "protectDomainsHelp": {
+    "message": "example.comのように、1行に1つ入力してください。下位のサイトも保護します。URLや「*」は入力できません。"
+  },
+  "protectAudible": {
+    "message": "音の出ているタブを保護する"
+  },
+  "protectGroups": {
+    "message": "グループに入っているタブを保護する"
+  },
+  "duplicateKeeper": {
+    "message": "重複したときに残すタブ"
+  },
+  "duplicateLast": {
+    "message": "並び順で最後のタブ（初期設定）"
+  },
+  "duplicateActive": {
+    "message": "表示中のタブを優先する（なければ最後のタブ）"
+  },
+  "optionsLanguage": {
+    "message": "ja"
+  },
+  "labelBadgeScope": {
+    "message": "タブ数を表示する範囲"
+  },
+  "labelCloseScope": {
+    "message": "同じサイトのタブを閉じる範囲"
+  },
+  "labelExtractScope": {
+    "message": "同じサイトのタブを移す範囲"
+  },
+  "settingsSaving": {
+    "message": "設定を保存しています…"
+  },
+  "settingsUnsaved": {
+    "message": "まだ保存できていない変更があります。"
+  },
+  "previewOption": {
+    "message": "実行する前に、対象のタブを確認する"
+  },
+  "previewTitle": {
+    "message": "操作対象の確認"
+  },
+  "previewHelp": {
+    "message": "対象のタブを確認してから実行してください。タブや設定が変わった場合や、確認の期限が切れた場合は、操作をやり直してください。"
+  },
+  "previewBoundary": {
+    "message": "固定タブや、別のプライベート／コンテナーのタブは対象外です。キャンセルすると、タブは変更しません。"
+  },
+  "previewTab": {
+    "message": "タブ／ウィンドウ"
+  },
+  "previewReasons": {
+    "message": "適用理由"
+  },
+  "previewScope": {
+    "message": "ウィンドウ範囲（ID）"
+  },
+  "previewOrigin": {
+    "message": "要求元のタブ／ウィンドウ"
+  },
+  "previewCount": {
+    "message": "対象タブ数"
+  },
+  "previewExcluded": {
+    "message": "保護により除外したタブ"
+  },
+  "previewConfirm": {
+    "message": "確定して実行"
+  },
+  "previewCancel": {
+    "message": "キャンセル"
+  },
+  "previewChecking": {
+    "message": "対象を再確認しています…"
+  },
+  "previewCancelled": {
+    "message": "キャンセルしました。タブは変更していません。"
+  },
+  "previewComplete": {
+    "message": "操作を実行しました。結果は拡張機能アイコンで確認してください。"
+  },
+  "previewExpired": {
+    "message": "この確認内容は期限切れなどで無効になりました。操作をやり直してください。"
+  },
+  "previewStale": {
+    "message": "タブまたは設定が変わったため実行しませんでした。操作をやり直してください。"
+  },
+  "previewPending": {
+    "message": "操作対象の確認待ち"
+  },
+  "previewReasonAction": {
+    "message": "選択した操作"
+  },
+  "previewReasonMove": {
+    "message": "タブの移動"
+  },
+  "previewReasonGlue": {
+    "message": "ウィンドウをまとめる"
+  },
+  "previewReasonSort": {
+    "message": "タブの並べ替え"
+  },
+  "previewReasonReload": {
+    "message": "メモリーから解放されたタブの再読み込み"
+  },
+  "previewReasonExtract": {
+    "message": "新しいウィンドウへの抽出"
+  },
+  "previewReasonGroup": {
+    "message": "ドメイン別のグループ化"
+  },
+  "previewReasonUngroup": {
+    "message": "グループ化の最小数未満"
+  },
+  "previewReasonGroupOrder": {
+    "message": "グループの並べ替え"
+  },
+  "previewReasonSameDomain": {
+    "message": "ドメイン条件に一致"
+  },
+  "previewReasonSystem": {
+    "message": "システムタブ"
+  },
+  "previewReasonLocal": {
+    "message": "ローカルファイル"
+  },
+  "previewReasonSearch": {
+    "message": "検索結果のタブ"
+  },
+  "previewReasonDuplicate": {
+    "message": "同一URLの重複（保持設定を適用）"
+  },
+  "previewReasonURL": {
+    "message": "URLのglob条件に一致"
+  },
+  "previewReasonPinned": {
+    "message": "固定タブ"
+  },
+  "previewReasonProtected": {
+    "message": "保護対象のドメイン"
+  },
+  "previewReasonAudible": {
+    "message": "音声を再生中"
+  },
+  "previewReasonExistingGroup": {
+    "message": "既存グループ"
+  },
+  "previewFailed": {
+    "message": "操作に失敗したか、実行中にタブが変わりました。拡張機能アイコンの結果を確認してください。"
+  },
+  "undoOpen": {
+    "message": "閉じたタブを元に戻す"
+  },
+  "undoTitle": {
+    "message": "閉じたタブの復元"
+  },
+  "undoLimitations": {
+    "message": "記録されたWebページを元のウィンドウに開きます。フォーム入力、閲覧履歴、スクロール位置は戻せません。プライベートタブなど、記録されないタブもあります。"
+  },
+  "undoRetention": {
+    "message": "直近1回分の記録を、最大50タブ・最長5分保持します。拡張機能が停止すると、早く消える場合があります。不要な記録は下で削除できます。"
+  },
+  "undoUnknownHelp": {
+    "message": "復元結果が不明なときは、開いたタブを確認してから記録を削除してください。二重に開くのを防ぐため、再試行はできません。元のウィンドウがなければ復元できません。"
+  },
+  "undoRestoreAll": {
+    "message": "復元可能な項目を復元"
+  },
+  "undoClearAll": {
+    "message": "記録をすべて削除"
+  },
+  "undoRefresh": {
+    "message": "再表示"
+  },
+  "undoRestore": {
+    "message": "復元"
+  },
+  "undoDelete": {
+    "message": "記録を削除"
+  },
+  "undoUnknown": {
+    "message": "作成結果が不明"
+  },
+  "undoWindow": {
+    "message": "ウィンドウ"
+  },
+  "undoIndex": {
+    "message": "記録位置"
+  },
+  "undoExpires": {
+    "message": "保持期限（最長）"
+  },
+  "undoEmpty": {
+    "message": "復元できる記録はありません。"
+  },
+  "undoUnavailable": {
+    "message": "このセッションでは記録を利用できないか、バックグラウンドが再起動しました。"
+  },
+  "undoWorking": {
+    "message": "記録を処理しています…"
+  },
+  "undoRestored": {
+    "message": "復元済み"
+  },
+  "undoFailed": {
+    "message": "未復元"
+  },
+  "undoDeleted": {
+    "message": "記録を削除しました。"
+  },
+  "ruleStorageTitle": {
+    "message": "URLの条件を保存する場所"
+  },
+  "ruleStorageSync": {
+    "message": "ブラウザーの同期を使う"
+  },
+  "ruleStorageLocal": {
+    "message": "このブラウザーだけ"
+  },
+  "ruleStorageHelp": {
+    "message": "URL条件の保存先を選びます。他の端末で使うには、ブラウザーの同期設定が必要です。切替中は他の端末で編集しないでください。同期する条件が上書き・削除される場合があります。"
+  },
+  "ruleStorageUnavailable": {
+    "message": "URL条件は確認できますが、このブラウザーでは保存先を切り替えられません。"
+  },
+  "ruleStorageResidual": {
+    "message": "このブラウザーに保存したURL条件を使っています。同期先に残ったURL条件があります。削除すると、他の端末で更新した条件も消える場合があります。"
+  },
+  "ruleStorageLocalReady": {
+    "message": "このブラウザーだけに保存したURL条件を使っています。"
+  },
+  "ruleStorageSyncReady": {
+    "message": "URL条件はブラウザーの同期を使う設定です。"
+  },
+  "ruleStorageCleanup": {
+    "message": "同期先に残ったURL条件を削除"
+  },
+  "ruleStorageMoving": {
+    "message": "編集内容を保存し、URL条件の保存先を切り替えています…"
+  },
+  "ruleStorageDraftPending": {
+    "message": "編集内容を保存してから、保存先を切り替えてください。"
+  },
+  "ruleStorageFailed": {
+    "message": "切り替えや削除を完了できませんでした。元のURL条件は残しています。保存先と、同期先に残ったURL条件を確認してください。"
+  },
+  "settingsTransferTitle": {
+    "message": "設定のバックアップと引き継ぎ"
+  },
+  "settingsTransferHelp": {
+    "message": "保存済みの設定を表示し、自分でコピーして保管できます。引き継ぐときは、この欄に貼り付けてください。取り込む前に変更内容を確認できます。編集中の設定は先に保存してください。"
+  },
+  "settingsTransferSensitive": {
+    "message": "URL条件と保護するサイト名が含まれます。非公開のサイト情報がないか、共有前に確認してください。"
+  },
+  "settingsJSONLabel": {
+    "message": "設定データ（コピー・貼り付け用）"
+  },
+  "settingsJSONHelp": {
+    "message": "OhMyTabからコピーした設定データを貼り付けてください。対応形式はohmytab-settingsのバージョン1、UTF-8、最大64KiBです。データを書き換えると、取り込めない場合があります。"
+  },
+  "settingsExport": {
+    "message": "コピーする設定を表示"
+  },
+  "settingsImportReview": {
+    "message": "貼り付けた設定を確認"
+  },
+  "settingsImportHeading": {
+    "message": "取り込むと、どの設定が変わるか"
+  },
+  "settingsImportMode": {
+    "message": "「現在の設定 → 取り込んだ後の設定」を確認してください。キャンセルすると、今の設定を使います。URL条件の保存先は変わりません。"
+  },
+  "settingsImportFirefox": {
+    "message": "Firefoxでは、タブのグループ化に関する設定は取り込みません。"
+  },
+  "settingsImportConfirm": {
+    "message": "この内容に設定を変更"
+  },
+  "settingsImportCancel": {
+    "message": "取り込みをやめる"
+  },
+  "settingsImportRecover": {
+    "message": "取り込む前の設定に戻す"
+  },
+  "settingsImportRecovery": {
+    "message": "前回の取り込みが完了していません。「取り込む前の設定に戻す」を押してから、保存・保存先の切り替え・取り込みをやり直してください。"
+  },
+  "settingsTransferBusy": {
+    "message": "設定の取り込みか、保存先の切り替えが終わるまでお待ちください。"
+  },
+  "settingsTransferDraft": {
+    "message": "設定を保存してから、表示や取り込みをやり直してください。入力内容は残しています。"
+  },
+  "settingsExportReady": {
+    "message": "下のデータをすべてコピーして保管してください。"
+  },
+  "settingsImportReviewReady": {
+    "message": "まだ設定は変えていません。変更内容を確認して、取り込むかどうかを選んでください。"
+  },
+  "settingsImportStale": {
+    "message": "確認した後で設定か入力内容が変わりました。もう一度、取り込む内容を確認してください。"
+  },
+  "settingsImportApplying": {
+    "message": "確認した内容に設定を変更しています…"
+  },
+  "settingsImportDone": {
+    "message": "設定を取り込みました。URL条件の保存先と、このブラウザーで使えない項目は変更していません。"
+  },
+  "settingsTransferFailed": {
+    "message": "処理を完了できませんでした。"
+  },
+  "settingsImportCancelled": {
+    "message": "取り込みをやめました。今の設定は変更していません。"
+  },
+  "settingsImportRecovered": {
+    "message": "取り込む前の設定に戻しました。保存や取り込みをやり直せます。"
+  },
+  "globDetailsTitle": {
+    "message": "URLの書き方と制限を詳しく見る"
+  },
+  "globSyntaxHelp": {
+    "message": "*、**、?、[a-z] などの文字クラス、{docs,help} の選択、@(foo|bar)・?(foo)・!(foo) などの拡張globを使えます。POSIX文字クラスは alnum、alpha、ascii、blank、cntrl、digit、graph、lower、print、punct、space、upper、word、xdigit に対応します。文字としての括弧は \\(・\\) と書き、正規表現用の括弧は使えません。"
+  },
+  "globRepeatHelp": {
+    "message": "+(foo|bar)・*(a|b) の反復は、空でない文字列の選択だけを使えます。枝の中のワイルドカードや入れ子、+(a|aa) のように先頭が重なる選択は拒否します。閉じ忘れや未知のPOSIXクラスもエラーになります。"
+  },
+  "globLimitsHelp": {
+    "message": "条件は100行までです。保存できない場合は、条件を減らすか短くしてください。"
+  },
+  "globDisabledHelp": {
+    "message": "「指定したURLのタブを閉じる」をオフにすると、この条件は使いません。ほかのオンの操作は実行します。オンで使うときは、条件の誤りを直してから実行してください。"
+  },
+  "sessionBoundaryHelp": {
+    "message": "通常のウィンドウとプライベートウィンドウをまたいで操作しません。Firefoxでは同じコンテナーのタブだけが対象です。これらを区別できない場合は操作しません。固定したタブも操作しません。"
+  },
+  "protectionPolicyHelp": {
+    "message": "操作は保護したタブを対象にしません。保護したタブを含むグループは移動しません。重複したタブは、選んだ設定に従って1つだけ残します。"
+  },
+  "previewOptionHelp": {
+    "message": "対象のタブを確認してから実行できます。確定するまで、タブは変更しません。"
+  },
+  "workflowTitle": {
+    "message": "自分の整理手順を保存して使う"
+  },
+  "workflowHelp": {
+    "message": "手順を保存したら、ページを右クリックして「整理手順: 手順名」を選んで実行します。"
+  },
+  "workflowSaved": {
+    "message": "保存した整理手順"
+  },
+  "workflowName": {
+    "message": "手順の名前"
+  },
+  "workflowScope": {
+    "message": "整理するウィンドウ"
+  },
+  "workflowScopeHelp": {
+    "message": "ウィンドウをまとめるには「すべての対象ウィンドウ」を選んでください。通常とプライベートのタブは分けて操作します。Firefoxでは同じコンテナーだけが対象です。"
+  },
+  "workflowOperations": {
+    "message": "この手順で行う操作"
+  },
+  "workflowRules": {
+    "message": "対象URLの条件（どれかに合えば対象）"
+  },
+  "workflowRuleHelp": {
+    "message": "オンにした条件のどれかに合うタブが対象です。サイト名、URLに含む文字、URLのパターンから探し方を選べます。"
+  },
+  "workflowOrigin": {
+    "message": "実行するウィンドウ（タブから選ぶ）"
+  },
+  "workflowDiscardHelp": {
+    "message": "まだ保存していない入力があります。編集を続けるか、入力を捨てて次へ進むかを選んでください。"
+  },
+  "workflowKeep": {
+    "message": "編集を続ける"
+  },
+  "workflowDiscard": {
+    "message": "入力を捨てて続ける"
+  },
+  "workflowNew": {
+    "message": "新しい手順を作る"
+  },
+  "workflowSave": {
+    "message": "手順を保存"
+  },
+  "workflowDuplicate": {
+    "message": "保存した手順を複製"
+  },
+  "workflowDelete": {
+    "message": "保存した手順を削除"
+  },
+  "workflowReload": {
+    "message": "保存済みの内容に戻す"
+  },
+  "workflowCopy": {
+    "message": "コピー"
+  },
+  "workflowAddRule": {
+    "message": "URLの条件を追加"
+  },
+  "workflowRemoveRule": {
+    "message": "この条件を削除"
+  },
+  "workflowRuleName": {
+    "message": "条件の名前"
+  },
+  "workflowMatch": {
+    "message": "タブの探し方"
+  },
+  "workflowMode_host": {
+    "message": "サイト名"
+  },
+  "workflowMode_contains": {
+    "message": "URLに含む文字"
+  },
+  "workflowMode_glob": {
+    "message": "URLのパターン（*など）"
+  },
+  "workflowValue": {
+    "message": "探すサイト名・URL・文字"
+  },
+  "workflowSubdomains": {
+    "message": "下位のサイトも含める（サイト名で探す場合）"
+  },
+  "workflowEnabled": {
+    "message": "オン"
+  },
+  "workflowDisabled": {
+    "message": "オフ"
+  },
+  "workflowInspectRule": {
+    "message": "この条件に合うタブを見る"
+  },
+  "workflowPreviewRule": {
+    "message": "この条件で閉じるタブを確認"
+  },
+  "workflowCopyRules": {
+    "message": "上の設定からURLの条件をコピー"
+  },
+  "workflowCopyOperations": {
+    "message": "上の設定から操作をコピー"
+  },
+  "workflowRefreshOrigin": {
+    "message": "タブの一覧を更新"
+  },
+  "workflowRefreshTargets": {
+    "message": "対象のタブを再確認"
+  },
+  "workflowRunSaved": {
+    "message": "保存した手順を確認して実行"
+  },
+  "workflowChooseOrigin": {
+    "message": "実行するウィンドウを、タブの一覧から選んでください。選んだタブを移したり閉じたりした場合は、一覧を更新して選び直してください。"
+  },
+  "workflowProtections": {
+    "message": "この手順でも使う、現在のタブ保護設定"
+  },
+  "workflowTargets": {
+    "message": "保存した手順で操作するタブ"
+  },
+  "workflowDraftTargets": {
+    "message": "画面の入力内容で調べたタブ"
+  },
+  "workflowRuleDraft": {
+    "message": "編集中の条件に合うタブ（閉じる操作だけ）"
+  },
+  "workflowCandidates": {
+    "message": "条件に合うタブ"
+  },
+  "workflowActual": {
+    "message": "実際に操作するタブ"
+  },
+  "workflowExcluded": {
+    "message": "保護されているため操作しないタブ"
+  },
+  "workflowEmpty": {
+    "message": "操作するタブはありません。条件に合うタブの数と、保護されているタブを確認してください。"
+  },
+  "workflowLoading": {
+    "message": "対象のタブを調べています…"
+  },
+  "workflowUnsaved": {
+    "message": "手順の変更をまだ保存していません"
+  },
+  "workflowNewState": {
+    "message": "新しい整理手順（まだ保存していません）"
+  },
+  "workflowSavedState": {
+    "message": "保存した手順を表示しています"
+  },
+  "workflowSaving": {
+    "message": "手順を保存しています…"
+  },
+  "workflowRevision": {
+    "message": "更新番号"
+  },
+  "workflowSelectSaved": {
+    "message": "保存した整理手順を選んでください。"
+  },
+  "workflowPreviewOpened": {
+    "message": "確認画面を開きました。対象を確かめてから実行してください。編集中の手順はまだ保存していません。"
+  },
+  "workflowError_invalid": {
+    "message": "入力欄を選びました。内容を確認してください。ウィンドウをまとめる場合は「すべての対象ウィンドウ」を選んでください。"
+  },
+  "workflowError_conflict": {
+    "message": "ほかの画面で保存されたか、保存中に入力が変わりました。今の入力は残しています。下で使う内容を選んでください。"
+  },
+  "workflowError_failed": {
+    "message": "処理を完了できませんでした。入力は残しています。もう一度試してください。"
+  },
+  "workflowError_unavailable": {
+    "message": "操作を完了できませんでした。もう一度試してください。"
+  },
+  "workflowError_busy": {
+    "message": "別の操作が終わってから、もう一度試してください。"
+  },
+  "workflowError_stale": {
+    "message": "タブや手順が変わりました。操作をやり直してください。"
+  },
+  "workflowError_unsupported": {
+    "message": "このブラウザーや、通常／プライベートなどの区分では使えない操作です。"
+  },
+  "workflowGlueScope": {
+    "message": "ウィンドウをまとめるには「すべての対象ウィンドウ」に切り替える必要があります。"
+  },
+  "workflowUseAll": {
+    "message": "すべての対象ウィンドウに切り替える"
+  },
+  "workflowScopeWin": {
+    "message": "右クリックしたタブのウィンドウだけ"
+  },
+  "workflowScopeAll": {
+    "message": "すべての対象ウィンドウ"
+  },
+  "workflowReasonURL": {
+    "message": "URLの条件に合う"
+  },
+  "settingsFormatDetails": {
+    "message": "設定データの形式と容量について"
+  },
+  "groupingHelp": {
+    "message": "同じサイトのタブがこの数以上ならグループにまとめ、少なければグループを解除します。"
+  },
+  "workflowConflictTitle": {
+    "message": "使う内容を選んでください"
+  },
+  "workflowConflictHelp": {
+    "message": "保存済みの内容に戻すと、今の入力は消えます。自分の編集内容で上書きすると、ほかの画面で保存した変更が置き換わります。"
+  },
+  "workflowOverwrite": {
+    "message": "自分の編集内容で上書きする"
+  },
+  "workflowRetrySave": {
+    "message": "この入力を保存する"
+  },
+  "workflowConflictChanged": {
+    "message": "処理中に入力が変わったため、保存しませんでした。今の入力を確認して、もう一度選んでください。"
+  },
+  "workflowConflictDeleted": {
+    "message": "この手順はほかの画面で削除されました。入力は残していますが、上書きはできません。"
+  },
+  "workflowSaveFailed": {
+    "message": "保存できたか確認できませんでした。入力は残しています。下で、もう一度保存するか、保存済みの内容に戻すかを選んでください。"
+  },
+  "workflowConflictNewHelp": {
+    "message": "ほかの手順が更新されました。今の入力を新しい手順として保存するか、入力を消して保存済みの一覧を読み直してください。"
+  },
+  "advancedFeatures": {
+    "message": "高度な機能"
+  },
+  "urlRulesEnabledNotice": {
+    "message": "URLを指定する機能が有効です。「高度な機能」で条件を確認できます。"
+  },
+  "workflowMenuTitle": {
+    "message": "保存した整理手順 — 対象を確認"
+  },
+  "workflowLoad": {
+    "message": "選んだ手順を読み込む"
+  },
+  "workflowOriginAutomatic": {
+    "message": "条件の確認には、このウィンドウの同じ閲覧セッションで使えるタブを自動で使います。"
+  },
+  "workflowOriginUnavailable": {
+    "message": "このウィンドウの同じ閲覧セッションに使えるタブがありません。通常のページを開いて対象を更新してください。"
+  },
+  "workflowEditing": {
+    "message": "手順を編集"
+  },
+  "workflowSavedActions": {
+    "message": "保存済みの手順の操作"
+  },
+  "workflowGlobalURLRules": {
+    "message": "共通のURL条件"
+  },
+  "workflowMenuPrefix": {
+    "message": "整理手順: "
+  },
+  "workflowStorageHelp": {
+    "message": "手順はこのブラウザーだけに保存します。設定のバックアップには含まれません。"
+  },
+  "workflowInspectionOpen": {
+    "message": "編集中の手順の対象を確認"
+  },
+  "workflowInspectionOpenRule": {
+    "message": "この条件の対象を確認"
+  },
+  "workflowInspectionTitle": {
+    "message": "整理手順の対象を確認"
+  },
+  "workflowInspectionHelp": {
+    "message": "基準にするタブを選び、対象を確認してください。結果の有効期間は60秒です。現在のタブ保護設定を適用します。手順全体の実行には、保存後に右クリックメニューを使ってください。"
+  },
+  "workflowInspectionOrigin": {
+    "message": "基準にするタブ"
+  },
+  "workflowInspectionChooseOrigin": {
+    "message": "基準にするタブを選んでください"
+  },
+  "workflowInspectionNoOrigin": {
+    "message": "このウィンドウの同じ閲覧セッションに使えるタブがありません。通常のページと同じウィンドウ・閲覧セッションで設定画面を開き、この確認画面を開き直してください。"
+  },
+  "workflowInspectionInspect": {
+    "message": "対象を確認する"
+  },
+  "workflowInspectionUnsavedAck": {
+    "message": "保存前のこの条件で確認へ進む"
+  },
+  "workflowInspectionClosePreview": {
+    "message": "この条件の対象だけを閉じるために確認へ進む"
+  },
+  "workflowInspectionCancel": {
+    "message": "確認画面を閉じる"
+  },
+  "workflowInspectionRuleMode": {
+    "message": "この条件だけで確認（閉じる操作のみ）"
+  },
+  "workflowInspectionFullMode": {
+    "message": "手順全体を確認（実行なし）"
+  },
+  "workflowInspectionStale": {
+    "message": "確認結果が古くなりました。対象を確認し直してください。"
+  },
+  "workflowInspectionNotifyFailed": {
+    "message": "前の確認を取り消せなかったため、実行へ進めません。基準のタブを選び直すか、この画面を開き直してください。"
+  },
+  "workflowInspectionLoading": {
+    "message": "対象のタブを調べています…"
+  },
+  "workflowInspectionContextLoading": {
+    "message": "基準にできるタブを調べています…"
+  },
+  "workflowInspectionReady": {
+    "message": "対象を確認しました。閉じるには、次の確認画面で対象を確かめて実行してください。"
+  },
+  "workflowInspectionEmpty": {
+    "message": "操作するタブはありません。条件やタブを変えた場合は、対象を確認し直してください。"
+  },
+  "workflowInspectionPreviewing": {
+    "message": "閉じるタブの確認画面を準備しています…"
+  },
+  "workflowInspectionConfirmHelp": {
+    "message": "確認画面を開きました。タブを閉じるには、そちらで実行してください。この画面を閉じたり内容を変えたりすると、実行できなくなります。"
+  },
+  "workflowInspectionDisabledRuleHelp": {
+    "message": "この条件は手順では無効です。この確認と、この条件だけでタブを閉じる操作では、選択した条件を使用します。"
   }
 }

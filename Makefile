@@ -1,22 +1,18 @@
-.PHONY: chrome firefox
+.PHONY: all build chrome firefox clean test-build
 
-all: chrome firefox
+all: build
 
-chrome: build/ohmytab_chrome.zip
+build:
+	pnpm run build
 
-firefox: build/ohmytab_firefox.zip
+chrome:
+	pnpm run build-chrome
 
-build/ohmytab_chrome.zip:
-	mkdir -p build
-	cd src && zip -r ../build/ohmytab_chrome.zip *
-
-build/ohmytab_firefox.zip: build/src_firefox
-	cd build/src_firefox && zip -r ../ohmytab_firefox.zip *
-
-build/src_firefox: 
-	mkdir -p build
-	cp -r src/ build/src_firefox
-	patch -u build/src_firefox/manifest.json src_firefox/patch
+firefox:
+	pnpm run build-firefox
 
 clean:
-	rm -r build
+	pnpm run clean
+
+test-build:
+	pnpm run test:build

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="560" viewBox="0 0 1400 560" xml:lang="en">
+<defs><symbol id="logo" viewBox="0 0 128 128"><!-- Paths from resource/icon.ai PDF content; PDF coordinates reflected into SVG. -->
+  <g transform="translate(0 128) scale(1 -1)">
+    <path fill="#58595b" transform="translate(46.9517 121.9487)" d="M0 0 V-10.403 C3.762 -14.615 6.069 -20.155 6.069 -26.247 C6.069 -32.339 3.762 -37.879 0 -42.09 V-116.821 H28.407 V0 Z"/>
+    <path fill="#58595b" transform="translate(29.2012 119.521)" d="M0 0 C-13.155 0 -23.819 -10.664 -23.819 -23.819 C-23.819 -36.974 -13.155 -47.638 0 -47.638 C7.063 -47.638 13.389 -44.546 17.75 -39.663 V-7.975 C13.389 -3.092 7.063 0 0 0 Z"/>
+    <circle fill="#ffb338" cx="99.1776" cy="62.8164" r="23.8195"/>
+  </g></symbol></defs>
+<g id="background" aria-label="Background" >
+<rect x="0" y="0" width="1400" height="560" rx="0" fill="#f7f6f3" /><circle cx="1300" cy="60" r="260" fill="#ffb03b" opacity="0.16"/>
+</g>
+<g id="brand" aria-label="OhMyTab brand" >
+<use href="#logo" x="383.90625" y="216" width="128" height="128"/><text x="567.90625" y="285" font-size="76" id="brand-name" font-family="&quot;Segoe UI&quot;, sans-serif" font-weight="800" text-anchor="start" letter-spacing="-0.01em" fill="#555559">OhMyTab</text>
+</g>
+<g id="copy" aria-label="Localized description" >
+<text x="567.90625" y="345" font-size="30" font-family="&quot;Segoe UI&quot;, sans-serif" text-anchor="start" fill="#5d5d66">Tidy up scattered tabs in one click</text>
+</g>
+</svg>

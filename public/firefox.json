@@ -3,7 +3,7 @@
   "name": "OhMyTab",
   "short_name": "OMT",
   "description": "__MSG_appDesc__",
-  "version": "2.0",
+  "version": "3.0.0",
   "default_locale": "en",
   "icons": {
     "16": "image/icon16.png",
@@ -17,7 +17,7 @@
     }
   },
   "background": {
-    "service_worker": "background.mjs",
+    "scripts": ["background.mjs"],
     "type": "module"
   },
   "permissions": ["tabs", "contextMenus", "storage"],
@@ -57,7 +57,8 @@
   },
   "browser_specific_settings": {
     "gecko": {
-      "id": "hrontan@gmail.com"
+      "id": "hrontan@gmail.com",
+      "strict_min_version": "112.0"
     }
   }
 }

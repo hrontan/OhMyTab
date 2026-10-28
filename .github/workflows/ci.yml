@@ -1,0 +1,58 @@
+name: CI
+'on':
+  push: null
+  pull_request: null
+  workflow_dispatch: null
+permissions:
+  contents: read
+jobs:
+  verify:
+    name: ${{ matrix.os }} / Node ${{ matrix.node }}
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+        node:
+          - 22.18.0
+          - 24.x
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ matrix.node }}
+          package-manager-cache: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - uses: pnpm/action-setup@v4
+      - name: Install locked dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Typecheck source and tests
+        run: pnpm run typecheck
+      - name: Lint without modifying files
+        run: pnpm run lint
+      - name: Verify lint migration contracts
+        run: pnpm run test:lint
+      - name: Test Chrome and Firefox modes
+        run: pnpm test
+      - name: Test build and clean commands
+        run: pnpm run test:build
+      - name: Test ZIP generation
+        run: pnpm run test:zip
+      - name: Build Chrome and Firefox
+        run: pnpm run build
+      - name: Initialize standalone distribution modules
+        run: node --experimental-vm-modules scripts/checks/check-bundles.ts
+      - name: Package Chrome and Firefox
+        run: pnpm run zip
+      - name: Inspect actual distribution archives
+        run: python scripts/checks/check-distribution.py

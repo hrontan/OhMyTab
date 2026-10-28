@@ -1,27 +1,27 @@
 {
   "appDesc": {
-    "message": "使用 OhMyTab 将分散的标签聚合到一个窗口，删除重复标签，并按 URL 或标题排序。"
+    "message": "使用 OhMyTab 将分散的标签页聚合到一个窗口，删除重复标签页，并按 URL 或标题排序。"
   },
   "option_top": {
-    "message": "选择扩展的行为"
+    "message": "扩展功能设置"
   },
   "option_category1": {
-    "message": "通知标志图标的配置"
+    "message": "图标上的标签页数量"
   },
   "option_category2": {
     "message": "右键菜单设置"
   },
   "option1": {
-    "message": "将选项卡合并到同一窗口"
+    "message": "将标签页合并到同一窗口"
   },
   "option2": {
-    "message": "关闭重复选项卡"
+    "message": "关闭重复标签页"
   },
   "option3": {
-    "message": "排序选项卡"
+    "message": "排列标签页"
   },
   "option3_0": {
-    "message": "排序键"
+    "message": "排序依据"
   },
   "option3_1": {
     "message": "网址"
@@ -30,22 +30,22 @@
     "message": "页面标题"
   },
   "option4": {
-    "message": "重新加载丢弃的选项卡"
+    "message": "重新加载已释放内存的标签页"
   },
   "option5": {
-    "message": "关闭系统选项卡"
+    "message": "关闭系统标签页"
   },
   "option6": {
-    "message": "显示图标上的选项卡数量"
+    "message": "在图标上显示标签页数量"
   },
   "option6_0": {
-    "message": "作用域"
+    "message": "范围"
   },
   "option6_1": {
-    "message": "一切"
+    "message": "所有窗口"
   },
   "option6_2": {
-    "message": "每个窗口"
+    "message": "当前窗口"
   },
   "option7": {
     "message": "关闭搜索引擎结果页面"
@@ -54,78 +54,786 @@
     "message": "仅在当前窗口操作"
   },
   "option9": {
-    "message": "添加\"关闭同一域名中的选项卡\""
+    "message": "添加“关闭同一域名中的标签页”"
   },
   "option9_d": {
-    "message": "关闭同一域名中的选项卡"
+    "message": "关闭同一域名中的标签页"
   },
   "option10": {
-    "message": "添加\"将选项卡合并到同一窗口\""
+    "message": "添加“将标签页合并到同一窗口”"
   },
   "option11": {
-    "message": "添加\"将当前选项卡提取到新窗口中\""
+    "message": "添加“将当前标签页提取到新窗口中”"
   },
   "option11_d": {
-    "message": "将当前选项卡提取到新窗口中"
+    "message": "将当前标签页提取到新窗口中"
   },
   "option12": {
-    "message": "添加\"将同一域名中的选项卡提取到新窗口中\""
+    "message": "添加“将同一域名中的标签页提取到新窗口中”"
   },
   "option12_d": {
-    "message": "将同一域名中的选项卡提取到新窗口中"
+    "message": "将同一域名中的标签页提取到新窗口中"
   },
   "option13": {
     "message": "关闭本地文件"
   },
   "option14": {
-    "message": "将相同域的选项卡分组"
+    "message": "按域名对标签页分组"
   },
   "option14_0": {
     "message": "分组/取消分组阈值"
   },
   "option15": {
-    "message": "扩展：添加“关闭与指定域匹配的标签”"
+    "message": "高级：添加“关闭符合域名条件的标签页”"
   },
   "option16": {
-    "message": "扩展：添加“提取与指定域匹配的标签”"
+    "message": "高级：添加“提取符合域名条件的标签页”"
   },
   "option17": {
-    "message": "高级功能：关闭与指定匹配模式相符的 URL 选项卡（每行一个）"
+    "message": "关闭 URL 匹配 glob 规则的标签页"
   },
   "option17_1": {
-    "message": "例如：*google.com、*yahoo*"
+    "message": "每行输入一个要关闭的 URL 模式，例如 example.com/**。符合任一行的标签页均为目标。"
   },
   "text0_0": {
-    "message": " (每个窗口)"
+    "message": " (仅当前窗口)"
   },
   "text0_1": {
-    "message": " (一切窗口)"
+    "message": " (所有窗口)"
   },
   "text2": {
-    "message": "关闭同一域名中的选项卡"
+    "message": "关闭同一域名中的标签页"
   },
   "text3": {
-    "message": "将选项卡合并到一个窗口中"
+    "message": "将标签页合并到一个窗口中"
   },
   "text4": {
-    "message": "将当前选项卡提取到新窗口中"
+    "message": "将当前标签页提取到新窗口中"
   },
   "text5": {
-    "message": "将同一域名中的选项卡提取到新窗口中"
+    "message": "将同一域名中的标签页提取到新窗口中"
   },
   "text6": {
-    "message": "关闭与指定域匹配的标签"
+    "message": "关闭符合域名条件的标签页"
   },
   "text7": {
-    "message": "提取与指定域匹配的标签"
+    "message": "提取符合域名条件的标签页"
   },
   "footnote1": {
-    "message": "Google, Bing, 百度, Yahoo, Yahoo Japan, Yandex, DuckDuckGo, Brave, You, Dogpile, Startpage, Ecosia, SwissCows, NAVER"
+    "message": "Google, Bing, 百度, Yahoo, Yahoo Japan, Yandex, DuckDuckGo, Brave, Dogpile, Startpage, Ecosia, SwissCows, NAVER"
   },
   "footnote2": {
-    "message": "\"将选项卡合并到一个窗口中\"和\"仅在当前窗口操作\"互斥。"
+    "message": "“将标签页合并到同一窗口”和“仅在当前窗口操作”不能同时启用。"
   },
   "footnote3": {
-    "message": "使用 picomatch 库"
+    "message": "规则匹配 URL 的一部分。要匹配 URL 中的字面问号，请写 \\?。"
+  },
+  "settingsSaved": {
+    "message": "设置已保存。"
+  },
+  "settingsSaveFailed": {
+    "message": "设置未保存。请修改设置或重试。"
+  },
+  "settingsRetry": {
+    "message": "重试"
+  },
+  "settingsLoadFailed": {
+    "message": "无法加载设置。请在编辑前重试。"
+  },
+  "settingsExternalChanged": {
+    "message": "已应用其他页面或同步的设置更改。"
+  },
+  "settingsExternalConflict": {
+    "message": "检测到外部设置更改。未保存的输入会保留，并在保存时优先应用。"
+  },
+  "operationRunning": {
+    "message": "OhMyTab：正在执行操作。"
+  },
+  "operationBusy": {
+    "message": "OhMyTab：另一操作正在执行。未执行此次请求，请在完成后重试。"
+  },
+  "menuNotReady": {
+    "message": "OhMyTab：菜单正在准备中，未执行此次请求。请重新右键选择。"
+  },
+  "operationResult": {
+    "message": "OhMyTab：目标 $1 个；完成 $2 个；失败 $3 个；未知 $4 个；API 错误 $5 个。"
+  },
+  "operationFailed": {
+    "message": "OhMyTab：操作已停止。目标 $1 个；完成 $2 个；失败 $3 个；未知 $4 个；API 错误 $5 个。请检查结果后重试。"
+  },
+  "protectionTitle": {
+    "message": "标签页保护和重复项保留规则"
+  },
+  "protectDomains": {
+    "message": "受保护的主机名"
+  },
+  "protectDomainsHelp": {
+    "message": "每行输入一个网站名称，例如 example.com。其子域名也会受到保护。请勿输入 URL 或“*”。"
+  },
+  "protectAudible": {
+    "message": "排除正在播放音频的标签页"
+  },
+  "protectGroups": {
+    "message": "排除已在分组中的标签页"
+  },
+  "duplicateKeeper": {
+    "message": "保留的重复标签页"
+  },
+  "duplicateLast": {
+    "message": "当前顺序中最后一个标签页（默认）"
+  },
+  "duplicateActive": {
+    "message": "优先保留活动标签页（否则保留最后一个）"
+  },
+  "optionsLanguage": {
+    "message": "zh-CN"
+  },
+  "labelBadgeScope": {
+    "message": "标签页计数范围"
+  },
+  "labelCloseScope": {
+    "message": "关闭同域标签页的范围"
+  },
+  "labelExtractScope": {
+    "message": "提取同域标签页的范围"
+  },
+  "settingsSaving": {
+    "message": "正在保存设置…"
+  },
+  "settingsUnsaved": {
+    "message": "有尚未保存的更改。"
+  },
+  "previewOption": {
+    "message": "执行操作前预览目标"
+  },
+  "previewTitle": {
+    "message": "确认操作目标"
+  },
+  "previewHelp": {
+    "message": "请确认目标标签页后再执行。如果标签页或设置已更改，或确认已过期，请重新发起操作。"
+  },
+  "previewBoundary": {
+    "message": "固定标签页及其他隐私会话或容器中的标签页不在操作范围内。取消后，标签页保持不变。"
+  },
+  "previewTab": {
+    "message": "标签页／窗口"
+  },
+  "previewReasons": {
+    "message": "应用原因"
+  },
+  "previewScope": {
+    "message": "窗口范围（ID）"
+  },
+  "previewOrigin": {
+    "message": "发起操作的标签页／窗口"
+  },
+  "previewCount": {
+    "message": "目标标签页数"
+  },
+  "previewExcluded": {
+    "message": "受保护而排除的标签页"
+  },
+  "previewConfirm": {
+    "message": "确认执行"
+  },
+  "previewCancel": {
+    "message": "取消"
+  },
+  "previewChecking": {
+    "message": "正在重新检查目标…"
+  },
+  "previewCancelled": {
+    "message": "已取消，未更改标签页。"
+  },
+  "previewComplete": {
+    "message": "操作已结束，请查看扩展图标的结果状态。"
+  },
+  "previewExpired": {
+    "message": "此预览已失效，请重新发起操作。"
+  },
+  "previewStale": {
+    "message": "标签页或设置已变化，未执行操作。请重新发起操作。"
+  },
+  "previewPending": {
+    "message": "等待预览确认"
+  },
+  "previewReasonAction": {
+    "message": "所选操作"
+  },
+  "previewReasonMove": {
+    "message": "移动标签页"
+  },
+  "previewReasonGlue": {
+    "message": "合并窗口"
+  },
+  "previewReasonSort": {
+    "message": "排序标签页"
+  },
+  "previewReasonReload": {
+    "message": "重新加载已释放内存的标签页"
+  },
+  "previewReasonExtract": {
+    "message": "提取至新窗口"
+  },
+  "previewReasonGroup": {
+    "message": "按域名分组"
+  },
+  "previewReasonUngroup": {
+    "message": "低于分组最小数量"
+  },
+  "previewReasonGroupOrder": {
+    "message": "排序标签页组"
+  },
+  "previewReasonSameDomain": {
+    "message": "符合域名条件"
+  },
+  "previewReasonSystem": {
+    "message": "系统页面"
+  },
+  "previewReasonLocal": {
+    "message": "本地文件"
+  },
+  "previewReasonSearch": {
+    "message": "搜索结果页"
+  },
+  "previewReasonDuplicate": {
+    "message": "URL重复（已应用保留设置）"
+  },
+  "previewReasonURL": {
+    "message": "符合URL glob规则"
+  },
+  "previewReasonPinned": {
+    "message": "固定标签页"
+  },
+  "previewReasonProtected": {
+    "message": "受保护域名"
+  },
+  "previewReasonAudible": {
+    "message": "正在播放音频"
+  },
+  "previewReasonExistingGroup": {
+    "message": "现有分组"
+  },
+  "previewFailed": {
+    "message": "操作失败或执行期间标签页发生变化，请查看扩展图标的结果。"
+  },
+  "undoOpen": {
+    "message": "恢复已关闭的标签页"
+  },
+  "undoTitle": {
+    "message": "恢复已关闭的标签页"
+  },
+  "undoLimitations": {
+    "message": "将已记录的网页重新打开到原窗口。无法恢复表单输入、浏览历史或滚动位置。隐私标签页等部分标签页不会被记录。"
+  },
+  "undoRetention": {
+    "message": "最多保留最近一次关闭操作的 50 个标签页记录，最长 5 分钟。扩展停止时，记录可能提前消失。您可以在下方删除记录。"
+  },
+  "undoUnknownHelp": {
+    "message": "恢复结果不明时，请先检查已打开的标签页，再删除记录。为避免重复打开，此时不能重试。原窗口已关闭时无法恢复。"
+  },
+  "undoRestoreAll": {
+    "message": "恢复可用记录"
+  },
+  "undoClearAll": {
+    "message": "删除全部记录"
+  },
+  "undoRefresh": {
+    "message": "刷新"
+  },
+  "undoRestore": {
+    "message": "恢复"
+  },
+  "undoDelete": {
+    "message": "删除记录"
+  },
+  "undoUnknown": {
+    "message": "创建结果不明"
+  },
+  "undoWindow": {
+    "message": "窗口"
+  },
+  "undoIndex": {
+    "message": "记录位置"
+  },
+  "undoExpires": {
+    "message": "最晚保留至"
+  },
+  "undoEmpty": {
+    "message": "没有可恢复的记录。"
+  },
+  "undoUnavailable": {
+    "message": "此会话无法使用记录，或后台已重启。"
+  },
+  "undoWorking": {
+    "message": "正在处理记录…"
+  },
+  "undoRestored": {
+    "message": "已恢复"
+  },
+  "undoFailed": {
+    "message": "未恢复"
+  },
+  "undoDeleted": {
+    "message": "已删除记录。"
+  },
+  "ruleStorageTitle": {
+    "message": "URL 规则存储位置"
+  },
+  "ruleStorageSync": {
+    "message": "使用浏览器同步"
+  },
+  "ruleStorageLocal": {
+    "message": "仅此浏览器"
+  },
+  "ruleStorageHelp": {
+    "message": "选择 URL 规则的保存位置。在其他设备上使用取决于浏览器的同步设置。切换期间请勿在其他设备上编辑，以免同步的规则被覆盖或删除。"
+  },
+  "ruleStorageUnavailable": {
+    "message": "您可以查看 URL 规则，但此浏览器无法切换保存位置。"
+  },
+  "ruleStorageResidual": {
+    "message": "正在使用仅保存在此浏览器的 URL 规则。同步存储中仍有残留的 URL 规则。删除这些规则时，其他设备上更新的规则也可能被删除。"
+  },
+  "ruleStorageLocalReady": {
+    "message": "正在使用仅保存在此浏览器的 URL 规则。"
+  },
+  "ruleStorageSyncReady": {
+    "message": "URL 规则已设为使用浏览器同步。"
+  },
+  "ruleStorageCleanup": {
+    "message": "删除同步存储中残留的 URL 规则"
+  },
+  "ruleStorageMoving": {
+    "message": "正在保存编辑并切换 URL 规则的保存位置…"
+  },
+  "ruleStorageDraftPending": {
+    "message": "请先保存编辑，再切换保存位置。"
+  },
+  "ruleStorageFailed": {
+    "message": "切换或删除未完成。原有 URL 规则仍保留。请检查所选保存位置和同步存储中残留的 URL 规则。"
+  },
+  "settingsTransferTitle": {
+    "message": "导入与导出设置"
+  },
+  "settingsTransferHelp": {
+    "message": "显示已保存的设置后，请自行复制以备份，或粘贴到其他浏览器的此处以迁移。导入前可查看更改。请先保存正在编辑的设置。"
+  },
+  "settingsTransferSensitive": {
+    "message": "数据包含 URL 规则和受保护的网站名称。分享前请检查是否包含私密网站信息。"
+  },
+  "settingsJSONLabel": {
+    "message": "设置 JSON"
+  },
+  "settingsJSONHelp": {
+    "message": "请粘贴从 OhMyTab 复制的设置数据。支持 ohmytab-settings 版本 1，UTF-8，最大 64 KiB。修改过或不受支持的数据可能无法导入。"
+  },
+  "settingsExport": {
+    "message": "导出 JSON"
+  },
+  "settingsImportReview": {
+    "message": "检查导入内容"
+  },
+  "settingsImportHeading": {
+    "message": "检查设置：当前 → 导入后"
+  },
+  "settingsImportMode": {
+    "message": "应用前请确认“当前设置 → 导入后的设置”。取消后保留当前设置。URL 规则的保存位置不变。"
+  },
+  "settingsImportFirefox": {
+    "message": "Firefox 不会导入标签页分组设置。"
+  },
+  "settingsImportConfirm": {
+    "message": "应用已确认的设置"
+  },
+  "settingsImportCancel": {
+    "message": "取消导入"
+  },
+  "settingsImportRecover": {
+    "message": "恢复中断导入前的设置"
+  },
+  "settingsImportRecovery": {
+    "message": "上次导入未完成。请先点击“恢复导入前的设置”，再保存、切换保存位置或重新导入。"
+  },
+  "settingsTransferBusy": {
+    "message": "请等待当前导入或存储切换完成。"
+  },
+  "settingsTransferDraft": {
+    "message": "请先保存编辑，再重新显示或导入设置。您的输入已保留。"
+  },
+  "settingsExportReady": {
+    "message": "请复制并保存下方全部数据。"
+  },
+  "settingsImportReviewReady": {
+    "message": "请检查各项后应用或取消。目前尚未导入。"
+  },
+  "settingsImportStale": {
+    "message": "检查后设置或输入已更改。请重新检查导入内容。"
+  },
+  "settingsImportApplying": {
+    "message": "正在应用已确认的设置…"
+  },
+  "settingsImportDone": {
+    "message": "设置已导入。存储位置和不支持项的原设置均已保留。"
+  },
+  "settingsTransferFailed": {
+    "message": "操作未完成。"
+  },
+  "settingsImportCancelled": {
+    "message": "已取消导入，未更改已保存设置。"
+  },
+  "settingsImportRecovered": {
+    "message": "已恢复原设置，可以继续保存或导入。"
+  },
+  "globDetailsTitle": {
+    "message": "支持的 glob 语法和限制"
+  },
+  "globSyntaxHelp": {
+    "message": "支持 *、**、?、[a-z] 等字符类、{docs,help} 选择，以及 @(foo|bar)、?(foo)、!(foo) 等扩展 glob。支持的 POSIX 类为 alnum、alpha、ascii、blank、cntrl、digit、graph、lower、print、punct、space、upper、word、xdigit。字面括号需写作 \\( 和 \\)，不支持正则表达式括号。"
+  },
+  "globRepeatHelp": {
+    "message": "重复扩展 glob +(foo|bar)、*(a|b) 仅允许非空字面分支。分支内的通配符、嵌套及 +(a|aa) 这类前缀重叠选择会被拒绝。未闭合分隔符和未知 POSIX 类也会报错。"
+  },
+  "globLimitsHelp": {
+    "message": "最多可输入 100 行规则。无法保存时，请减少或缩短规则。"
+  },
+  "globDisabledHelp": {
+    "message": "关闭“关闭符合 URL 的标签页”后，将不使用这些规则，其他已启用操作仍会执行。启用 URL 规则时，请先修正规则中的错误再执行。"
+  },
+  "sessionBoundaryHelp": {
+    "message": "操作仅限与请求标签页相同的普通或隐私边界。Firefox 还限定为同一容器；无法识别会话的请求不会执行。固定标签页被排除。"
+  },
+  "protectionPolicyHelp": {
+    "message": "操作会跳过受保护的标签页。包含受保护标签页的标签组不会移动。重复标签页会按所选设置保留一个。"
+  },
+  "previewOptionHelp": {
+    "message": "执行前可确认目标标签页。确认前不会更改标签页。"
+  },
+  "workflowTitle": {
+    "message": "已保存的工作流"
+  },
+  "workflowHelp": {
+    "message": "保存工作流后，右键点击网页并选择“整理步骤：名称”即可运行。"
+  },
+  "workflowSaved": {
+    "message": "已保存的工作流"
+  },
+  "workflowName": {
+    "message": "工作流名称"
+  },
+  "workflowScope": {
+    "message": "操作范围"
+  },
+  "workflowScopeHelp": {
+    "message": "合并窗口时请选择“起点会话中的所有窗口”。普通与隐私标签页分开操作。Firefox 中仅操作同一容器的标签页。"
+  },
+  "workflowOperations": {
+    "message": "操作"
+  },
+  "workflowRules": {
+    "message": "目标 URL 条件（或）"
+  },
+  "workflowRuleHelp": {
+    "message": "符合任一已启用规则的标签页均为目标。可按网站名称、URL 包含的文字或通配符模式查找。"
+  },
+  "workflowOrigin": {
+    "message": "起点标签页（同一窗口及会话）"
+  },
+  "workflowDiscardHelp": {
+    "message": "保留草稿，或丢弃后继续。"
+  },
+  "workflowKeep": {
+    "message": "保留草稿"
+  },
+  "workflowDiscard": {
+    "message": "丢弃并继续"
+  },
+  "workflowNew": {
+    "message": "新建"
+  },
+  "workflowSave": {
+    "message": "保存"
+  },
+  "workflowDuplicate": {
+    "message": "复制已保存版本"
+  },
+  "workflowDelete": {
+    "message": "删除已保存版本"
+  },
+  "workflowReload": {
+    "message": "恢复为已保存内容"
+  },
+  "workflowCopy": {
+    "message": "副本"
+  },
+  "workflowAddRule": {
+    "message": "添加规则"
+  },
+  "workflowRemoveRule": {
+    "message": "移除规则"
+  },
+  "workflowRuleName": {
+    "message": "规则名称"
+  },
+  "workflowMatch": {
+    "message": "匹配方式"
+  },
+  "workflowMode_host": {
+    "message": "主机名"
+  },
+  "workflowMode_contains": {
+    "message": "包含字面文本"
+  },
+  "workflowMode_glob": {
+    "message": "URL glob"
+  },
+  "workflowValue": {
+    "message": "匹配值"
+  },
+  "workflowSubdomains": {
+    "message": "包含子域名（仅主机）"
+  },
+  "workflowEnabled": {
+    "message": "已启用"
+  },
+  "workflowDisabled": {
+    "message": "已禁用"
+  },
+  "workflowInspectRule": {
+    "message": "检查此规则"
+  },
+  "workflowPreviewRule": {
+    "message": "预览此草稿规则（仅关闭）"
+  },
+  "workflowCopyRules": {
+    "message": "复制全局 URL 规则"
+  },
+  "workflowCopyOperations": {
+    "message": "复制全局操作"
+  },
+  "workflowRefreshOrigin": {
+    "message": "刷新起点并重新选择"
+  },
+  "workflowRefreshTargets": {
+    "message": "刷新目标"
+  },
+  "workflowRunSaved": {
+    "message": "确认并运行已保存的工作流"
+  },
+  "workflowChooseOrigin": {
+    "message": "请选择起点标签页。如果已移动或关闭，请刷新并重新选择。"
+  },
+  "workflowProtections": {
+    "message": "当前保护设置及重复项保留规则（执行时应用）"
+  },
+  "workflowTargets": {
+    "message": "已保存工作流的目标"
+  },
+  "workflowDraftTargets": {
+    "message": "草稿目标（与已保存版本不同）"
+  },
+  "workflowRuleDraft": {
+    "message": "草稿规则（仅关闭）"
+  },
+  "workflowCandidates": {
+    "message": "规则匹配数"
+  },
+  "workflowActual": {
+    "message": "所有操作的目标"
+  },
+  "workflowExcluded": {
+    "message": "保护排除项"
+  },
+  "workflowEmpty": {
+    "message": "没有可操作目标。请检查匹配项和保护排除项。"
+  },
+  "workflowLoading": {
+    "message": "正在检查目标…"
+  },
+  "workflowUnsaved": {
+    "message": "草稿未保存"
+  },
+  "workflowNewState": {
+    "message": "新工作流（未保存）"
+  },
+  "workflowSavedState": {
+    "message": "已加载保存版本"
+  },
+  "workflowSaving": {
+    "message": "正在保存…"
+  },
+  "workflowRevision": {
+    "message": "修订"
+  },
+  "workflowSelectSaved": {
+    "message": "请先选择已保存的工作流。"
+  },
+  "workflowPreviewOpened": {
+    "message": "已打开确认页面。请检查后运行。草稿未保存。"
+  },
+  "workflowError_invalid": {
+    "message": "请检查当前获得焦点的字段。合并窗口需要选择所有窗口。"
+  },
+  "workflowError_conflict": {
+    "message": "其他设置页面保存了更改，或保存期间输入发生变化。当前输入已保留，请在下方选择要使用的内容。"
+  },
+  "workflowError_failed": {
+    "message": "未能完成操作。当前输入已保留，请重试。"
+  },
+  "workflowError_unavailable": {
+    "message": "未能完成操作，请重试。"
+  },
+  "workflowError_busy": {
+    "message": "其他操作正在运行。请等待完成后重试。"
+  },
+  "workflowError_stale": {
+    "message": "标签页或整理流程已更改。请重新发起操作。"
+  },
+  "workflowError_unsupported": {
+    "message": "此浏览器或会话不支持该操作。"
+  },
+  "workflowGlueScope": {
+    "message": "合并需要所有窗口。请明确切换后继续。"
+  },
+  "workflowUseAll": {
+    "message": "将此工作流切换为所有窗口"
+  },
+  "workflowScopeWin": {
+    "message": "右键所点标签页的窗口"
+  },
+  "workflowScopeAll": {
+    "message": "起点会话中的所有窗口"
+  },
+  "workflowReasonURL": {
+    "message": "URL 规则匹配"
+  },
+  "settingsFormatDetails": {
+    "message": "设置数据的格式和大小限制"
+  },
+  "groupingHelp": {
+    "message": "同一网站的标签页数量达到此值时分组，少于此值时取消分组。"
+  },
+  "workflowConflictTitle": {
+    "message": "选择要使用的内容"
+  },
+  "workflowConflictHelp": {
+    "message": "恢复已保存内容会丢弃当前输入。用当前编辑内容覆盖会替换其他设置页面保存的更改。"
+  },
+  "workflowOverwrite": {
+    "message": "用当前编辑内容覆盖"
+  },
+  "workflowRetrySave": {
+    "message": "保存当前输入"
+  },
+  "workflowConflictChanged": {
+    "message": "检查期间输入发生变化，因此未保存。请确认当前输入后重新选择。"
+  },
+  "workflowConflictDeleted": {
+    "message": "此整理步骤已在其他设置页面删除。当前输入已保留，但无法覆盖已删除的步骤。"
+  },
+  "workflowSaveFailed": {
+    "message": "无法确认是否保存成功。当前输入已保留，请在下方选择再次保存或恢复已保存内容。"
+  },
+  "workflowConflictNewHelp": {
+    "message": "其他已保存步骤发生变化。可将当前输入保存为新步骤，或丢弃输入并重新加载已保存列表。"
+  },
+  "advancedFeatures": {
+    "message": "高级功能"
+  },
+  "urlRulesEnabledNotice": {
+    "message": "全局 URL 规则已启用。请展开高级功能以查看条件。"
+  },
+  "workflowMenuTitle": {
+    "message": "已保存的工作流 — 确认目标"
+  },
+  "workflowLoad": {
+    "message": "加载所选工作流"
+  },
+  "workflowOriginAutomatic": {
+    "message": "条件检查自动使用此窗口中同一浏览会话的可用标签页。"
+  },
+  "workflowOriginUnavailable": {
+    "message": "此窗口的同一浏览会话中没有可用标签页。请在此打开普通网页，然后刷新目标。"
+  },
+  "workflowEditing": {
+    "message": "编辑步骤"
+  },
+  "workflowSavedActions": {
+    "message": "已保存步骤的操作"
+  },
+  "workflowGlobalURLRules": {
+    "message": "通用 URL 条件"
+  },
+  "workflowMenuPrefix": {
+    "message": "整理步骤："
+  },
+  "workflowStorageHelp": {
+    "message": "整理流程仅保存在此浏览器中，不包含在设置备份中。"
+  },
+  "workflowInspectionOpen": {
+    "message": "检查正在编辑的流程目标"
+  },
+  "workflowInspectionOpenRule": {
+    "message": "检查此规则的目标"
+  },
+  "workflowInspectionTitle": {
+    "message": "检查流程目标"
+  },
+  "workflowInspectionHelp": {
+    "message": "请选择基准标签页，然后检查目标。结果在60秒后过期，并应用当前的标签页保护设置。检查整个流程不会执行操作；如需执行，请保存后使用右键菜单。"
+  },
+  "workflowInspectionOrigin": {
+    "message": "基准标签页"
+  },
+  "workflowInspectionChooseOrigin": {
+    "message": "请选择基准标签页"
+  },
+  "workflowInspectionNoOrigin": {
+    "message": "此窗口的同一浏览会话中没有可用标签页。请在普通网页所在的同一窗口及浏览会话中打开设置，再重新打开此对话框。"
+  },
+  "workflowInspectionInspect": {
+    "message": "检查目标"
+  },
+  "workflowInspectionUnsavedAck": {
+    "message": "使用此未保存的规则进入确认"
+  },
+  "workflowInspectionClosePreview": {
+    "message": "预览仅关闭此规则的目标"
+  },
+  "workflowInspectionCancel": {
+    "message": "关闭检查"
+  },
+  "workflowInspectionRuleMode": {
+    "message": "单个规则：仅关闭"
+  },
+  "workflowInspectionFullMode": {
+    "message": "整个流程：仅检查"
+  },
+  "workflowInspectionStale": {
+    "message": "检查结果已过期。请重新检查后再继续。"
+  },
+  "workflowInspectionNotifyFailed": {
+    "message": "无法使上一次确认失效，已禁止继续执行。请重新选择基准标签页或重新打开此对话框。"
+  },
+  "workflowInspectionLoading": {
+    "message": "正在检查目标…"
+  },
+  "workflowInspectionContextLoading": {
+    "message": "正在加载可用的基准标签页…"
+  },
+  "workflowInspectionReady": {
+    "message": "目标已检查。关闭前仍需重新预览并明确确认。"
+  },
+  "workflowInspectionEmpty": {
+    "message": "没有可操作的标签页。更改规则或标签页后，请重新检查。"
+  },
+  "workflowInspectionPreviewing": {
+    "message": "正在准备新的关闭预览…"
+  },
+  "workflowInspectionConfirmHelp": {
+    "message": "已打开新的预览。请在该页面确认关闭。关闭此对话框或更改内容会使该预览失效。"
+  },
+  "workflowInspectionDisabledRuleHelp": {
+    "message": "此规则在工作流中已禁用。本次检查和单规则关闭仍会使用所选规则。"
   }
 }

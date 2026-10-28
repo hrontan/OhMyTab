@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>OhMyTab Preview</title>
+<style>*{box-sizing:border-box}body{font:1rem/1.5 system-ui,sans-serif;margin:1rem auto;padding:0 1rem;max-width:65rem}h1{font-size:1.5rem}table{width:100%;border-collapse:collapse;table-layout:fixed}th,td{text-align:left;border:1px solid #aaa;padding:.5rem;overflow-wrap:anywhere}button{font:inherit;margin:.5rem .5rem .5rem 0;padding:.5rem 1rem}:focus-visible{outline:2px solid currentColor;outline-offset:2px}.url{font-size:.875rem}#status{min-height:1.5em}details{margin:1rem 0}</style></head>
+<body><h1 data-message="previewTitle"></h1><p data-message="previewHelp"></p><p id="scope"></p><p id="count"></p>
+<table><thead><tr><th data-message="previewTab"></th><th data-message="previewReasons"></th></tr></thead><tbody id="targets"></tbody></table>
+<details><summary data-message="previewExcluded"></summary><ul id="excluded"></ul></details>
+<p data-message="previewBoundary"></p><button id="confirm" data-message="previewConfirm" disabled></button><button id="cancel" data-message="previewCancel" disabled></button><p id="status" role="status" aria-live="polite" aria-atomic="true"></p>
+<script src="preview.mjs"></script></body></html>

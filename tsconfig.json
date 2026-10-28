@@ -1,11 +1,16 @@
 {
   "extends": [
     "@tsconfig/recommended/tsconfig.json",
-    "@tsconfig/strictest/tsconfig.json",
-    "@tsconfig/esm/tsconfig.json"
+    "@tsconfig/strictest/tsconfig.json"
   ],
   "compilerOptions": {
     "outDir": "./dist",
+    "rootDir": ".",
+    "types": ["chrome", "firefox-webext-browser", "node"],
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "verbatimModuleSyntax": true,
 
     // Source Code Checking
     "noImplicitAny": true,
@@ -16,9 +21,7 @@
     "noPropertyAccessFromIndexSignature": false,
 
     // Other
-    "lib": ["dom", "es2022"],
-
-    "baseUrl": "./"
+    "lib": ["dom", "es2022"]
   },
   "include": ["src"],
   "exclude": ["**/node_modules"]

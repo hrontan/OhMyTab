@@ -1,0 +1,54 @@
+import { afterEach, beforeEach, expect, test, vi } from "vitest";
+import { installSettingsBrowser } from "../helpers/settings-browser.ts";
+import { createOptionsDocument } from "../helpers/options-dom.ts";
+import type { BrowserTarget } from "../helpers/browser.ts";
+let mock: ReturnType<typeof installSettingsBrowser>;
+beforeEach(() => { vi.resetModules(); mock = installSettingsBrowser(process.env.TEST_BROWSER as BrowserTarget); Object.assign(mock.data, { glue: false }); });
+afterEach(() => vi.unstubAllGlobals());
+async function options() {
+  const { defaultSetting } = await import("../../src/settings/setting.ts");
+  const dom = createOptionsDocument(Object.keys(defaultSetting));
+  vi.stubGlobal("document", dom.document);
+  await import("../../src/options/options.ts"); await dom.load(); return dom;
+}
+test("delayed save announces busy status, failure retains draft and keyboard-capable retry confirms success", async () => {
+  const dom = await options();
+  dom.elements.protect_audible!.checked = true;
+  const save = dom.form.dispatch("change");
+  await vi.waitFor(() => expect(mock.writes).toHaveLength(1));
+  expect(dom.status.textContent).toBe("settingsSaving");
+  expect(dom.status.attributes).toMatchObject({ role: "status", "aria-live": "polite", "aria-busy": "true", "data-state": "saving" });
+  mock.writes[0]!.reject("quota"); await save;
+  expect(dom.elements.protect_audible!.checked).toBe(true);
+  expect(mock.data.protect_audible).not.toBe(true);
+  expect(dom.status.attributes).toMatchObject({ role: "alert", "aria-live": "assertive", "aria-busy": "false", "data-state": "failed" });
+  expect(dom.status.textContent).toContain("settingsSaveFailed");
+  const retry = dom.status.children.find(e => e.type === "button")!;
+  expect(retry.textContent).toBe("settingsRetry");
+  const retried = retry.dispatch("click");
+  await vi.waitFor(() => expect(mock.writes).toHaveLength(2));
+  expect(dom.status.attributes["data-state"]).toBe("saving");
+  mock.writes[1]!.resolve(); await retried;
+  expect(mock.data.protect_audible).toBe(true);
+  expect(dom.status.textContent).toBe("settingsSaved");
+  expect(dom.status.attributes).toMatchObject({ role: "status", "aria-live": "polite", "aria-busy": "false", "data-state": "saved" });
+});
+test("older acknowledgement leaves a newer input-only draft visibly unsaved without changing the queue", async () => {
+  const dom = await options();
+  dom.elements.protect_domains!.value = "first.example";
+  const first = dom.form.dispatch("change");
+  await vi.waitFor(() => expect(mock.writes).toHaveLength(1));
+  dom.elements.protect_domains!.value = "second.example";
+  await dom.form.dispatch("input");
+  mock.writes[0]!.resolve(); await first;
+  expect(mock.writes).toHaveLength(1);
+  expect(mock.data.protect_domains).toBe("first.example");
+  expect(dom.elements.protect_domains!.value).toBe("second.example");
+  expect(dom.status.textContent).toBe("settingsUnsaved");
+  expect(dom.status.attributes).toMatchObject({ "aria-busy": "false", "data-state": "unsaved" });
+  const next = dom.form.dispatch("change");
+  await vi.waitFor(() => expect(mock.writes).toHaveLength(2));
+  mock.writes[1]!.resolve(); await next;
+  expect(mock.data.protect_domains).toBe("second.example");
+  expect(dom.status.attributes["data-state"]).toBe("saved");
+});
