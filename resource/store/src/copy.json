@@ -1,0 +1,95 @@
+{
+  "ja": {
+    "font": "\"Yu Gothic UI\", \"Meiryo UI\", \"Segoe UI\", sans-serif",
+    "tagline": "散らばったタブを、ワンクリックで整理",
+    "promo": "統合・重複削除・並び替えをワンクリックで",
+    "before": "実行前",
+    "after": "実行後",
+    "window": "ウィンドウ",
+    "duplicate": "重複",
+    "slides": [
+      {
+        "title": "散らばったタブを、\nワンクリックで整理",
+        "body": "有効にした操作で、同じセッションの対象タブを集約し、重複を閉じ、URLやタイトル順に並べ替えます。固定タブと保護タブは除外します。"
+      },
+      {
+        "title": "同じドメインのタブを\nまとめて閉じる・移す",
+        "body": "右クリックメニューから、同じドメインの対象タブを閉じたり新しいウィンドウへ移したりできます。サブドメインの階層も選べます。"
+      },
+      {
+        "title": "タブの数が\nひと目でわかる",
+        "body": "開いているタブ数を全体またはウィンドウごとに表示します。Chromeでは同じドメインの対象タブをグループ化し、ドメイン名を付けて折りたたみます。"
+      },
+      {
+        "title": "よく使う整理を\n手順として保存",
+        "body": "名前・対象のウィンドウ・操作・URL条件をまとめて保存し、ページの右クリックメニューから実行できます。実行前に対象のタブも確認できます。"
+      }
+    ],
+    "duplicateNote": "同じURLの印付きタブを閉じ、対象内の最後のタブを残します。",
+    "groupNote": "Chromeのみ・ドメイン名で自動命名・グループは折りたたみ",
+    "illustration": "対象タブの説明図（ブラウザー画面の撮影ではありません）。",
+    "optionsCaption": "Chromeの設定画面（一部抜粋）。"
+  },
+  "en": {
+    "font": "\"Segoe UI\", sans-serif",
+    "tagline": "Tidy up scattered tabs in one click",
+    "promo": "Merge, deduplicate and sort tabs in one click",
+    "before": "Before",
+    "after": "After",
+    "window": "Window",
+    "duplicate": "Duplicate",
+    "slides": [
+      {
+        "title": "Tidy up scattered tabs\nin one click",
+        "body": "Enabled actions merge eligible tabs in the same session, close duplicates, and sort by URL or title. Pinned and protected tabs are excluded."
+      },
+      {
+        "title": "Close or move tabs\nof the same domain",
+        "body": "Close or move eligible tabs of the same domain from the context menu. Detailed menus can choose a subdomain level."
+      },
+      {
+        "title": "See your tab count\nat a glance",
+        "body": "Show the total tab count or a count per window. Chrome can group eligible tabs by domain, name each group after its domain, and collapse it."
+      },
+      {
+        "title": "Save your own\ncleanup routines",
+        "body": "Save a name, window scope, operations and URL conditions together, then run the workflow from the page context menu. You can inspect its target tabs first."
+      }
+    ],
+    "duplicateNote": "Same URL: close the marked copies; keep the last eligible tab.",
+    "groupNote": "Chrome only · domain names set automatically · groups collapsed",
+    "illustration": "Illustration of eligible tabs; not a browser screenshot.",
+    "optionsCaption": "Chrome options page (excerpt)."
+  },
+  "zh_CN": {
+    "font": "\"Microsoft YaHei UI\", \"Microsoft YaHei\", \"Segoe UI\", sans-serif",
+    "tagline": "一键整理分散的选项卡",
+    "promo": "一键合并、去重、排序选项卡",
+    "before": "执行前",
+    "after": "执行后",
+    "window": "窗口",
+    "duplicate": "重复",
+    "slides": [
+      {
+        "title": "一键整理\n分散的选项卡",
+        "body": "执行已启用的操作，合并同一会话的合格选项卡、关闭重复项，并按 URL 或标题排序。固定和受保护项被排除。"
+      },
+      {
+        "title": "批量关闭或移动\n同一域名的选项卡",
+        "body": "从右键菜单关闭或移动同一域名的合格选项卡，也可选择子域名级别。"
+      },
+      {
+        "title": "选项卡数量\n一目了然",
+        "body": "显示总数或每个窗口的选项卡数量。Chrome 可将同一域名的合格项分组，以域名命名并折叠。"
+      },
+      {
+        "title": "将常用整理\n保存为工作流",
+        "body": "将名称、目标窗口、操作和 URL 条件一起保存，并从页面右键菜单运行。运行前还可以检查目标标签页。"
+      }
+    ],
+    "duplicateNote": "关闭标记的同 URL 副本，保留最后一个合格选项卡。",
+    "groupNote": "仅限 Chrome · 自动使用域名命名 · 组处于折叠状态",
+    "illustration": "合格选项卡示意图，并非浏览器截图。",
+    "optionsCaption": "Chrome 选项页面（节选）。"
+  }
+}

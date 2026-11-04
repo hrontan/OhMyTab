@@ -1,0 +1,11 @@
+diff --git a/index.d.ts b/index.d.ts
+--- a/index.d.ts
++++ b/index.d.ts
+@@ -22,7 +22,6 @@
+  * Cross-browser alias of {@link chrome}.
+  * @since Chrome 148 (Chrome 152 for extensions declaring a `devtools_page` in manifest)
+  */
+-declare var browser: typeof chrome;
+ 
+ declare namespace chrome {
+     ////////////////////

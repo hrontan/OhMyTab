@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" xml:lang="ja">
+<defs><symbol id="logo" viewBox="0 0 128 128"><!-- Paths from resource/icon.ai PDF content; PDF coordinates reflected into SVG. -->
+  <g transform="translate(0 128) scale(1 -1)">
+    <path fill="#58595b" transform="translate(46.9517 121.9487)" d="M0 0 V-10.403 C3.762 -14.615 6.069 -20.155 6.069 -26.247 C6.069 -32.339 3.762 -37.879 0 -42.09 V-116.821 H28.407 V0 Z"/>
+    <path fill="#58595b" transform="translate(29.2012 119.521)" d="M0 0 C-13.155 0 -23.819 -10.664 -23.819 -23.819 C-23.819 -36.974 -13.155 -47.638 0 -47.638 C7.063 -47.638 13.389 -44.546 17.75 -39.663 V-7.975 C13.389 -3.092 7.063 0 0 0 Z"/>
+    <circle fill="#ffb338" cx="99.1776" cy="62.8164" r="23.8195"/>
+  </g></symbol></defs>
+<g id="background" aria-label="Background" >
+<rect x="0" y="0" width="1280" height="800" rx="0" fill="#f7f6f3" />
+</g>
+<g id="brand" aria-label="OhMyTab brand" >
+<use href="#logo" x="80" y="44" width="36" height="36"/><text x="128" y="71" font-size="22" id="brand-name" font-family="&quot;Segoe UI&quot;, sans-serif" font-weight="800" text-anchor="start" letter-spacing="-0.01em" fill="#555559">OhMyTab</text>
+</g>
+<g id="copy" aria-label="Localized title and description" font-family="&quot;Yu Gothic UI&quot;, &quot;Meiryo UI&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#26262a">
+<text x="80" y="301.95" font-size="46" font-weight="700" letter-spacing="-0.01em">散らばったタブを、</text>
+<text x="80" y="359.45" font-size="46" font-weight="700" letter-spacing="-0.01em">ワンクリックで整理</text><rect x="80" y="387.45" width="64" height="6" rx="3" fill="#ffb03b" /><text x="80" y="446.45" font-size="21" fill="#5d5d66">有効にした操作で、同じセッションの対象タブ</text>
+<text x="80" y="482.15" font-size="21" fill="#5d5d66">を集約し、重複を閉じ、URLやタイトル順に並</text>
+<text x="80" y="517.85" font-size="21" fill="#5d5d66">べ替えます。固定タブと保護タブは除外します。</text>
+</g>
+<g id="illustration" aria-label="Feature illustration" transform="translate(630 100)" font-family="&quot;Yu Gothic UI&quot;, &quot;Meiryo UI&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#26262a">
+<text x="0" y="24" font-size="15" fill="#8a5300" font-weight="700">実行前</text><g id="before-window-1" aria-label="ウィンドウ 1" >
+<rect x="0" y="38" width="620" height="125" rx="14" fill="#fff" stroke="#dddbd5"/><rect x="1" y="39" width="618" height="94" rx="13" fill="#ebe9e4" /><g id="before-news-1" aria-label="news: first duplicate closed" data-tab-id="news-1" data-url="https://news.example/a" data-phase="before" data-duplicate="true">
+<rect x="13" y="52" width="194" height="77" rx="9" fill="#f6f5f1" stroke="#d93025" stroke-width="2" stroke-dasharray="4 3"/><rect x="22" y="62" width="12" height="12" rx="3" fill="#e8710a" /><text x="40" y="73" font-size="14" >News</text><text x="22" y="93" font-size="9" >news.example/a</text><rect x="21" y="103" width="90" height="19" rx="9" fill="#d93025" /><text x="29" y="116" font-size="11" fill="#fff" font-weight="700">重複</text>
+</g><g id="before-mail-1" aria-label="mail: first duplicate closed" data-tab-id="mail-1" data-url="https://mail.example/inbox" data-phase="before" data-duplicate="true">
+<rect x="213" y="52" width="194" height="77" rx="9" fill="#f6f5f1" stroke="#d93025" stroke-width="2" stroke-dasharray="4 3"/><rect x="222" y="62" width="12" height="12" rx="3" fill="#1a73e8" /><text x="240" y="73" font-size="14" >Mail</text><text x="222" y="93" font-size="9" >mail.example/inbox</text><rect x="221" y="103" width="90" height="19" rx="9" fill="#d93025" /><text x="229" y="116" font-size="11" fill="#fff" font-weight="700">重複</text>
+</g><g id="before-news-2" aria-label="news: retained" data-tab-id="news-2" data-url="https://news.example/a" data-phase="before" data-duplicate="false">
+<rect x="413" y="52" width="194" height="77" rx="9" fill="#f6f5f1" stroke="#dddbd5"/><rect x="422" y="62" width="12" height="12" rx="3" fill="#e8710a" /><text x="440" y="73" font-size="14" >News</text><text x="422" y="93" font-size="9" >news.example/a</text>
+</g><text x="14" y="152" font-size="13" fill="#5d5d66">ウィンドウ 1</text>
+</g><g id="before-window-2" aria-label="ウィンドウ 2" >
+<rect x="0" y="175" width="620" height="125" rx="14" fill="#fff" stroke="#dddbd5"/><rect x="1" y="176" width="618" height="94" rx="13" fill="#ebe9e4" /><g id="before-shop-1" aria-label="shop: retained" data-tab-id="shop-1" data-url="https://shop.example/item" data-phase="before" data-duplicate="false">
+<rect x="13" y="189" width="194" height="77" rx="9" fill="#f6f5f1" stroke="#dddbd5"/><rect x="22" y="199" width="12" height="12" rx="3" fill="#a142f4" /><text x="40" y="210" font-size="14" >Shop</text><text x="22" y="230" font-size="9" >shop.example/item</text>
+</g><g id="before-docs-1" aria-label="docs: retained" data-tab-id="docs-1" data-url="https://docs.example/guide" data-phase="before" data-duplicate="false">
+<rect x="213" y="189" width="194" height="77" rx="9" fill="#f6f5f1" stroke="#dddbd5"/><rect x="222" y="199" width="12" height="12" rx="3" fill="#188038" /><text x="240" y="210" font-size="14" >Docs</text><text x="222" y="230" font-size="9" >docs.example/guide</text>
+</g><g id="before-mail-2" aria-label="mail: retained" data-tab-id="mail-2" data-url="https://mail.example/inbox" data-phase="before" data-duplicate="false">
+<rect x="413" y="189" width="194" height="77" rx="9" fill="#f6f5f1" stroke="#dddbd5"/><rect x="422" y="199" width="12" height="12" rx="3" fill="#1a73e8" /><text x="440" y="210" font-size="14" >Mail</text><text x="422" y="230" font-size="9" >mail.example/inbox</text>
+</g><text x="14" y="289" font-size="13" fill="#5d5d66">ウィンドウ 2</text>
+</g><path d="M294 320 H326 L310 338 Z" fill="#ffb03b"/><text x="0" y="370" font-size="15" fill="#8a5300" font-weight="700">実行後</text><g id="after-window-1" aria-label="ウィンドウ 1" >
+<rect x="0" y="384" width="620" height="125" rx="14" fill="#fff" stroke="#dddbd5"/><rect x="1" y="385" width="618" height="94" rx="13" fill="#ebe9e4" /><g id="after-docs-1" aria-label="docs: retained" data-tab-id="docs-1" data-url="https://docs.example/guide" data-phase="after" data-duplicate="false">
+<rect x="13" y="398" width="144" height="77" rx="9" fill="#f6f5f1" stroke="#dddbd5"/><rect x="22" y="408" width="12" height="12" rx="3" fill="#188038" /><text x="40" y="419" font-size="14" >Docs</text><text x="22" y="439" font-size="9" >docs.example/guide</text>
+</g><g id="after-mail-2" aria-label="mail: retained" data-tab-id="mail-2" data-url="https://mail.example/inbox" data-phase="after" data-duplicate="false">
+<rect x="163" y="398" width="144" height="77" rx="9" fill="#f6f5f1" stroke="#dddbd5"/><rect x="172" y="408" width="12" height="12" rx="3" fill="#1a73e8" /><text x="190" y="419" font-size="14" >Mail</text><text x="172" y="439" font-size="9" >mail.example/inbox</text>
+</g><g id="after-news-2" aria-label="news: retained" data-tab-id="news-2" data-url="https://news.example/a" data-phase="after" data-duplicate="false">
+<rect x="313" y="398" width="144" height="77" rx="9" fill="#f6f5f1" stroke="#dddbd5"/><rect x="322" y="408" width="12" height="12" rx="3" fill="#e8710a" /><text x="340" y="419" font-size="14" >News</text><text x="322" y="439" font-size="9" >news.example/a</text>
+</g><g id="after-shop-1" aria-label="shop: retained" data-tab-id="shop-1" data-url="https://shop.example/item" data-phase="after" data-duplicate="false">
+<rect x="463" y="398" width="144" height="77" rx="9" fill="#f6f5f1" stroke="#dddbd5"/><rect x="472" y="408" width="12" height="12" rx="3" fill="#a142f4" /><text x="490" y="419" font-size="14" >Shop</text><text x="472" y="439" font-size="9" >shop.example/item</text>
+</g><text x="14" y="498" font-size="13" fill="#5d5d66">ウィンドウ 1</text>
+</g><text x="0" y="540" font-size="13" fill="#5d5d66">同じURLの印付きタブを閉じ、対象内の最後のタブを残します。</text><text x="0" y="650" font-size="13" fill="#5d5d66">対象タブの説明図（ブラウザー画面の撮影ではありません）。</text>
+</g>
+</svg>

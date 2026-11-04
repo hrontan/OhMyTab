@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "types": ["node", "chrome", "firefox-webext-browser"]
+  },
+  "exclude": ["tooling", "benchmarks"],
+  "include": ["../src", "./**/*.ts"]
+}

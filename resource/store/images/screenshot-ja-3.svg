@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="800" viewBox="0 0 1280 800" xml:lang="ja">
+<defs><symbol id="logo" viewBox="0 0 128 128"><!-- Paths from resource/icon.ai PDF content; PDF coordinates reflected into SVG. -->
+  <g transform="translate(0 128) scale(1 -1)">
+    <path fill="#58595b" transform="translate(46.9517 121.9487)" d="M0 0 V-10.403 C3.762 -14.615 6.069 -20.155 6.069 -26.247 C6.069 -32.339 3.762 -37.879 0 -42.09 V-116.821 H28.407 V0 Z"/>
+    <path fill="#58595b" transform="translate(29.2012 119.521)" d="M0 0 C-13.155 0 -23.819 -10.664 -23.819 -23.819 C-23.819 -36.974 -13.155 -47.638 0 -47.638 C7.063 -47.638 13.389 -44.546 17.75 -39.663 V-7.975 C13.389 -3.092 7.063 0 0 0 Z"/>
+    <circle fill="#ffb338" cx="99.1776" cy="62.8164" r="23.8195"/>
+  </g></symbol></defs>
+<g id="background" aria-label="Background" >
+<rect x="0" y="0" width="1280" height="800" rx="0" fill="#f7f6f3" />
+</g>
+<g id="brand" aria-label="OhMyTab brand" >
+<use href="#logo" x="80" y="44" width="36" height="36"/><text x="128" y="71" font-size="22" id="brand-name" font-family="&quot;Segoe UI&quot;, sans-serif" font-weight="800" text-anchor="start" letter-spacing="-0.01em" fill="#555559">OhMyTab</text>
+</g>
+<g id="copy" aria-label="Localized title and description" font-family="&quot;Yu Gothic UI&quot;, &quot;Meiryo UI&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#26262a">
+<text x="80" y="284.1" font-size="46" font-weight="700" letter-spacing="-0.01em">タブの数が</text>
+<text x="80" y="341.6" font-size="46" font-weight="700" letter-spacing="-0.01em">ひと目でわかる</text><rect x="80" y="369.6" width="64" height="6" rx="3" fill="#ffb03b" /><text x="80" y="428.6" font-size="21" fill="#5d5d66">開いているタブ数を全体またはウィンドウごと</text>
+<text x="80" y="464.3" font-size="21" fill="#5d5d66">に表示します。Chromeでは同じドメインの対象</text>
+<text x="80" y="500" font-size="21" fill="#5d5d66">タブをグループ化し、ドメイン名を付けて折り</text>
+<text x="80" y="535.7" font-size="21" fill="#5d5d66">たたみます。</text>
+</g>
+<g id="illustration" aria-label="Feature illustration" transform="translate(630 100)" font-family="&quot;Yu Gothic UI&quot;, &quot;Meiryo UI&quot;, &quot;Segoe UI&quot;, sans-serif" fill="#26262a">
+<rect x="0" y="85" width="620" height="70" rx="14" fill="#fff" stroke="#dddbd5"/><rect x="18" y="103" width="510" height="34" rx="17" fill="#f1f0ec" /><rect x="546" y="100" width="40" height="40" rx="8" fill="#f6f5f1" /><use href="#logo" x="551" y="105" width="30" height="30"/><rect x="570" y="128" width="29" height="20" rx="4" fill="#8cb6f7" /><text x="576" y="143" font-size="13" fill="#fff">12</text><g id="collapsed-domain-groups" aria-label="Chrome domain groups, collapsed" data-collapsed="true" data-browser="Chrome">
+<rect x="0" y="183" width="620" height="220" rx="14" fill="#fff" stroke="#dddbd5"/><rect x="1" y="184" width="618" height="46" rx="13" fill="#ebe9e4" /><rect x="12" y="199" width="173" height="30" rx="8" fill="#188038" /><text x="24" y="219" font-size="13" fill="#fff" font-weight="700">docs.example.com</text><rect x="192" y="199" width="177" height="30" rx="8" fill="#e8710a" /><text x="204" y="219" font-size="13" fill="#fff" font-weight="700">news.example.com</text><text x="14" y="376" font-size="13" fill="#5d5d66">Chromeのみ・ドメイン名で自動命名・グループは折りたたみ</text>
+</g><text x="0" y="650" font-size="13" fill="#5d5d66">対象タブの説明図（ブラウザー画面の撮影ではありません）。</text>
+</g>
+</svg>
